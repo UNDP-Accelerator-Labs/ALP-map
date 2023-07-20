@@ -130,7 +130,7 @@
 		'preserveAspectRatio': 'xMidYMid meet'
 	})
 
-	const endpoint = new URL('https://acclabs-actionlearningplans.azurewebsites.net/apis/fetch/tags?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDAwLyJdLCJpYXQiOjE2ODk2NzUxOTIsImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.Q8-rt-0taMT5QhNGWfhLsIbqCc07HN8mr30kx12_0vY')
+	const endpoint = new URL('https://acclabs-actionlearningplans.azurewebsites.net/apis/fetch/tags?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cHM6Ly91bmRwLWFjY2VsZXJhdG9yLWxhYnMuZ2l0aHViLmlvLyJdLCJpYXQiOjE2ODk4NjQwNDksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.UrYiH9OVYRkytd6jIiX2RiiCnavBJ0DewpGyLsdkkiA')
 
 	const basetags_params = new URLSearchParams(endpoint.search)
 	basetags_params.append('mobilizations', 26)
@@ -332,7 +332,7 @@
 				const queryparams = new URLSearchParams(pads_endpoint.search)
 				queryparams.append('output', 'json')
 
-				queryparams.append('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDAwLyJdLCJpYXQiOjE2ODk2NzUxOTIsImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.Q8-rt-0taMT5QhNGWfhLsIbqCc07HN8mr30kx12_0vY')
+				queryparams.append('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cHM6Ly91bmRwLWFjY2VsZXJhdG9yLWxhYnMuZ2l0aHViLmlvLyJdLCJpYXQiOjE2ODk4NjQwNDksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.UrYiH9OVYRkytd6jIiX2RiiCnavBJ0DewpGyLsdkkiA')
 
 				// queryparams.append('countries', 'json')
 				queryparams.append('mobilizations', 26)
