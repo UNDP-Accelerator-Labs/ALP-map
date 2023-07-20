@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.35em;
+}
+body header {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #005687;
+}
+body header a {
+  line-height: 26px;
+  margin: 0 30px;
+  float: right;
+}
+body header img#logo {
+  height: 125px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+body div.container {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 30px);
+}
+body div.container .left-col {
+  flex: 1 1 0;
+}
+body div.container .left-col svg {
+  margin: auto;
+  flex-shrink: 0;
+}
+body div.container .left-col svg text {
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-anchor: middle;
+  text-transform: capitalize;
+  pointer-events: none;
+}
+body div.container .left-col svg text.group-label {
+  font-size: 14px;
+  /*font-weight: bold;*/
+  fill: #646464;
+}
+body div.container .left-col svg .node:not(.node--root) {
+  cursor: pointer;
+}
+body div.container .left-col svg .node:not(.node--root) .highlight {
+  stroke: #FFC10E;
+  stroke-width: 2;
+}
+body div.container .left-col svg .node:not(.node--root):not(.node--leaf):hover circle:not(.highlight) {
+  stroke: #969696;
+  stroke-dasharray: 1px 2px;
+}
+body div.container .left-col svg .node--leaf circle {
+  transition: opacity 0.25s;
+}
+body div.container .left-col svg .node--leaf circle.dimmed {
+  opacity: 0.3;
+}
+body div.container .left-col svg circle.connected {
+  fill: green !important;
+}
+body div.container .left-col #get-data {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+body div.container .right-col {
+  flex: 0 1 0;
+  background-color: #005687;
+  transition: flex 0.5s;
+  color: #FFF;
+  overflow: auto;
+}
+body div.container .right-col h1 {
+  margin-bottom: 30px;
+  color: #FFC10E;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin: 2em;
+}
+body div.container .right-col svg .timeseries {
+  fill: none;
+  stroke: #32BEE1;
+}
+body div.container .right-col article {
+  margin: 4em 0;
+}
+body div.container .right-col article .inner {
+  display: flex;
+  padding: 0 4em;
+}
+body div.container .right-col article .inner hgroup {
+  flex: 1 1 0;
+  padding-right: 2em;
+}
+body div.container .right-col article .inner hgroup h1 {
+  font-size: 24px;
+  line-height: 1.2em;
+  color: #FFF;
+  text-decoration: none;
+  margin: 0;
+}
+body div.container .right-col article .inner hgroup p {
+  color: #32BEE1;
+  margin-top: 5px;
+}
+body div.container .right-col article .inner hgroup .tags {
+  margin: 15px 0;
+}
+body div.container .right-col article .inner hgroup .tags .tag {
+  display: inline-block;
+  margin: 2.5px;
+  font-size: 12px;
+  white-space: nowrap;
+  text-transform: capitalize;
+  padding: 0 5px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+}
+body div.container .right-col article .inner .body {
+  flex: 1 1 0;
+  min-width: 300px;
+}
+body div.container .right-col article .inner .body img {
+  width: 300px;
+  margin: 0 15px 15px 0;
+}
+
+/*# sourceMappingURL=main.css.map */
