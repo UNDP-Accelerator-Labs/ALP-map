@@ -542,7 +542,7 @@
 
 		const body = pad.addElems('div', 'body')
 		body.addElems('img', 'vignette', d => d.media.slice(0, 1))
-			.attr('src', d => d)
+			.attr('src', d => d.replace('https:/', 'https://'))
 		body.addElems('p', 'snippet', d => d.snippet)
 			.html(d => d)
 	}
