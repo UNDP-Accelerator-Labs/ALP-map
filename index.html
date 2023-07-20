@@ -144,7 +144,7 @@
 
 	const data_collection = []
 	data_collection.push(GET(`${endpoint.origin}${endpoint.pathname}?${basetags_params.toString()}`))
-	data_collection.push(d3.json('/data/taxonomy_manual_202305.json'))
+	data_collection.push(d3.json('data/taxonomy_manual_202305.json'))
 	if (highlighttags_params.size > 2) data_collection.push(GET(`${endpoint.origin}${endpoint.pathname}?${highlighttags_params.toString()}`))
 
 	addLoader()
