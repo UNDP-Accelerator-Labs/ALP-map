@@ -21,6 +21,10 @@
 	<img id='logo' src='imgs/branding/UNDP_accelerator_labs_logo_vertical_color_RGB.png'>
 </header>
 
+<nav>
+	<!-- <input id='find-tag' type='text' oninput='highlightTag(this.value)'></div> -->
+</nav>
+
 <div class='container'>
 	<div class='left-col'>
 		<svg id='bubbles'>
@@ -132,24 +136,27 @@
 		'preserveAspectRatio': 'xMidYMid meet'
 	})
 
-	const endpoint = new URL('https://acclabs-actionlearningplans.azurewebsites.net/apis/fetch/tags?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cHM6Ly91bmRwLWFjY2VsZXJhdG9yLWxhYnMuZ2l0aHViLmlvLyJdLCJpYXQiOjE2ODk4NjQwNDksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.UrYiH9OVYRkytd6jIiX2RiiCnavBJ0DewpGyLsdkkiA')
+	const platform = new URL('https://acclabs-actionlearningplans.azurewebsites.net')
+	const endpoint = new URL('apis/fetch/tags?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDAwLyJdLCJpYXQiOjE2ODk2NzUxOTIsImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.Q8-rt-0taMT5QhNGWfhLsIbqCc07HN8mr30kx12_0vY', platform)
 
 	const basetags_params = new URLSearchParams(endpoint.search)
-	basetags_params.append('mobilizations', 26)
+	let mobilization = 26
 
 	const highlighttags_params = new URLSearchParams(basetags_params)
 	new URLSearchParams(window.location.search).forEach((v, k) => {
 		if (['countries'].includes(k)) highlighttags_params.append(k, v)
 		if (['regions'].includes(k)) basetags_params.append(k, v)
-
+		if (['mobilizations'].includes(k)) mobilization = v
 	})
+	basetags_params.append('mobilizations', mobilization)
 
 	const data_collection = []
 	data_collection.push(GET(`${endpoint.origin}${endpoint.pathname}?${basetags_params.toString()}`))
-	data_collection.push(d3.json('data/taxonomy_manual_202305.json'))
+	data_collection.push(d3.json('data/taxonomy_manual_202309.json'))
 	if (highlighttags_params.size > 2) data_collection.push(GET(`${endpoint.origin}${endpoint.pathname}?${highlighttags_params.toString()}`))
 
 	addLoader()
+
 	Promise.all(data_collection)
 	.then(results => {
 		rmLoader()
@@ -195,7 +202,6 @@
 			d.orid = d.id
 			d.id = `root.${contains_unclustered ? `${d.clusters >= 0}.` : ''}${d.keywords.replace(/\,\s/g, '-')}.${d.split}`
 			d.value = d.select_count ?? d.total_count
-			console.log(d.value)
 		})
 		packdata.unique('keywords').forEach(d => {
 			packdata.push({ id: `root.${contains_unclustered ? `${d.clusters >= 0}.` : ''}${d.keywords.replace(/\,\s/g, '-')}` })
@@ -330,14 +336,14 @@
 				const tag_ids = d.children.map(c => c.data.orid).flat()
 				const cluster_name = d.children.map(c => c.data).flat().unique('keywords', true)
 				
-				const pads_endpoint = 'https://acclabs-actionlearningplans.azurewebsites.net/apis/fetch/pads'
+				const pads_endpoint = new URL('apis/fetch/pads', platform)
 				const queryparams = new URLSearchParams(pads_endpoint.search)
 				queryparams.append('output', 'json')
 
-				queryparams.append('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cHM6Ly91bmRwLWFjY2VsZXJhdG9yLWxhYnMuZ2l0aHViLmlvLyJdLCJpYXQiOjE2ODk4NjQwNDksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.UrYiH9OVYRkytd6jIiX2RiiCnavBJ0DewpGyLsdkkiA')
+				queryparams.append('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDAwLyJdLCJpYXQiOjE2ODk2NzUxOTIsImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.Q8-rt-0taMT5QhNGWfhLsIbqCc07HN8mr30kx12_0vY')
 
 				// queryparams.append('countries', 'json')
-				queryparams.append('mobilizations', 26)
+				queryparams.append('mobilizations', mobilization)
 				queryparams.append('include_imgs', true)
 				queryparams.append('include_tags', true)
 				new URLSearchParams(window.location.search).forEach((v, k) => {
@@ -533,17 +539,21 @@
 		const head = pad.addElems('hgroup', 'head')
 
 		head.addElems('h1', 'title')
-			.html(d => d.title)
+			.addElems('a')
+		.attrs({
+			'href': d => new URL(`en/view/pad?id=${d.pad_id}`, platform),
+			'target': '_blank'
+		}).html(d => d.title)
 		head.addElems('p', 'country')
 			.html(d => d.country)
 		head.addElems('div', 'tags', d => [d.tags.filter(c => c.type === 'thematic_areas')])
 			.addElems('div', 'tag', d => d)
-			.html(d => d.name)
+			.html(d => d.name.length > 20 ? `${d.name.slice(0, 20)}...` : d.name)
 
 		const body = pad.addElems('div', 'body')
 		body.addElems('img', 'vignette', d => d.media.slice(0, 1))
 			.attr('src', d => d.replace('https:/', 'https://'))
-		body.addElems('p', 'snippet', d => d.snippet)
+		body.addElems('p', 'snippet', d => [d.snippet])
 			.html(d => d)
 	}
 
@@ -569,6 +579,10 @@
 			}).on('click', d => {
 				window.open(`https://acclabs-actionlearningplans.azurewebsites.net/en/edit/pad?id=${data.unique('pad', true)[0]}`, '_blank')
 			})
+	}
+
+	function highlightTag (value) {
+		d3.selectAll('circle').classed('highlight', d => Object.keys(d.data).includes('orid') && d.data.clean[0].includes(value))
 	}
 
 	function sortpolygon (points, type) {

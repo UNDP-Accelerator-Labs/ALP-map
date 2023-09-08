@@ -4000,12 +4000,12 @@
             "design"
         ],
         "split": "design",
-        "clusters": 65,
+        "clusters": 118,
         "umap": [
             5.0488448143,
             6.6308012009
         ],
-        "keywords": "design, systemic, architecture",
+        "keywords": "methods, approaches",
         "keywords_umap": [
             3.1753716469,
             11.1284370422
@@ -5936,12 +5936,12 @@
             "empowerment"
         ],
         "split": "empowerment",
-        "clusters": -1,
+        "clusters": 84,
         "umap": [
             2.1886031628,
             9.7755651474
         ],
-        "keywords": "water, citizen, waste",
+        "keywords": "communities",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -6946,12 +6946,12 @@
             "free education"
         ],
         "split": "free education",
-        "clusters": 14,
+        "clusters": 28,
         "umap": [
             6.1165909767,
             4.1177220345
         ],
-        "keywords": "free, packaging, software",
+        "keywords": "education, statistic, training",
         "keywords_umap": [
             1.0049681664,
             12.0515050888
@@ -9837,12 +9837,12 @@
             "mobile application"
         ],
         "split": "mobile application",
-        "clusters": 127,
+        "clusters": 130,
         "umap": [
             6.5572061539,
             7.2162356377
         ],
-        "keywords": "mobile, device, application",
+        "keywords": "digital, data, AI",
         "keywords_umap": [
             0.678386569,
             12.1466884613
@@ -12459,12 +12459,12 @@
             "recycle waste plastic"
         ],
         "split": "recycle waste plastic",
-        "clusters": 81,
+        "clusters": 71,
         "umap": [
             5.9149889946,
             2.8335134983
         ],
-        "keywords": "recycling, recycle, pvc",
+        "keywords": "waste management",
         "keywords_umap": [
             2.0413165092,
             8.654004097
@@ -14592,12 +14592,12 @@
             "stem"
         ],
         "split": "stem",
-        "clusters": 64,
+        "clusters": 28,
         "umap": [
             4.7175545692,
             5.2354249954
         ],
-        "keywords": "stem, substrate, microorganism",
+        "keywords": "education, statistic, training",
         "keywords_umap": [
             2.7441492081,
             8.564491272
@@ -16221,12 +16221,12 @@
             "waste collection"
         ],
         "split": "waste collection",
-        "clusters": 66,
+        "clusters": 71,
         "umap": [
             5.9012794495,
             2.3438065052
         ],
-        "keywords": "waste, separation, recoverable",
+        "keywords": "waste management",
         "keywords_umap": [
             1.4387103319,
             8.7220363617
@@ -17673,11 +17673,11 @@
         "clean": [
             "sustainable land managemnt"
         ],
-        "clusters": -1,
+        "clusters": 19,
         "id": [
             4139
         ],
-        "keywords": "water, citizen, waste",
+        "keywords": "agriculture, agrotech",
         "split": "sustainable land managemnt",
         "total_count": 1,
         "initial_idx": 852
@@ -17686,11 +17686,11 @@
         "clean": [
             "traditional practices"
         ],
-        "clusters": -1,
+        "clusters": 95,
         "id": [
             4185
         ],
-        "keywords": "water, citizen, waste",
+        "keywords": "community, reliance, resilience",
         "split": "traditional practices",
         "total_count": 1,
         "initial_idx": 853
@@ -17699,11 +17699,11 @@
         "clean": [
             "msmes"
         ],
-        "clusters": -1,
+        "clusters": 115,
         "id": [
             4184
         ],
-        "keywords": "water, citizen, waste",
+        "keywords": "big, small, enterprise",
         "split": "msmes",
         "total_count": 1,
         "initial_idx": 854

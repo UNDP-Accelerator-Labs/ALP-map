@@ -69,6 +69,14 @@ body {
 		}
 	}
 
+	nav {
+		#find-tag {
+			position: absolute;
+			top: 60px;
+			left: 30px;
+		}
+	}
+
 	div.container {
 		display: flex;
 		width: 100%;
@@ -77,6 +85,7 @@ body {
 
 		.left-col {
 			flex: 1 1 0;
+			position: relative;
 
 			svg {
 				margin: auto;
@@ -152,20 +161,24 @@ body {
 				margin: 4em 0;
 
 				.inner {
-					display: flex;
+					display: grid;
+					grid-column-gap: 2em;
+					grid-template-columns: 4fr 6fr;
 					padding: 0 4em;
-
 
 					hgroup {
 						flex: 1 1 0;
-						padding-right: 2em;
 
 						h1 {
-							font-size: $t-large;
-							line-height: 1.2em;
-							color: #FFF;
 							text-decoration: none;
 							margin: 0;
+							
+							a {
+								font-size: $t-large;
+								line-height: 1.2em;
+								color: #FFF;
+								text-decoration: none;
+							}
 						}
 						p {
 							color: $c-light-blue;
@@ -188,10 +201,10 @@ body {
 					}
 					.body {
 						flex: 1 1 0;
-						min-width: 300px;
+						/*min-width: 300px;*/
 
 						img {
-							width: 300px;
+							max-width: 300px;
 							margin: 0 15px 15px 0;
 						}
 					}

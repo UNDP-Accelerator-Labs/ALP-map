@@ -34,6 +34,11 @@ body header img#logo {
   top: 30px;
   left: 0;
 }
+body nav #find-tag {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
 body div.container {
   display: flex;
   width: 100%;
@@ -41,6 +46,7 @@ body div.container {
 }
 body div.container .left-col {
   flex: 1 1 0;
+  position: relative;
 }
 body div.container .left-col svg {
   margin: auto;
@@ -106,19 +112,23 @@ body div.container .right-col article {
   margin: 4em 0;
 }
 body div.container .right-col article .inner {
-  display: flex;
+  display: grid;
+  grid-column-gap: 2em;
+  grid-template-columns: 4fr 6fr;
   padding: 0 4em;
 }
 body div.container .right-col article .inner hgroup {
   flex: 1 1 0;
-  padding-right: 2em;
 }
 body div.container .right-col article .inner hgroup h1 {
+  text-decoration: none;
+  margin: 0;
+}
+body div.container .right-col article .inner hgroup h1 a {
   font-size: 24px;
   line-height: 1.2em;
   color: #FFF;
   text-decoration: none;
-  margin: 0;
 }
 body div.container .right-col article .inner hgroup p {
   color: #32BEE1;
@@ -139,10 +149,10 @@ body div.container .right-col article .inner hgroup .tags .tag {
 }
 body div.container .right-col article .inner .body {
   flex: 1 1 0;
-  min-width: 300px;
+  /*min-width: 300px;*/
 }
 body div.container .right-col article .inner .body img {
-  width: 300px;
+  max-width: 300px;
   margin: 0 15px 15px 0;
 }
 
