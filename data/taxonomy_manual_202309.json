@@ -284,12 +284,12 @@
             "activism"
         ],
         "split": "activism",
-        "clusters": -1,
+        "clusters": 94,
         "umap": [
             2.5118186474,
             10.168545723
         ],
-        "keywords": "water, citizen, waste",
+        "keywords": "involvement, active, citizenship",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -10240,12 +10240,12 @@
             "network"
         ],
         "split": "network",
-        "clusters": -1,
+        "clusters": 94,
         "umap": [
             6.3355445862,
             7.8828454018
         ],
-        "keywords": "water, citizen, waste",
+        "keywords": "involvement, active, citizenship",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
