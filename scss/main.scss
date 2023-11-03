@@ -40,7 +40,7 @@ $t-xxxlarge: 90px;
 	margin: 0;
 }
 .hide {
-	display: none;
+	display: none !important;
 }
 html, body {
 	height: 100%;
@@ -51,45 +51,77 @@ body {
 	line-height: 1.35em;
 
 	header {
+		flex: 0 1 0;
 		display: block;
 		width: 100%;
-		height: 30px;
-		background-color: $c-dark-blue;
+		
+		#languages {
+			height: 30px;
+			background-color: $c-dark-blue;
+		}
 
 		a {
 			line-height: 26px;
 			margin: 0 30px;
 			float: right;
 		}
-		img#logo {
-			height: 125px;
+		
+		#logo {
 			position: absolute;
 			top: 30px;
 			left: 0;
+			
+			img {
+				height: 125px;
+				margin-bottom: 30px;
+			}
+			h1 {
+				margin: 0 0 5px 105px;
+				line-height: 1.2em;
+				word-spacing: 100vw;
+				color: $c-dark-blue;
+			}
+			h2 {
+				margin: 0 0 0 105px;
+				line-height: 1.3em;
+				word-spacing: 100vw;
+				color: $c-mid-blue;
+				font-weight: normal;
+			}
 		}
 	}
+	.cartouche {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		min-height: 30px;
+		width: 100%;
+		padding: 15px;
+		border: 1px dotted $c-light-grey;
+		box-sizing: border-box;
+		background-color: #FFF;
 
-	nav {
-		#find-tag {
+		/*#find-tag {
 			position: absolute;
 			top: 60px;
 			left: 30px;
-		}
+		}*/
 	}
+
 
 	div.container {
 		display: flex;
 		width: 100%;
-		height: calc(100% - 30px);
-
+		height: 100%;
 
 		.left-col {
 			flex: 1 1 0;
+			display: flex;
+			flex-direction: column;
 			position: relative;
 
 			svg {
 				margin: auto;
-				flex-shrink: 0;
 
 				text {
 					font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
@@ -107,15 +139,20 @@ body {
 					cursor: pointer;
 
 					.highlight {
-						stroke: $c-mid-yellow;
+						stroke: $c-dark-yellow;
 						stroke-width: 2;
 					}
 				}
-				.node:not(.node--root):not(.node--leaf):hover {
+				.node:not(.node--root):not(.node--leaf):hover,
+				.node:not(.node--root):not(.node--leaf).hover {
 					circle:not(.highlight) {
 						stroke: $c-light-grey;
 						stroke-dasharray: 1px 2px;
 					}
+				}
+				.node--root {
+					fill: #FFF;
+					fill-opacity: .75;
 				}
 				.node--leaf {
 					circle {
@@ -143,6 +180,20 @@ body {
 			transition: flex .5s;
 			color: #FFF;
 			overflow: auto;
+
+			button.expand-filters {
+				position: fixed;
+				top: 30px;
+				right: 0;
+
+				&:not(.close) {
+					pointer-events: none;
+				}
+
+				.line {
+					background-color: #FFF;
+				}
+			}
 			
 			h1 {
 				margin-bottom: 30px;
@@ -150,6 +201,7 @@ body {
 				text-transform: capitalize;
 				text-decoration: underline;
 				margin: 2em;
+				line-height: 1.3em;
 			}
 			svg {
 				.timeseries {
@@ -184,6 +236,9 @@ body {
 							color: $c-light-blue;
 							margin-top: 5px;
 						}
+						small {
+							color: $c-light-blue;
+						}
 						.tags {
 							margin: 15px 0;
 
@@ -209,6 +264,207 @@ body {
 						}
 					}
 				}
+			}
+		}
+	}
+}
+form {
+	width: 100%;
+	max-height: 0;
+/*	padding: 15px 7.5px;*/
+	display: flex;
+	flex-wrap: wrap;
+	background: repeating-linear-gradient(
+		45deg, 
+		transparent, 
+		transparent 3px, rgba(150, 150, 150, 0.1) 3px, 
+		rgba(150, 150, 150, 0.1) 6px
+	);
+	box-sizing: border-box;
+	transition: max-height .25s ease-out;
+	overflow: hidden;
+
+	section {
+		flex: 1 1;
+		padding: 15px 15px 0 15px;
+
+		&:nth-child(even) {
+			padding-left: 0;
+		}
+
+		.filter {
+			position: relative;
+			width: 100%;
+			height: 45px;
+			background-color: #FFF;
+			margin-bottom: 15px;
+			border-bottom: 1px solid $c-light-grey;
+
+			input[type=text] {
+				position: relative;
+				width: 100%;
+				height: 30px;
+				padding: 0 15px;
+				margin-top: 15px;
+				border: none;
+				outline: none;
+				background-color: transparent;
+				font-size: $t-main;
+				color: $c-dark-blue;
+			}
+			label {
+				position: absolute;
+				left: 15px;
+				font-size: $t-small;
+				line-height: 1.5em;
+				color: $c-light-grey;
+				transform: translateY(15px);
+				transition: transform .25s, font-size .25s;
+				pointer-events: none;
+			}
+			input[type=text]:focus + label,
+			input[type=text].has-value + label {
+				font-size: $t-xsmall;
+				line-height: 1.5em;
+				transform: translateY(2.5px);
+			}
+			input[type=text]:focus ~ button,
+			input[type=text].has-value ~ button {
+				display: block;
+			}
+
+			.dropdown {
+				position: absolute;
+				width: 100%;
+				max-height: 0;
+				left: 0;
+				top: 100%;
+				background-color: #FFF;
+				box-shadow: 0px 10px 10px rgba(0,0,0,.1);
+				overflow: auto;
+				z-index: 1000000;
+				transition: max-height 0.25s ease-out;
+
+				&.dropup {
+					top: auto;
+					bottom: 100%;
+					box-shadow: 0px -10px 10px rgba(0,0,0,.1);
+				}
+
+				menu {
+					width: 100%;
+
+					li {
+						display: inline-block;
+						width: 100%;
+						margin: 0;
+						list-style: none;
+
+						input[type=checkbox] {
+							display: none;
+						}
+						label {
+							display: flex;
+							align-items: center;
+							position: static;
+							padding: 5px 20px 5px 15px;
+							cursor: pointer;
+							font-size: $t-mid-small;
+							line-height: 1.5em;
+							color: $c-dark-grey;
+							transform: none;
+							pointer-events: all;
+							cursor: pointer;
+							text-transform: capitalize;
+
+							.count {
+								margin-left: auto;
+								padding-left: 10px;
+								color: $c-light-grey;
+							}
+						}
+						input:checked + label {
+							background-color: $c-light-2;
+						}
+
+						&:hover {
+							background-color: $c-light-3;
+						}
+					}
+				}
+			}
+		}
+	}
+	button.submit-filters {
+		flex-basis: 100%;
+		width: 100%;
+		height: 30px;
+		padding: 0 10px;
+		margin: 0 15px 15px 15px;
+		border: 1px solid #005687;
+		outline: none;
+		background-color: transparent;
+		font-size: 14px;
+		line-height: 1.5em;
+		color: $c-dark-blue;
+		cursor: pointer;
+		box-sizing: border-box;
+	}
+}
+button.expand-filters {
+	position: relative;
+	vertical-align: middle;
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin: 0 15px 0 0;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+	.line {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 2px;
+		background-color: #969696;
+		transition: transform 0.25s, width 0.25s;
+
+		&.l1 {
+			width: 20px;
+			transform: translate(5px, 7.5px) rotate(0deg);
+			transform-origin: center;
+			transition-delay: 0.1s;
+		}
+		&.l2 {
+			width: 15px;
+			transform: translate(7.5px, 12.5px) rotate(0deg);
+			transform-origin: center;
+		}
+		&.l3 {
+			width: 10px;
+				transform: translate(10px, 17.5px) rotate(0deg);
+				transform-origin: center;
+				transition-delay: 0.1s;
+		}
+	}
+
+	&.close {
+		.line {
+			&.l1 {
+				width: 25px;
+				transform: translate(2.5px, 15px) rotate(-45deg);
+				transform-origin: center;
+			}
+			&.l2 {
+				width: 0;
+				transform: translate(15px, 12.5px) rotate(0deg);
+			}
+			&.l3 {
+				width: 25px;
+				transform: translate(2.5px, 15px) rotate(45deg);
+				transform-origin: center;
 			}
 		}
 	}

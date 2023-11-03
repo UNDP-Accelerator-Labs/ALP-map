@@ -12,7 +12,7 @@
             6.9306349754,
             7.2029080391
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -457,7 +457,7 @@
             1.5028914213,
             3.0319261551
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -711,7 +711,7 @@
             1.8443572521,
             5.0216274261
         ],
-        "keywords": "water, management, heat",
+        "keywords": "water",
         "keywords_umap": [
             3.0801610947,
             10.2746181488
@@ -774,7 +774,7 @@
             1.3624565601,
             3.1797029972
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -942,7 +942,7 @@
             3.3950576782,
             5.6619644165
         ],
-        "keywords": "water, management, heat",
+        "keywords": "water",
         "keywords_umap": [
             4.2656745911,
             10.3655500412
@@ -1383,7 +1383,7 @@
             1.3482265472,
             3.1044654846
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -1551,7 +1551,7 @@
             3.1442499161,
             5.4113149643
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.9846971035,
             10.0757570267
@@ -1714,12 +1714,12 @@
             "birds"
         ],
         "split": "birds",
-        "clusters": 50,
+        "clusters": 99,
         "umap": [
             3.16375494,
             4.4939212799
         ],
-        "keywords": "bird, frog, bumblebee",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.594353199,
             9.1906681061
@@ -1740,7 +1740,7 @@
             3.2855112553,
             8.7477378845
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.7412052155,
             11.0843057632
@@ -2288,7 +2288,7 @@
             3.978672266,
             4.8951230049
         ],
-        "keywords": "city, cool, clean",
+        "keywords": "cities",
         "keywords_umap": [
             2.7401401997,
             9.2084589005
@@ -2393,7 +2393,7 @@
             4.0085506439,
             4.5937285423
         ],
-        "keywords": "city, cool, clean",
+        "keywords": "cities",
         "keywords_umap": [
             2.7401401997,
             9.2084589005
@@ -2456,7 +2456,7 @@
             1.5229231119,
             3.1894321442
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -2498,7 +2498,7 @@
             3.0874824524,
             3.2711594105
         ],
-        "keywords": "water, management, heat",
+        "keywords": "water",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -2766,12 +2766,12 @@
             "collective impact"
         ],
         "split": "collective impact",
-        "clusters": 83,
+        "clusters": 89,
         "umap": [
             3.0344932079,
             7.5220594406
         ],
-        "keywords": "impact, invest, collective",
+        "keywords": "economic, growth, inclusive",
         "keywords_umap": [
             2.5293562412,
             12.0301914215
@@ -2813,7 +2813,7 @@
             3.7944107056,
             5.3047709465
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.9846971035,
             10.0757570267
@@ -3178,7 +3178,7 @@
             2.9462351799,
             5.825378418
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             4.1359949112,
             10.1391658783
@@ -3304,7 +3304,7 @@
             3.5979299545,
             2.8611540794
         ],
-        "keywords": "city, cool, clean",
+        "keywords": "cities",
         "keywords_umap": [
             2.7401401997,
             9.2084589005
@@ -3325,7 +3325,7 @@
             3.9863262177,
             4.6644282341
         ],
-        "keywords": "city, cool, clean",
+        "keywords": "cities",
         "keywords_umap": [
             2.7401401997,
             9.2084589005
@@ -3539,7 +3539,7 @@
             2.6214020252,
             8.6777410507
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -3814,7 +3814,7 @@
             2.8738820553,
             8.4002895355
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -5498,7 +5498,7 @@
             3.3112695217,
             5.6396946907
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.9846971035,
             10.0757570267
@@ -5519,7 +5519,7 @@
             3.3534948826,
             5.6270656586
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.9846971035,
             10.0757570267
@@ -5561,7 +5561,7 @@
             3.4490914345,
             5.2267079353
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.9846971035,
             10.0757570267
@@ -5582,7 +5582,7 @@
             3.2668876648,
             5.092238903
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.9846971035,
             10.0757570267
@@ -5603,7 +5603,7 @@
             3.4162535667,
             6.4353570938
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.9846971035,
             10.0757570267
@@ -5750,7 +5750,7 @@
             2.8065698147,
             8.3805427551
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -5813,7 +5813,7 @@
             1.830394268,
             3.0456476212
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -5915,12 +5915,12 @@
             "digital social services and employment services"
         ],
         "split": "employment services",
-        "clusters": 49,
+        "clusters": 114,
         "umap": [
             5.4662799835,
             9.3346481323
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "employment, decent work",
         "keywords_umap": [
             1.0010057688,
             11.0991077423
@@ -5962,7 +5962,7 @@
             1.3757663965,
             3.1091091633
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -5983,7 +5983,7 @@
             1.4301288128,
             3.0798254013
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -6004,7 +6004,7 @@
             1.3851538897,
             3.1462714672
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -6025,7 +6025,7 @@
             1.4215263128,
             3.1340925694
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -6046,7 +6046,7 @@
             1.2772009373,
             3.2282235622
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -6067,7 +6067,7 @@
             1.3502595425,
             3.1554143429
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -6153,7 +6153,7 @@
             2.9387905598,
             6.9953150749
         ],
-        "keywords": "environment, friendly, protect",
+        "keywords": "environment",
         "keywords_umap": [
             3.0017197132,
             11.3586988449
@@ -6174,7 +6174,7 @@
             3.047734499,
             7.160946846
         ],
-        "keywords": "environment, friendly, protect",
+        "keywords": "environment",
         "keywords_umap": [
             3.0017197132,
             11.3586988449
@@ -6195,7 +6195,7 @@
             3.0541701317,
             6.86521101
         ],
-        "keywords": "environment, friendly, protect",
+        "keywords": "environment",
         "keywords_umap": [
             3.0017197132,
             11.3586988449
@@ -6216,7 +6216,7 @@
             2.8646500111,
             8.1467571259
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -6232,12 +6232,12 @@
             "environmental justice"
         ],
         "split": "environmental justice",
-        "clusters": 93,
+        "clusters": 82,
         "umap": [
             3.3726663589,
             10.1002502441
         ],
-        "keywords": "justice, peace, environmental",
+        "keywords": "environment",
         "keywords_umap": [
             3.7335777283,
             12.4485359192
@@ -6258,7 +6258,7 @@
             2.9559617043,
             7.2345819473
         ],
-        "keywords": "environment, friendly, protect",
+        "keywords": "environment",
         "keywords_umap": [
             2.0470011234,
             10.7627906799
@@ -6510,7 +6510,7 @@
             3.591293335,
             5.0621781349
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.9846971035,
             10.0757570267
@@ -6951,7 +6951,7 @@
             6.1165909767,
             4.1177220345
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             1.0049681664,
             12.0515050888
@@ -7513,12 +7513,12 @@
             "government innovation"
         ],
         "split": "government innovation",
-        "clusters": 35,
+        "clusters": 88,
         "umap": [
             3.9010469913,
             9.3805236816
         ],
-        "keywords": "innovation",
+        "keywords": "local, development, entre",
         "keywords_umap": [
             2.8321950436,
             12.7819709778
@@ -7856,7 +7856,7 @@
             2.590638876,
             3.7551996708
         ],
-        "keywords": "water, management, heat",
+        "keywords": "water",
         "keywords_umap": [
             1.1475791931,
             8.3195886612
@@ -8045,7 +8045,7 @@
             2.0357732773,
             3.1853032112
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -8066,7 +8066,7 @@
             3.9202709198,
             4.2772083282
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -8087,7 +8087,7 @@
             3.708632946,
             4.8582434654
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.9846971035,
             10.0757570267
@@ -8257,7 +8257,7 @@
             2.9023728371,
             8.3515367508
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -8299,7 +8299,7 @@
             3.3468103409,
             8.4158830643
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -8483,12 +8483,12 @@
             "informal employment"
         ],
         "split": "informal employment",
-        "clusters": 120,
+        "clusters": 114,
         "umap": [
             5.1032333374,
             9.1289701462
         ],
-        "keywords": "small businesses, informal businesses",
+        "keywords": "employment, decent work",
         "keywords_umap": [
             1.2924062014,
             11.2195367813
@@ -10098,7 +10098,7 @@
             3.5448412895,
             4.9912858009
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             3.9846971035,
             10.0757570267
@@ -10896,7 +10896,7 @@
             2.5561506748,
             8.9305381775
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -11930,12 +11930,12 @@
             "project management"
         ],
         "split": "project management",
-        "clusters": 41,
+        "clusters": 118,
         "umap": [
             4.0327806473,
             7.6430306435
         ],
-        "keywords": "management, sediment, agile",
+        "keywords": "methods, approaches",
         "keywords_umap": [
             2.7764191628,
             10.8937711716
@@ -11956,7 +11956,7 @@
             2.7451562881,
             6.9436569214
         ],
-        "keywords": "environment, friendly, protect",
+        "keywords": "environment",
         "keywords_umap": [
             3.0017197132,
             11.3586988449
@@ -12212,7 +12212,7 @@
             2.7741343975,
             8.2952299118
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -12615,7 +12615,7 @@
             2.9909431934,
             3.3321111202
         ],
-        "keywords": "water, management, heat",
+        "keywords": "water",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -12869,7 +12869,7 @@
             1.4300401211,
             3.0777578354
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -13482,7 +13482,7 @@
             2.7512552738,
             8.4617395401
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -14301,7 +14301,7 @@
             1.5900638103,
             3.0226871967
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -14576,7 +14576,7 @@
             3.1561095715,
             8.1496706009
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -14597,7 +14597,7 @@
             4.7175545692,
             5.2354249954
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             2.7441492081,
             8.564491272
@@ -14954,7 +14954,7 @@
             1.3243507147,
             3.1382825375
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -15080,7 +15080,7 @@
             3.8837993145,
             7.0880255699
         ],
-        "keywords": "city, cool, clean",
+        "keywords": "cities",
         "keywords_umap": [
             3.6138191223,
             10.644780159
@@ -15101,7 +15101,7 @@
             1.2858401537,
             3.0952630043
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -15485,7 +15485,7 @@
             2.9437537193,
             8.4667701721
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -15848,7 +15848,7 @@
             3.7490885258,
             5.7728214264
         ],
-        "keywords": "city, cool, clean",
+        "keywords": "cities",
         "keywords_umap": [
             4.1243000031,
             10.1541252136
@@ -15869,7 +15869,7 @@
             3.6957094669,
             5.223528862
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             4.1243000031,
             10.1541252136
@@ -15911,7 +15911,7 @@
             3.502238512,
             6.3392729759
         ],
-        "keywords": "city, cool, clean",
+        "keywords": "cities",
         "keywords_umap": [
             3.5727117062,
             10.100982666
@@ -16100,7 +16100,7 @@
             3.5204811096,
             7.8830308914
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -16121,7 +16121,7 @@
             2.9914000034,
             8.4077730179
         ],
-        "keywords": "education, statistic, training",
+        "keywords": "education, training",
         "keywords_umap": [
             3.3683011532,
             11.681189537
@@ -16436,7 +16436,7 @@
             2.8153951168,
             3.5709586143
         ],
-        "keywords": "water, management, heat",
+        "keywords": "water",
         "keywords_umap": [
             1.3751293421,
             7.9543128014
@@ -16457,7 +16457,7 @@
             2.7884020805,
             3.8596508503
         ],
-        "keywords": "water, management, heat",
+        "keywords": "water",
         "keywords_umap": [
             1.1475791931,
             8.3195886612
@@ -16478,7 +16478,7 @@
             2.7699825764,
             3.683154583
         ],
-        "keywords": "water, management, heat",
+        "keywords": "water",
         "keywords_umap": [
             1.1475791931,
             8.3195886612
@@ -16499,7 +16499,7 @@
             2.7012779713,
             3.687097311
         ],
-        "keywords": "water, management, heat",
+        "keywords": "water",
         "keywords_umap": [
             1.1475791931,
             8.3195886612
@@ -16520,7 +16520,7 @@
             2.8193001747,
             3.6841907501
         ],
-        "keywords": "water, management, heat",
+        "keywords": "water",
         "keywords_umap": [
             1.1475791931,
             8.3195886612
@@ -16667,7 +16667,7 @@
             2.9663145542,
             4.8446846008
         ],
-        "keywords": "ecological, farming, movement",
+        "keywords": "biodiversity",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -16898,7 +16898,7 @@
             1.155921936,
             3.4596073627
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "keywords_umap": [
             0.9117527008,
             8.8105955124
@@ -17235,7 +17235,7 @@
         "id": [
             4198
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "split": "green energy",
         "total_count": 1,
         "initial_idx": 818
@@ -17274,7 +17274,7 @@
         "id": [
             4160
         ],
-        "keywords": "environment, friendly, protect",
+        "keywords": "environment",
         "split": "enviromental mapping",
         "total_count": 1,
         "initial_idx": 821
@@ -17313,7 +17313,7 @@
         "id": [
             4079
         ],
-        "keywords": "environment, friendly, protect",
+        "keywords": "environment",
         "split": "enviroment",
         "total_count": 3,
         "initial_idx": 824
@@ -17586,7 +17586,7 @@
         "id": [
             4132
         ],
-        "keywords": "energy, renewable, transition",
+        "keywords": "energy",
         "split": "energy access",
         "total_count": 2,
         "initial_idx": 845
@@ -17707,5 +17707,538 @@
         "split": "msmes",
         "total_count": 1,
         "initial_idx": 854
+    },
+    {
+        "clean": [
+            "collective intelligence"
+        ],
+        "clusters": 118,
+        "id": [
+            4442
+        ],
+        "keywords": "methods, approaches",
+        "split": "collective intelligence",
+        "total_count": 2,
+        "initial_idx": 855
+    },
+    {
+        "clean": [
+            "capacity building"
+        ],
+        "clusters": 28,
+        "id": [
+            4479
+        ],
+        "keywords": "education, training",
+        "split": "capacity building",
+        "total_count": 2,
+        "initial_idx": 856
+    },
+    {
+        "clean": [
+            "leaky pipeline"
+        ],
+        "clusters": 89,
+        "id": [
+            4699
+        ],
+        "keywords": "economic, growth, inclusive",
+        "split": "leaky pipeline",
+        "total_count": 1,
+        "initial_idx": 857
+    },
+    {
+        "clean": [
+            "green transition,"
+        ],
+        "clusters": 62,
+        "id": [
+            4647
+        ],
+        "keywords": "green, economy, blue",
+        "split": "green transition,",
+        "total_count": 1,
+        "initial_idx": 858
+    },
+    {
+        "clean": [
+            "political polarization"
+        ],
+        "clusters": 88,
+        "id": [
+            4476
+        ],
+        "keywords": "local, development, entre",
+        "split": "political polarization",
+        "total_count": 1,
+        "initial_idx": 859
+    },
+    {
+        "clean": [
+            "democratic governance"
+        ],
+        "clusters": 77,
+        "id": [
+            4477
+        ],
+        "keywords": "government, innovation, policy",
+        "split": "democratic governance",
+        "total_count": 1,
+        "initial_idx": 860
+    },
+    {
+        "clean": [
+            "court of justice"
+        ],
+        "clusters": 93,
+        "id": [
+            4341
+        ],
+        "keywords": "justice, peace, environmental",
+        "split": "court of justice",
+        "total_count": 1,
+        "initial_idx": 861
+    },
+    {
+        "clean": [
+            "social contracts"
+        ],
+        "clusters": 77,
+        "id": [
+            4468
+        ],
+        "keywords": "government, innovation, policy",
+        "split": "social contracts",
+        "total_count": 1,
+        "initial_idx": 862
+    },
+    {
+        "clean": [
+            "portfolio management"
+        ],
+        "clusters": 118,
+        "id": [
+            4469
+        ],
+        "keywords": "methods, approaches",
+        "split": "portfolio management",
+        "total_count": 1,
+        "initial_idx": 863
+    },
+    {
+        "clean": [
+            "economic diversification, governance, and citizens agency"
+        ],
+        "clusters": 77,
+        "id": [
+            4470
+        ],
+        "keywords": "government, innovation, policy",
+        "split": "economic diversification, governance, and citizens agency",
+        "total_count": 1,
+        "initial_idx": 864
+    },
+    {
+        "clean": [
+            "climate adaptation"
+        ],
+        "clusters": 23,
+        "id": [
+            4434
+        ],
+        "keywords": "climate",
+        "split": "climate adaptation",
+        "total_count": 2,
+        "initial_idx": 865
+    },
+    {
+        "clean": [
+            "climate security"
+        ],
+        "clusters": 23,
+        "id": [
+            4445
+        ],
+        "keywords": "climate",
+        "split": "climate security",
+        "total_count": 1,
+        "initial_idx": 866
+    },
+    {
+        "clean": [
+            "appropriate technology"
+        ],
+        "clusters": 123,
+        "id": [
+            4339
+        ],
+        "keywords": "technology, appropiate, emerge",
+        "split": "appropriate technology",
+        "total_count": 1,
+        "initial_idx": 867
+    },
+    {
+        "clean": [
+            "gender mainstreaming"
+        ],
+        "clusters": 45,
+        "id": [
+            4487
+        ],
+        "keywords": "gender, women",
+        "split": "gender mainstreaming",
+        "total_count": 1,
+        "initial_idx": 868
+    },
+    {
+        "clean": [
+            "waste upcycling"
+        ],
+        "clusters": 71,
+        "id": [
+            4335
+        ],
+        "keywords": "waste management",
+        "split": "waste upcycling",
+        "total_count": 1,
+        "initial_idx": 869
+    },
+    {
+        "clean": [
+            "strategic innovation"
+        ],
+        "clusters": 35,
+        "id": [
+            4480
+        ],
+        "keywords": "innovation",
+        "split": "strategic innovation",
+        "total_count": 1,
+        "initial_idx": 870
+    },
+    {
+        "clean": [
+            "resilience"
+        ],
+        "clusters": 23,
+        "id": [
+            4432
+        ],
+        "keywords": "climate",
+        "split": "resilience",
+        "total_count": 1,
+        "initial_idx": 871
+    },
+    {
+        "clean": [
+            "disaster preparedness"
+        ],
+        "clusters": 22,
+        "id": [
+            4435
+        ],
+        "keywords": "disaster, crisis",
+        "split": "disaster preparedness",
+        "total_count": 1,
+        "initial_idx": 872
+    },
+    {
+        "clean": [
+            "resilient agriculture"
+        ],
+        "clusters": 19,
+        "id": [
+            4447
+        ],
+        "keywords": "agriculture, agrotech",
+        "split": "resilient agriculture",
+        "total_count": 1,
+        "initial_idx": 873
+    },
+    {
+        "clean": [
+            "leave no one behind"
+        ],
+        "clusters": 44,
+        "id": [
+            4449
+        ],
+        "keywords": "inequality, social capital",
+        "split": "leave no one behind",
+        "total_count": 1,
+        "initial_idx": 874
+    },
+    {
+        "clean": [
+            "environmental, social, and corporate governance (esg)"
+        ],
+        "clusters": 77,
+        "id": [
+            4329
+        ],
+        "keywords": "government, innovation, policy",
+        "split": "environmental, social, and corporate governance (esg)",
+        "total_count": 1,
+        "initial_idx": 875
+    },
+    {
+        "clean": [
+            "climate"
+        ],
+        "clusters": 23,
+        "id": [
+            4334
+        ],
+        "keywords": "climate",
+        "split": "climate",
+        "total_count": 1,
+        "initial_idx": 876
+    },
+    {
+        "clean": [
+            "regional trade"
+        ],
+        "clusters": 87,
+        "id": [
+            4430
+        ],
+        "keywords": "market, need, assessment",
+        "split": "regional trade",
+        "total_count": 1,
+        "initial_idx": 877
+    },
+    {
+        "clean": [
+            "afcfta"
+        ],
+        "clusters": 87,
+        "id": [
+            4431
+        ],
+        "keywords": "market, need, assessment",
+        "split": "afcfta",
+        "total_count": 1,
+        "initial_idx": 878
+    },
+    {
+        "clean": [
+            "adaptation"
+        ],
+        "clusters": 23,
+        "id": [
+            4709
+        ],
+        "keywords": "climate",
+        "split": "adaptation",
+        "total_count": 1,
+        "initial_idx": 879
+    },
+    {
+        "clean": [
+            "food rescue"
+        ],
+        "clusters": 3,
+        "id": [
+            4441
+        ],
+        "keywords": "food systems, food security",
+        "split": "food rescue",
+        "total_count": 1,
+        "initial_idx": 880
+    },
+    {
+        "clean": [
+            "just transition"
+        ],
+        "clusters": 62,
+        "id": [
+            4443
+        ],
+        "keywords": "green, economy, blue",
+        "split": "just transition",
+        "total_count": 1,
+        "initial_idx": 881
+    },
+    {
+        "clean": [
+            "value-based economy"
+        ],
+        "clusters": 61,
+        "id": [
+            4490
+        ],
+        "keywords": "economy, creative, solidarity",
+        "split": "value-based economy",
+        "total_count": 1,
+        "initial_idx": 882
+    },
+    {
+        "clean": [
+            "ai systems"
+        ],
+        "clusters": 130,
+        "id": [
+            4716
+        ],
+        "keywords": "digital, data, AI",
+        "split": "ai systems",
+        "total_count": 1,
+        "initial_idx": 883
+    },
+    {
+        "clean": [
+            "waste ecosystem"
+        ],
+        "clusters": 71,
+        "id": [
+            4717
+        ],
+        "keywords": "waste management",
+        "split": "waste ecosystem",
+        "total_count": 1,
+        "initial_idx": 884
+    },
+    {
+        "clean": [
+            "infectious waste"
+        ],
+        "clusters": 71,
+        "id": [
+            4718
+        ],
+        "keywords": "waste management",
+        "split": "infectious waste",
+        "total_count": 1,
+        "initial_idx": 885
+    },
+    {
+        "clean": [
+            "municipality waste"
+        ],
+        "clusters": 71,
+        "id": [
+            4719
+        ],
+        "keywords": "waste management",
+        "split": "municipality waste",
+        "total_count": 1,
+        "initial_idx": 886
+    },
+    {
+        "clean": [
+            "earthquake"
+        ],
+        "clusters": 22,
+        "id": [
+            4722
+        ],
+        "keywords": "disaster, crisis",
+        "split": "earthquake",
+        "total_count": 1,
+        "initial_idx": 887
+    },
+    {
+        "clean": [
+            "recovery and city revitalization"
+        ],
+        "clusters": 52,
+        "id": [
+            4723
+        ],
+        "keywords": "cities",
+        "split": "recovery and city revitalization",
+        "total_count": 1,
+        "initial_idx": 888
+    },
+    {
+        "clean": [
+            "earthquake response"
+        ],
+        "clusters": 22,
+        "id": [
+            4724
+        ],
+        "keywords": "disaster, crisis",
+        "split": "earthquake response",
+        "total_count": 1,
+        "initial_idx": 889
+    },
+    {
+        "clean": [
+            "startup"
+        ],
+        "clusters": 36,
+        "id": [
+            4721
+        ],
+        "keywords": "sector, private, informal",
+        "split": "startup",
+        "total_count": 1,
+        "initial_idx": 890
+    },
+    {
+        "clean": [
+            "digital divide"
+        ],
+        "clusters": 130,
+        "id": [
+            4711
+        ],
+        "keywords": "digital, data, AI",
+        "split": "digital divide",
+        "total_count": 1,
+        "initial_idx": 891
+    },
+    {
+        "clean": [
+            "small holder farmers"
+        ],
+        "clusters": 19,
+        "id": [
+            4712
+        ],
+        "keywords": "agriculture, agrotech",
+        "split": "small holder farmers",
+        "total_count": 1,
+        "initial_idx": 892
+    },
+    {
+        "clean": [
+            "career counselling"
+        ],
+        "clusters": 114,
+        "id": [
+            4710
+        ],
+        "keywords": "employment, decent work",
+        "split": "career counselling",
+        "total_count": 1,
+        "initial_idx": 893
+    },
+    {
+        "clean": [
+            "clusters"
+        ],
+        "clusters": 27,
+        "id": [
+            4713
+        ],
+        "keywords": "co, creation, cluster",
+        "split": "clusters",
+        "total_count": 1,
+        "initial_idx": 894
+    },
+    {
+        "clean": [
+            "associativity"
+        ],
+        "clusters": 77,
+        "id": [
+            4714
+        ],
+        "keywords": "government, innovation, policy",
+        "split": "associativity",
+        "total_count": 1,
+        "initial_idx": 895
     }
 ]

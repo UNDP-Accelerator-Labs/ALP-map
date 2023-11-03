@@ -5,7 +5,7 @@
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 html, body {
@@ -18,8 +18,11 @@ body {
   line-height: 1.35em;
 }
 body header {
+  flex: 0 1 0;
   display: block;
   width: 100%;
+}
+body header #languages {
   height: 30px;
   background-color: #005687;
 }
@@ -28,29 +31,57 @@ body header a {
   margin: 0 30px;
   float: right;
 }
-body header img#logo {
-  height: 125px;
+body header #logo {
   position: absolute;
   top: 30px;
   left: 0;
 }
-body nav #find-tag {
+body header #logo img {
+  height: 125px;
+  margin-bottom: 30px;
+}
+body header #logo h1 {
+  margin: 0 0 5px 105px;
+  line-height: 1.2em;
+  word-spacing: 100vw;
+  color: #005687;
+}
+body header #logo h2 {
+  margin: 0 0 0 105px;
+  line-height: 1.3em;
+  word-spacing: 100vw;
+  color: #0468B1;
+  font-weight: normal;
+}
+body .cartouche {
+  display: flex;
   position: absolute;
-  top: 60px;
-  left: 30px;
+  bottom: 0;
+  min-height: 30px;
+  width: 100%;
+  padding: 15px;
+  border: 1px dotted #969696;
+  box-sizing: border-box;
+  background-color: #FFF;
+  /*#find-tag {
+  	position: absolute;
+  	top: 60px;
+  	left: 30px;
+  }*/
 }
 body div.container {
   display: flex;
   width: 100%;
-  height: calc(100% - 30px);
+  height: 100%;
 }
 body div.container .left-col {
   flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 body div.container .left-col svg {
   margin: auto;
-  flex-shrink: 0;
 }
 body div.container .left-col svg text {
   font-family: "Noto Sans", Helvetica, Arial, sans-serif;
@@ -68,12 +99,17 @@ body div.container .left-col svg .node:not(.node--root) {
   cursor: pointer;
 }
 body div.container .left-col svg .node:not(.node--root) .highlight {
-  stroke: #FFC10E;
+  stroke: #FA7814;
   stroke-width: 2;
 }
-body div.container .left-col svg .node:not(.node--root):not(.node--leaf):hover circle:not(.highlight) {
+body div.container .left-col svg .node:not(.node--root):not(.node--leaf):hover circle:not(.highlight),
+body div.container .left-col svg .node:not(.node--root):not(.node--leaf).hover circle:not(.highlight) {
   stroke: #969696;
   stroke-dasharray: 1px 2px;
+}
+body div.container .left-col svg .node--root {
+  fill: #FFF;
+  fill-opacity: 0.75;
 }
 body div.container .left-col svg .node--leaf circle {
   transition: opacity 0.25s;
@@ -97,12 +133,24 @@ body div.container .right-col {
   color: #FFF;
   overflow: auto;
 }
+body div.container .right-col button.expand-filters {
+  position: fixed;
+  top: 30px;
+  right: 0;
+}
+body div.container .right-col button.expand-filters:not(.close) {
+  pointer-events: none;
+}
+body div.container .right-col button.expand-filters .line {
+  background-color: #FFF;
+}
 body div.container .right-col h1 {
   margin-bottom: 30px;
   color: #FFC10E;
   text-transform: capitalize;
   text-decoration: underline;
   margin: 2em;
+  line-height: 1.3em;
 }
 body div.container .right-col svg .timeseries {
   fill: none;
@@ -134,6 +182,9 @@ body div.container .right-col article .inner hgroup p {
   color: #32BEE1;
   margin-top: 5px;
 }
+body div.container .right-col article .inner hgroup small {
+  color: #32BEE1;
+}
 body div.container .right-col article .inner hgroup .tags {
   margin: 15px 0;
 }
@@ -154,6 +205,186 @@ body div.container .right-col article .inner .body {
 body div.container .right-col article .inner .body img {
   max-width: 300px;
   margin: 0 15px 15px 0;
+}
+
+form {
+  width: 100%;
+  max-height: 0;
+  /*	padding: 15px 7.5px;*/
+  display: flex;
+  flex-wrap: wrap;
+  background: repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(150, 150, 150, 0.1) 3px, rgba(150, 150, 150, 0.1) 6px);
+  box-sizing: border-box;
+  transition: max-height 0.25s ease-out;
+  overflow: hidden;
+}
+form section {
+  flex: 1 1;
+  padding: 15px 15px 0 15px;
+}
+form section:nth-child(even) {
+  padding-left: 0;
+}
+form section .filter {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background-color: #FFF;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #969696;
+}
+form section .filter input[type=text] {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  padding: 0 15px;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #005687;
+}
+form section .filter label {
+  position: absolute;
+  left: 15px;
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #969696;
+  transform: translateY(15px);
+  transition: transform 0.25s, font-size 0.25s;
+  pointer-events: none;
+}
+form section .filter input[type=text]:focus + label,
+form section .filter input[type=text].has-value + label {
+  font-size: 10px;
+  line-height: 1.5em;
+  transform: translateY(2.5px);
+}
+form section .filter input[type=text]:focus ~ button,
+form section .filter input[type=text].has-value ~ button {
+  display: block;
+}
+form section .filter .dropdown {
+  position: absolute;
+  width: 100%;
+  max-height: 0;
+  left: 0;
+  top: 100%;
+  background-color: #FFF;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  z-index: 1000000;
+  transition: max-height 0.25s ease-out;
+}
+form section .filter .dropdown.dropup {
+  top: auto;
+  bottom: 100%;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.1);
+}
+form section .filter .dropdown menu {
+  width: 100%;
+}
+form section .filter .dropdown menu li {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+}
+form section .filter .dropdown menu li input[type=checkbox] {
+  display: none;
+}
+form section .filter .dropdown menu li label {
+  display: flex;
+  align-items: center;
+  position: static;
+  padding: 5px 20px 5px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #000000;
+  transform: none;
+  pointer-events: all;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+form section .filter .dropdown menu li label .count {
+  margin-left: auto;
+  padding-left: 10px;
+  color: #969696;
+}
+form section .filter .dropdown menu li input:checked + label {
+  background-color: #E5E5E5;
+}
+form section .filter .dropdown menu li:hover {
+  background-color: #F3F3F3;
+}
+form button.submit-filters {
+  flex-basis: 100%;
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  margin: 0 15px 15px 15px;
+  border: 1px solid #005687;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #005687;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button.expand-filters {
+  position: relative;
+  vertical-align: middle;
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin: 0 15px 0 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+button.expand-filters .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background-color: #969696;
+  transition: transform 0.25s, width 0.25s;
+}
+button.expand-filters .line.l1 {
+  width: 20px;
+  transform: translate(5px, 7.5px) rotate(0deg);
+  transform-origin: center;
+  transition-delay: 0.1s;
+}
+button.expand-filters .line.l2 {
+  width: 15px;
+  transform: translate(7.5px, 12.5px) rotate(0deg);
+  transform-origin: center;
+}
+button.expand-filters .line.l3 {
+  width: 10px;
+  transform: translate(10px, 17.5px) rotate(0deg);
+  transform-origin: center;
+  transition-delay: 0.1s;
+}
+button.expand-filters.close .line.l1 {
+  width: 25px;
+  transform: translate(2.5px, 15px) rotate(-45deg);
+  transform-origin: center;
+}
+button.expand-filters.close .line.l2 {
+  width: 0;
+  transform: translate(15px, 12.5px) rotate(0deg);
+}
+button.expand-filters.close .line.l3 {
+  width: 25px;
+  transform: translate(2.5px, 15px) rotate(45deg);
+  transform-origin: center;
 }
 
 /*# sourceMappingURL=main.css.map */

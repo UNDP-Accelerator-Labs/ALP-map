@@ -80,3 +80,6 @@ Array.prototype.intersection = function (V2) {
 	}
 	return intersection
 }
+String.prototype.simplify = function () {
+	return this.valueOf().trim().replace(/[^\w\s]/gi, '').replace(/\s/g, '').toLowerCase()
+}

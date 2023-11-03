@@ -16,25 +16,80 @@
 
 <body id='packs'>
 
-<header>
-	<!-- <a href='https://docs.google.com/forms/d/e/1FAIpQLSemSMY4hrzjuAE1NTNXM06oQx7ZP_niWZA8pWCngIFwNXhDIQ/viewform' target='_blank'>Contribute</a> -->
-	<img id='logo' src='imgs/branding/UNDP_accelerator_labs_logo_vertical_color_RGB.png'>
-</header>
-
-<nav>
-	<!-- <input id='find-tag' type='text' oninput='highlightTag(this.value)'></div> -->
-</nav>
 
 <div class='container'>
 	<div class='left-col'>
+		<header>
+			<nav id='languages'></nav>
+			<div id='logo'>
+				<img src='imgs/branding/UNDP_accelerator_labs_logo_vertical_color_RGB.png'>
+				<h1>Action Learning Plans</h1>
+				<h2>Topic Browser</h2>
+			</div>
+
+			<script type='text/javascript'>
+				function fixLabel (node) {
+					d3.select(node).classed('has-value', node.value?.trim().length)
+				}
+			</script>
+		</header>
 		<svg id='bubbles'>
 			<g></g>
 		</svg>
+		<div class='cartouche'>
+			<button type='button' class='expand-filters' onclick='expandfilters(this)'>
+				<div class='line l1'></div><div class='line l2'></div><div class='line l3'></div>
+			</button>
+			<form method='GET'>
+				<section>
+					<!-- <input id='find-tag' type='text' oninput='highlightTag(this.value)' /> -->
+					<div class='filter regions'>
+						<input type='text' id='f-regions' onblur='fixLabel(this)'>
+						<label for='f-regions'>Filter by region</label>
+						<div class='dropdown'>
+							<menu class='f-regions'>
+							</menu>
+						</div>
+					</div>
+					<div class='filter countries'>
+						<input type='text' id='f-countries' onblur='fixLabel(this)'>
+						<label for='f-countries'>Filter by country</label>
+						<div class='dropdown'>
+							<menu class='f-countries'>
+							</menu>
+						</div>
+					</div>
+				</section>
+				<section>
+					<!-- <div class='filter countries'>
+						<input type='text' id='h-countries' onblur='fixLabel(this)'>
+						<label for='h-countries'>Highlight countries</label>
+						<div class='dropdown'>
+							<menu class='h-countries'>
+							</menu>
+						</div>
+					</div> -->
+					<div class='filter tags'>
+						<input type='text' id='h-tags' onblur='fixLabel(this)'>
+						<label for='h-regions'>Highlight tags</label>
+						<div class='dropdown'>
+							<menu class='h-tags'>
+							</menu>
+						</div>
+					</div>
+				</section>
+				<button type='submit' class='submit-filters'>Apply filters</button>
+			</form>
+		</div>
 		<!-- <button id='get-data'>Get data</button> -->
 	</div>
 	<div class='right-col'>
+		<button type='button' class='expand-filters' onclick='clearPanel()'>
+			<div class='line l1'></div><div class='line l2'></div><div class='line l3'></div>
+		</button>
 	</div>
 </div>
+
 <footer>
 	<div class='footer-row'>
 		<div class='footer-column left'>
@@ -127,6 +182,7 @@
 	const width = Math.round(Math.min(cw ?? ow, ch ?? oh))
 	const height = width
 	const padding = 60
+	const edit_layout = false
 	
 	const svg = d3.select('svg#bubbles')
 	.attrs({ 
@@ -136,33 +192,48 @@
 		'preserveAspectRatio': 'xMidYMid meet'
 	})
 
+	const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDAwLyJdLCJpYXQiOjE2ODk2NzUxOTIsImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.Q8-rt-0taMT5QhNGWfhLsIbqCc07HN8mr30kx12_0vY'
+	
 	const platform = new URL('https://acclabs-actionlearningplans.azurewebsites.net')
-	const endpoint = new URL('apis/fetch/tags?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cHM6Ly91bmRwLWFjY2VsZXJhdG9yLWxhYnMuZ2l0aHViLmlvLyJdLCJpYXQiOjE2ODk4NjQwNDksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.UrYiH9OVYRkytd6jIiX2RiiCnavBJ0DewpGyLsdkkiA', platform)
+	// const platform = new URL('https://learningplans.sdg-innovation-commons.org')
+	const tags_path = new URL('apis/fetch/tags', platform)
+	const regions_path = new URL('apis/fetch/regions', platform)
+	const countries_path = new URL('apis/fetch/countries', platform)
 
-	const basetags_params = new URLSearchParams(endpoint.search)
+	const basetags_params = new URLSearchParams(tags_path.search)
+	basetags_params.append('token', token)
 	let mobilization = 26
 
 	const highlighttags_params = new URLSearchParams(basetags_params)
 	new URLSearchParams(window.location.search).forEach((v, k) => {
-		if (['countries'].includes(k)) highlighttags_params.append(k, v)
+		// if (['h-countries'].includes(k)) highlighttags_params.append(k, v)
+		if (['countries'].includes(k)) basetags_params.append(k, v)
 		if (['regions'].includes(k)) basetags_params.append(k, v)
-		if (['mobilizations'].includes(k)) mobilization = v
+		if (['mobilizations'].includes(k)) basetags_params.append(k, v) //mobilization = v
 	})
-	basetags_params.append('mobilizations', mobilization)
+	if (!basetags_params.has('mobilizations')) basetags_params.append('mobilizations', mobilization)
+
+	const regions_params = new URLSearchParams(regions_path)
+	regions_params.append('token', token)
+	const countries_params = new URLSearchParams(countries_path)
+	countries_params.append('token', token)
+	countries_params.append('has_lab', true)
 
 	const data_collection = []
-	data_collection.push(GET(`${endpoint.origin}${endpoint.pathname}?${basetags_params.toString()}`))
-	data_collection.push(d3.json('data/taxonomy_manual_202309.json'))
-	if (highlighttags_params.size > 2) data_collection.push(GET(`${endpoint.origin}${endpoint.pathname}?${highlighttags_params.toString()}`))
+	data_collection.push(GET(`${tags_path.origin}${tags_path.pathname}?${basetags_params.toString()}`))
+	data_collection.push(GET(`${regions_path.origin}${regions_path.pathname}?${regions_params.toString()}`))
+	data_collection.push(GET(`${countries_path.origin}${countries_path.pathname}?${countries_params.toString()}`))
+	data_collection.push(d3.json('data/taxonomy_manual_202311.json'))
+	if (highlighttags_params.size >= 2) data_collection.push(GET(`${tags_path.origin}${tags_path.pathname}?${highlighttags_params.toString()}`))
 
 	addLoader()
 
 	Promise.all(data_collection)
 	.then(results => {
 		rmLoader()
-		const [ tags_data, taxonomy, tags_portfolio ] = results
+		let [ tags_data, regions, countries, taxonomy, tags_portfolio ] = results
 
-		// console.log('max', d3.max(taxonomy, d => d.clusters))
+		renderMenu(regions, countries, tags_data)
 
 		const selectids = tags_data.map(d => d.id)
 		const portfolio_ids = tags_portfolio?.unique('id', true) || []
@@ -173,14 +244,16 @@
 			if (d.count === undefined) d.count = 1
 			if (!taxonomy.map(d => d.id).flat().includes(d.id)) {
 				console.log('found a missing tag in the taxonomy')
-				const obj = {}
-				obj.clean = [d.name.replace(/\./g, ',')]
-				obj.clusters = -1
-				obj.id = [d.id]
-				obj.keywords = taxonomy.find(c => c.clusters === -1).keywords
-				obj.split = d.name.replace(/\./g, ',')
-				obj.total_count = d.count // nestedtags.find(c => d.id === c.key).count
-				taxonomy.push(obj)
+				if (d.name) {
+					const obj = {}
+					obj.clean = [d.name?.replace(/\./g, ',')]
+					obj.clusters = -1
+					obj.id = [d.id]
+					obj.keywords = taxonomy.find(c => c.clusters === -1).keywords
+					obj.split = d.name?.replace(/\./g, ',')
+					obj.total_count = d.count // nestedtags.find(c => d.id === c.key).count
+					taxonomy.push(obj)
+				} else console.log('the tag has no name (value)')
 			}
 		})
 
@@ -226,9 +299,126 @@
 			})
 			console.log(taxonomy)
 		})
-
 	}).catch(err => console.log(err))
 
+	function renderMenu (regions, countries, tags) {
+		// ADD THE mobilizations VALUES FOR NOW AS WE DO NOT ENABLE SELECTION YET
+		const cartouche = d3.select('.cartouche')
+		const form = cartouche.select('form')
+
+		form.addElems('input', 'mobilizations', basetags_params.getAll('mobilizations'))
+			.attrs({
+				'type': 'hidden',
+				'name': 'mobilizations',
+				'value': d => d
+			})
+
+		// ADD THE DROPDOWNS
+		regions.sort((a, b) => a.undp_region.localeCompare(b.undp_region))
+		countries = countries.filter(d => {
+			if (basetags_params.getAll('regions').length) return d.has_lab && basetags_params.getAll('regions').includes(d.undp_region)
+			else return d.has_lab
+		})
+
+		tags.sort((a, b) => a.name?.localeCompare(b.name))
+		
+		// FOR FILTERING
+		const regions_menu = cartouche.select('menu.f-regions')
+		.addElems('li', 'region', regions)
+		
+		regions_menu.addElems('input')
+			.attrs({
+				'type': 'checkbox',
+				'value': d => d.undp_region,
+				'id': d => d.undp_region,
+				'name': 'regions',
+				'checked': d => basetags_params.getAll('regions').includes(d.undp_region) || null
+			})
+		regions_menu.addElems('label')
+			.attr('for', d => d.undp_region)
+		.html(d => `${d.undp_region_name} (${d.undp_region})`)
+
+		const countries_menu = cartouche.select('menu.f-countries')
+		.addElems('li', 'country', countries)
+		
+		countries_menu.addElems('input')
+			.attrs({
+				'type': 'checkbox',
+				'value': d => d.iso3,
+				'id': d => d.iso3,
+				'name': 'countries',
+				'checked': d => basetags_params.getAll('countries').includes(d.iso3) || null
+			})
+		countries_menu.addElems('label')
+			.attr('for', d => d.country)
+		.html(d => `${d.country}`)
+
+		// FOR HIGHLIGHTING
+		// const countries_hmenu = cartouche.select('menu.h-countries')
+		// .addElems('li', 'country', countries)
+		
+		// countries_hmenu.addElems('input')
+		// 	.attrs({
+		// 		'type': 'checkbox',
+		// 		'value': d => d.iso3,
+		// 		'id': d => `h-${d.iso3}`,
+		// 		'name': 'countries',
+		// 		'checked': d => highlighttags_params.getAll('h-countries').includes(d.iso3) || null
+		// 	})
+		// countries_hmenu.addElems('label')
+		// 	.attr('for', d => `h-${d.iso3}`)
+		// .html(d => `${d.country}`)
+
+		const tags_hmenu = cartouche.select('menu.h-tags')
+		.addElems('li', 'tag', tags)
+		
+		tags_hmenu.addElems('input')
+			.attrs({
+				'type': 'checkbox',
+				'value': d => d.name?.simplify(),
+				'id': d => d.name?.simplify(),
+				'name': 'h-tags',
+				'checked': d => highlighttags_params.getAll('h-tag').includes(d.name?.simplify()) || null
+			})
+		.on('change', function (d) {
+			toggleHighlight(d.name, this.checked)
+		})
+
+		tags_hmenu.addElems('label')
+			.attr('for', d => d.name?.simplify())
+		.html(d => d.name)
+
+		// INTERACTIVITY
+		cartouche.selectAll('.filter input[type=text]')
+		.on('keyup', function () {
+			const node = this
+			const dropdown = d3.select(node).findAncestor('filter').select('.dropdown')
+			dropdown.selectAll('menu li')
+				.classed('hide', function () {
+					return !this.textContent.trim().toLowerCase()
+					.includes(node.value.trim().toLowerCase())
+				})
+		}).on('focus', function () {
+			const dropdown = d3.select(this).findAncestor('filter').select('.dropdown')
+			let { top, height } = this.getBoundingClientRect()
+			top = top + height
+			const viewheight = window.innerHeight
+			if (top + 300 >= viewheight) dropdown.classed('dropup', true)
+
+			const filters = d3.select(this).findAncestor('filters')
+
+			if (dropdown.node()) dropdown.node().style.maxHeight = `${Math.min(dropdown.node().scrollHeight, 300)}px`
+			if (filters?.node()) filters.node().style.overflow = 'visible'
+
+			dropdown.selectAll('label, a').on('mousedown', function () {
+				d3.event.preventDefault()
+			})
+		}).on('blur', function () {
+			const filter = d3.select(this).findAncestor('filter')
+			const dropdown = filter.select('.dropdown')
+			if (dropdown.node()) dropdown.node().style.maxHeight = null
+		})
+	}
 
 	function drawPack (data) {
 		const drag = d3.drag()
@@ -290,7 +480,7 @@
 		let node = svg.styles({
 			'width': `calc(100% - ${padding}px)`,
 			'height': `calc(100% - ${padding}px)`,
-			'margin': `${padding}px 0 0 ${padding}px`
+			// 'margin': `${padding}px 0 0 ${padding}px`
 		}).select('g')
 			.selectAll('g')
 		.data(root.descendants(), d => d.id)
@@ -304,7 +494,7 @@
 		.each(function(d) { 
 			const sel = d3.select(this)
 			d.node = this 
-			if (sel.classed('node--leaf')) sel.call(drag)
+			if (sel.classed('node--leaf') && edit_layout) sel.call(drag)
 		}).on('mouseover', function (d) {
 			const sel = d3.select(this)
 			if (sel.classed('node--leaf')) {
@@ -314,20 +504,26 @@
 				.selectAll('tspan')
 					.transition()
 					.style('opacity', 0)
+
+				d3.selectAll('.node')
+					.classed('hover', c => d.parent.data.id === c.data.id)
 			}
 			sel.selectAll('text').classed('hide', false)
-			hovered(true)
-		}).on('mouseout', function () {
+			// hovered(true)
+		}).on('mouseout', function (d) {
 			const sel = d3.select(this)
 			if (sel.classed('node--leaf')) {
 				d3.selectAll('.group-label tspan')
 				.transition().style('opacity', 1)
+
+				d3.selectAll('.node.hover')
+					.classed('hover', false)
 			}
 			sel.selectAll('text').classed('hide', true)
-			hovered(false)
+			// hovered(false)
 		}).on('click', async function (d) {
+			const sel = d3.select(this)
 			if (d.children && d.depth !== 0) {
-				const sel = d3.select(this)
 				// HIGHLIGHT
 				d3.selectAll('circle.highlight').classed('highlight', false)
 				const circle = sel.select('circle').classed('highlight', true)
@@ -336,14 +532,17 @@
 				const tag_ids = d.children.map(c => c.data.orid).flat()
 				const cluster_name = d.children.map(c => c.data).flat().unique('keywords', true)
 				
-				const pads_endpoint = new URL('apis/fetch/pads', platform)
-				const queryparams = new URLSearchParams(pads_endpoint.search)
+				const pads_path = new URL('apis/fetch/pads', platform)
+				const queryparams = new URLSearchParams(pads_path.search)
 				queryparams.append('output', 'json')
-
-				queryparams.append('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cHM6Ly91bmRwLWFjY2VsZXJhdG9yLWxhYnMuZ2l0aHViLmlvLyJdLCJpYXQiOjE2ODk4NjQwNDksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.UrYiH9OVYRkytd6jIiX2RiiCnavBJ0DewpGyLsdkkiA')
+				queryparams.append('token', token)
 
 				// queryparams.append('countries', 'json')
-				queryparams.append('mobilizations', mobilization)
+				if (basetags_params.getAll('mobilizations').length) {
+					basetags_params.getAll('mobilizations').forEach(d => {
+						queryparams.append('mobilizations', d)
+					})
+				} else queryparams.append('mobilizations', mobilization)
 				queryparams.append('include_imgs', true)
 				queryparams.append('include_tags', true)
 				new URLSearchParams(window.location.search).forEach((v, k) => {
@@ -353,7 +552,8 @@
 				})		
 
 				// GET TIMESERIES DATA
-				const timeseries_params = new URLSearchParams(endpoint.search)
+				const timeseries_params = new URLSearchParams(tags_path.search)
+				timeseries_params.append('token', token)
 				timeseries_params.append('timeseries', true)
 				timeseries_params.append('aggregation', 'month')
 				timeseries_params.append('type', 'thematic_areas')
@@ -365,9 +565,10 @@
 				})
 
 				addLoader()
-				let [ pads, timeseries ] = await Promise.all([ GET(`${pads_endpoint}?${queryparams}`), GET(`${endpoint.origin}${endpoint.pathname}?${timeseries_params}`) ])
+				let [ pads, timeseries ] = await Promise.all([ GET(`${pads_path}?${queryparams}`), GET(`${tags_path.origin}${tags_path.pathname}?${timeseries_params}`) ])
 				rmLoader()
 				pads = pads.flat().filter(d => d.status >= 2)
+				pads.sort((a, b) => +new Date(b.created_at) - +new Date(a.created_at))
 
 				const aggseries = []
 				timeseries.map(d => d.timeseries).flat()
@@ -379,6 +580,10 @@
 				aggseries.sort((a, b) => a.date - b.date)
 
 				displaySnippets({ title: cluster_name, data: pads, timeseries: aggseries })
+			} else if (sel.classed('node--leaf')) {
+				const parent = d3.selectAll('.node')
+				.filter(c => d.parent.data.id === c.data.id)
+				.node().dispatchEvent(new Event('click'))
 			}
 		}).merge(node)
 		
@@ -455,11 +660,11 @@
 			}).text(d => d)
 		.merge(text_lines)
 
-		function hovered(hover) {
-			return function(d) {
-				d3.selectAll(d.ancestors().map(function(d) { return d.node; })).classed("node--hover", hover);
-			};
-		}
+		// function hovered(hover) {
+		// 	return function(d) {
+		// 		d3.selectAll(d.ancestors().map(function(d) { return d.node; })).classed('node--hover', hover);
+		// 	};
+		// }
 
 		d3.selectAll('.group-label').moveToFront()
 	}
@@ -491,14 +696,15 @@
 
 		svg.addElems('path', 'timeseries', [data])
 			.attr('d', line)
-
 	}
 
 	function displaySnippets (kwargs) {
 		const { title, data, timeseries } = kwargs
-		const panel = d3.select('.right-col')
+		const container = d3.select('.right-col')
 		.style('flex', '1 1 0')
-		.addElems('div', 'inner')
+		container.select('button.expand-filters').toggleClass('close')
+
+		const panel = container.addElems('div', 'inner')
 
 		panel.addElems('h1', 'category', title ? [title] : [])
 			.html(d => d)
@@ -546,9 +752,17 @@
 		}).html(d => d.title)
 		head.addElems('p', 'country')
 			.html(d => d.country)
+		head.addElems('small', 'date')
+			.html(d => {
+				const date = new Date(d.created_at)
+				const year = date.getFullYear()
+				let month = date.getMonth() + 1
+				if (month < 10) month = `0${month}`
+				return `${year}-${month}`
+			})
 		head.addElems('div', 'tags', d => [d.tags.filter(c => c.type === 'thematic_areas')])
 			.addElems('div', 'tag', d => d)
-			.html(d => d.name.length > 20 ? `${d.name.slice(0, 20)}...` : d.name)
+			.html(d => d.name?.length > 20 ? `${d.name?.slice(0, 20)}...` : d.name)
 
 		const body = pad.addElems('div', 'body')
 		body.addElems('img', 'vignette', d => d.media.slice(0, 1))
@@ -560,6 +774,7 @@
 	function clearPanel () {
 		const container = d3.select('.right-col')
 		.style('flex', '0 1 0')
+		container.select('button.expand-filters').toggleClass('close')
 		container.selectAll('.inner').remove()
 	}
 
@@ -582,7 +797,13 @@
 	}
 
 	function highlightTag (value) {
-		d3.selectAll('circle').classed('highlight', d => Object.keys(d.data).includes('orid') && d.data.clean[0].includes(value))
+		d3.selectAll('circle')
+		.classed('highlight', d => value?.length && Object.keys(d.data).includes('orid') && d.data.clean[0].includes(value))
+	}
+	function toggleHighlight (value, highlight = true) {
+		d3.selectAll('circle')
+		.filter(d => value?.length && Object.keys(d.data).includes('orid') && d.data.clean[0].includes(value))
+		.classed('highlight', highlight)
 	}
 
 	function sortpolygon (points, type) {
@@ -623,6 +844,20 @@
 	}
 	function rmLoader () {
 		d3.select('.lds-default').remove()
+	}
+	function expandfilters (node) {
+		d3.select(node).toggleClass('close')
+		const cartouche = d3.select(node).findAncestor('cartouche')
+		const filters = cartouche.select('form').node()
+		const padding = filters.querySelector('section').getBoundingClientRect().height / 2
+		// WE NEED TO MANUALLY ADD THE BOTTOM PADDING BECAUSE IT IS NOT COMPUTED IN THE scrollHeight
+		if (filters.style.maxHeight) {
+			filters.style.maxHeight = null
+			filters.style.overflow = 'hidden'
+		} else {
+			filters.style.maxHeight = `${filters.scrollHeight + padding}px`
+			filters.style.overflow = 'visible'
+		}
 	}
 </script>
 </body>
