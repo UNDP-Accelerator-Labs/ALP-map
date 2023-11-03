@@ -81,6 +81,8 @@ body div.container .left-col {
   position: relative;
 }
 body div.container .left-col svg {
+  position: relative;
+  z-index: 100;
   margin: auto;
 }
 body div.container .left-col svg text {
