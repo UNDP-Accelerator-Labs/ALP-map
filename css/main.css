@@ -63,6 +63,7 @@ body .cartouche {
   border: 1px dotted #969696;
   box-sizing: border-box;
   background-color: #FFF;
+  z-index: 1000;
   /*#find-tag {
   	position: absolute;
   	top: 60px;
