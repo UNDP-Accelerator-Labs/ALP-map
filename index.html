@@ -192,7 +192,8 @@
 		'preserveAspectRatio': 'xMidYMid meet'
 	})
 
-	const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cHM6Ly91bmRwLWFjY2VsZXJhdG9yLWxhYnMuZ2l0aHViLmlvLyJdLCJpYXQiOjE2ODk4NjQwNDksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.UrYiH9OVYRkytd6jIiX2RiiCnavBJ0DewpGyLsdkkiA'
+	// const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cHM6Ly91bmRwLWFjY2VsZXJhdG9yLWxhYnMuZ2l0aHViLmlvLyJdLCJpYXQiOjE2ODk4NjQwNDksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.UrYiH9OVYRkytd6jIiX2RiiCnavBJ0DewpGyLsdkkiA'
+	const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDAwLyJdLCJpYXQiOjE2ODk2NzUxOTIsImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.Q8-rt-0taMT5QhNGWfhLsIbqCc07HN8mr30kx12_0vY'
 	
 	const platform = new URL('https://acclabs-actionlearningplans.azurewebsites.net')
 	// const platform = new URL('https://learningplans.sdg-innovation-commons.org')
@@ -350,7 +351,7 @@
 				'checked': d => basetags_params.getAll('countries').includes(d.iso3) || null
 			})
 		countries_menu.addElems('label')
-			.attr('for', d => d.country)
+			.attr('for', d => d.iso3)
 		.html(d => `${d.country}`)
 
 		// FOR HIGHLIGHTING
@@ -546,7 +547,7 @@
 				queryparams.append('include_imgs', true)
 				queryparams.append('include_tags', true)
 				new URLSearchParams(window.location.search).forEach((v, k) => {
-					// if (['countries'].includes(k)) queryparams.append(k, v)
+					if (['countries'].includes(k)) queryparams.append(k, v)
 					if (['regions'].includes(k)) queryparams.append(k, v)
 
 				})		
