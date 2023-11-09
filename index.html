@@ -194,8 +194,8 @@
 
 	const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJhY2NlcHRlZG9yaWdpbnMiOlsiaHR0cHM6Ly91bmRwLWFjY2VsZXJhdG9yLWxhYnMuZ2l0aHViLmlvLyJdLCJpYXQiOjE2ODk4NjQwNDksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJhY2NsYWJzLWFjdGlvbmxlYXJuaW5ncGxhbnMuYXp1cmV3ZWJzaXRlcy5uZXQifQ.UrYiH9OVYRkytd6jIiX2RiiCnavBJ0DewpGyLsdkkiA'
 	
-	const platform = new URL('https://acclabs-actionlearningplans.azurewebsites.net')
-	// const platform = new URL('https://learningplans.sdg-innovation-commons.org')
+	// const platform = new URL('https://acclabs-actionlearningplans.azurewebsites.net')
+	const platform = new URL('https://learningplans.sdg-innovation-commons.org')
 	const tags_path = new URL('apis/fetch/tags', platform)
 	const regions_path = new URL('apis/fetch/regions', platform)
 	const countries_path = new URL('apis/fetch/countries', platform)
@@ -792,7 +792,8 @@
 				'stroke': '#000',
 				'fill': 'none'
 			}).on('click', d => {
-				window.open(`https://acclabs-actionlearningplans.azurewebsites.net/en/edit/pad?id=${data.unique('pad', true)[0]}`, '_blank')
+				// window.open(`https://acclabs-actionlearningplans.azurewebsites.net/en/edit/pad?id=${data.unique('pad', true)[0]}`, '_blank')
+				window.open(`https://learningplans.sdg-innovation-commons.org/en/edit/pad?id=${data.unique('pad', true)[0]}`, '_blank')
 			})
 	}
 
