@@ -23,7 +23,7 @@
 			<nav id='languages'></nav>
 			<div id='logo'>
 				<img src='imgs/branding/UNDP_accelerator_labs_logo_vertical_color_RGB.png'>
-				<h1>Action Learning Plans</h1>
+				<h1>Action Learning</h1>
 				<h2>Topic Browser</h2>
 			</div>
 
@@ -168,7 +168,7 @@
 	</div>
 	<div class='footer-row signature'>
 		<div class='inner'>
-			<p>&copy; 2023 United Nations Development Programme</p>
+			<p>&copy; 2024 United Nations Development Programme</p>
 		</div>
 		<!-- TO DO: TRANSLATE -->
 	</div>
@@ -182,7 +182,7 @@
 	const width = Math.round(Math.min(cw ?? ow, ch ?? oh))
 	const height = width
 	const padding = 60
-	const edit_layout = false
+	const edit_layout = true
 	
 	const svg = d3.select('svg#bubbles')
 	.attrs({ 
@@ -202,7 +202,7 @@
 
 	const basetags_params = new URLSearchParams(tags_path.search)
 	basetags_params.append('token', token)
-	let mobilization = 28
+	let mobilization = 30
 
 	const highlighttags_params = new URLSearchParams(basetags_params)
 	new URLSearchParams(window.location.search).forEach((v, k) => {
@@ -223,7 +223,7 @@
 	data_collection.push(GET(`${tags_path.origin}${tags_path.pathname}?${basetags_params.toString()}`))
 	data_collection.push(GET(`${regions_path.origin}${regions_path.pathname}?${regions_params.toString()}`))
 	data_collection.push(GET(`${countries_path.origin}${countries_path.pathname}?${countries_params.toString()}`))
-	data_collection.push(d3.json('data/taxonomy_manual_202311.json'))
+	data_collection.push(d3.json('data/taxonomy_manual_202401_01.json'))
 	if (highlighttags_params.size >= 2) data_collection.push(GET(`${tags_path.origin}${tags_path.pathname}?${highlighttags_params.toString()}`))
 
 	addLoader()
