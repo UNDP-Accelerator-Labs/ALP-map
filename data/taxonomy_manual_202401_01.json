@@ -75,7 +75,7 @@
             6.0921845436,
             6.7531909943
         ],
-        "keywords": "drone, robotic, accelerator",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             1.7144613266,
             10.8844747543
@@ -91,12 +91,12 @@
             "access"
         ],
         "split": "access",
-        "clusters": 85,
+        "clusters": 86,
         "umap": [
             5.7883090973,
             8.3840827942
         ],
-        "keywords": "access, internet, basic",
+        "keywords": "accessibility",
         "keywords_umap": [
             1.5371396542,
             11.9661636353
@@ -112,12 +112,12 @@
             "access to basic services"
         ],
         "split": "access to basic services",
-        "clusters": 49,
+        "clusters": 86,
         "umap": [
             5.6842942238,
             8.5451917648
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "accessibility",
         "keywords_umap": [
             1.5371396542,
             11.9661636353
@@ -154,12 +154,12 @@
             "access to information"
         ],
         "split": "access to information",
-        "clusters": 85,
+        "clusters": 86,
         "umap": [
             5.6281847954,
             8.3884086609
         ],
-        "keywords": "access, internet, basic",
+        "keywords": "accessibility",
         "keywords_umap": [
             1.5371396542,
             11.9661636353
@@ -175,12 +175,12 @@
             "access to technology and access to internet"
         ],
         "split": "access to internet",
-        "clusters": 85,
+        "clusters": 86,
         "umap": [
             5.8279948235,
             8.2348985672
         ],
-        "keywords": "access, internet, basic",
+        "keywords": "accessibility",
         "keywords_umap": [
             1.5371396542,
             11.9661636353
@@ -196,12 +196,12 @@
             "access to technology and access to internet"
         ],
         "split": "access to technology",
-        "clusters": 85,
+        "clusters": 86,
         "umap": [
             5.7924351692,
             8.2802782059
         ],
-        "keywords": "access, internet, basic",
+        "keywords": "accessibility",
         "keywords_umap": [
             1.5371396542,
             11.9661636353
@@ -222,7 +222,7 @@
             5.5247683525,
             8.3263607025
         ],
-        "keywords": "affordability, accessibility, connectivity",
+        "keywords": "accessibility",
         "keywords_umap": [
             1.9154479504,
             12.2518434525
@@ -268,7 +268,7 @@
             2.7485306263,
             9.6249790192
         ],
-        "keywords": "involvement, active, citizenship",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             3.8530421257,
             11.8581781387
@@ -289,7 +289,7 @@
             2.5118186474,
             10.168545723
         ],
-        "keywords": "involvement, active, citizenship",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -331,7 +331,7 @@
             2.0296447277,
             9.144276619
         ],
-        "keywords": "people, disability, elderly",
+        "keywords": "vulnerable, populations",
         "keywords_umap": [
             4.0260853767,
             11.8837270737
@@ -394,7 +394,7 @@
             4.221765995,
             8.3568887711
         ],
-        "keywords": "affordability, accessibility, connectivity",
+        "keywords": "accessibility",
         "keywords_umap": [
             1.9154479504,
             12.2518434525
@@ -478,7 +478,7 @@
             4.2215967178,
             6.7972865105
         ],
-        "keywords": "affordable, machinery, industry",
+        "keywords": "industry",
         "keywords_umap": [
             1.6768090725,
             9.7659235001
@@ -499,7 +499,7 @@
             4.4527850151,
             5.6653366089
         ],
-        "keywords": "affordable, machinery, industry",
+        "keywords": "industry",
         "keywords_umap": [
             1.6768090725,
             9.7659235001
@@ -562,7 +562,7 @@
             2.1955649853,
             6.6730895042
         ],
-        "keywords": "people, disability, elderly",
+        "keywords": "vulnerable, populations",
         "keywords_umap": [
             3.7835552692,
             12.0697116852
@@ -732,7 +732,7 @@
             2.6655185223,
             3.6787467003
         ],
-        "keywords": "pollution, odor, noise",
+        "keywords": "pollution",
         "keywords_umap": [
             1.1475791931,
             8.3195886612
@@ -753,7 +753,7 @@
             5.2039465904,
             7.3244976997
         ],
-        "keywords": "solution, alternative, datum",
+        "keywords": "local solutions",
         "keywords_umap": [
             2.2231407166,
             10.7395772934
@@ -795,7 +795,7 @@
             4.5653028488,
             8.5620956421
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             2.2620592117,
             12.3221788406
@@ -816,7 +816,7 @@
             4.9740009308,
             7.4055700302
         ],
-        "keywords": "solution, alternative, datum",
+        "keywords": "local solutions",
         "keywords_umap": [
             2.2231407166,
             10.7395772934
@@ -921,7 +921,7 @@
             5.5185346603,
             7.0472512245
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             2.4211161137,
             11.2348937988
@@ -1047,7 +1047,7 @@
             5.4738917351,
             7.7760791779
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -1068,7 +1068,7 @@
             5.6668748856,
             7.2847652435
         ],
-        "keywords": "localization, geolocation, integration",
+        "keywords": "communication, advocacy",
         "keywords_umap": [
             3.0547959805,
             10.7949533463
@@ -1089,7 +1089,7 @@
             2.2963159084,
             9.5293855667
         ],
-        "keywords": "affordability, accessibility, connectivity",
+        "keywords": "accessibility",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -1110,7 +1110,7 @@
             2.4180934429,
             9.5864744186
         ],
-        "keywords": "involvement, active, citizenship",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -1257,7 +1257,7 @@
             1.9869550467,
             8.4326086044
         ],
-        "keywords": "youth, livelihood, refugee",
+        "keywords": "youth, and livelihood",
         "keywords_umap": [
             4.1852836609,
             11.5889005661
@@ -1530,7 +1530,7 @@
             5.6239948273,
             3.3572983742
         ],
-        "keywords": "materials, minerals",
+        "keywords": "materials",
         "keywords_umap": [
             2.2791810036,
             8.5474500656
@@ -1761,7 +1761,7 @@
             6.6772422791,
             7.9004201889
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             0.9799171686,
             12.4271440506
@@ -1782,7 +1782,7 @@
             4.4204096794,
             6.0692954063
         ],
-        "keywords": "green, economy, blue",
+        "keywords": "green, and blue, economies",
         "keywords_umap": [
             3.8656797409,
             9.2799606323
@@ -1803,7 +1803,7 @@
             4.164765358,
             2.2295591831
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -1887,7 +1887,7 @@
             4.1111130714,
             9.3456811905
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             2.7245087624,
             12.1530799866
@@ -1950,7 +1950,7 @@
             4.8080277443,
             8.9803771973
         ],
-        "keywords": "future, business, continuity",
+        "keywords": "economy, business",
         "keywords_umap": [
             2.67923069,
             12.1741361618
@@ -2118,7 +2118,7 @@
             0.2926496565,
             8.2285928726
         ],
-        "keywords": "youth, livelihood, refugee",
+        "keywords": "youth, and livelihood",
         "keywords_umap": [
             4.1247367859,
             11.4316673279
@@ -2139,7 +2139,7 @@
             4.5117945671,
             5.9306397438
         ],
-        "keywords": "economy, creative, solidarity",
+        "keywords": "economy, business",
         "keywords_umap": [
             3.5727117062,
             10.100982666
@@ -2160,7 +2160,7 @@
             5.0846643448,
             6.4156765938
         ],
-        "keywords": "economy, creative, solidarity",
+        "keywords": "economy, business",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -2183,7 +2183,7 @@
             4.3188147545,
             6.3463625908
         ],
-        "keywords": "economy, creative, solidarity",
+        "keywords": "economy, business",
         "keywords_umap": [
             3.7808964252,
             12.8838672638
@@ -2225,7 +2225,7 @@
             2.6297113895,
             9.7122220993
         ],
-        "keywords": "involvement, active, citizenship",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -2246,7 +2246,7 @@
             2.8360815048,
             9.5125789642
         ],
-        "keywords": "involvement, active, citizenship",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -2309,7 +2309,7 @@
             2.5541789532,
             10.0526237488
         ],
-        "keywords": "co, creation, cluster",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -2330,7 +2330,7 @@
             2.7477242947,
             10.2288370132
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -2351,7 +2351,7 @@
             3.6370990276,
             9.8706655502
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "services",
         "keywords_umap": [
             3.9885787964,
             12.2016057968
@@ -2477,7 +2477,7 @@
             4.1774783134,
             2.0767953396
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -2582,7 +2582,7 @@
             7.0875916481,
             4.7416090965
         ],
-        "keywords": "co, creation, cluster",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             3.2991342545,
             10.929643631
@@ -2603,7 +2603,7 @@
             7.2510051727,
             4.401843071
         ],
-        "keywords": "co, creation, cluster",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             3.2991342545,
             10.929643631
@@ -2645,7 +2645,7 @@
             3.9929330349,
             2.7931034565
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -2666,7 +2666,7 @@
             4.1076488495,
             2.2973041534
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -2708,7 +2708,7 @@
             4.1004152298,
             8.1385068893
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             3.4337844849,
             11.1149864197
@@ -2771,7 +2771,7 @@
             3.0344932079,
             7.5220594406
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "keywords_umap": [
             2.5293562412,
             12.0301914215
@@ -2855,7 +2855,7 @@
             4.9322032928,
             7.4775013924
         ],
-        "keywords": "localization, geolocation, integration",
+        "keywords": "communication, advocacy",
         "keywords_umap": [
             3.0547959805,
             10.7949533463
@@ -2918,7 +2918,7 @@
             2.2060234547,
             9.9772348404
         ],
-        "keywords": "involvement, active, citizenship",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             3.5349388123,
             12.0618743896
@@ -2939,7 +2939,7 @@
             3.7490615845,
             7.3325734138
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             3.6605508327,
             10.6163463593
@@ -2966,7 +2966,7 @@
             2.3013789654,
             9.8922281265
         ],
-        "keywords": "involvement, active, citizenship",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             3.8530421257,
             11.8581781387
@@ -3050,7 +3050,7 @@
             5.5780730247,
             9.5228700638
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "services",
         "keywords_umap": [
             1.0010057688,
             11.0991077423
@@ -3157,7 +3157,7 @@
             5.6137785912,
             8.1375389099
         ],
-        "keywords": "affordability, accessibility, connectivity",
+        "keywords": "accessibility",
         "keywords_umap": [
             1.9154479504,
             12.2518434525
@@ -3199,7 +3199,7 @@
             3.0781977177,
             5.9997282028
         ],
-        "keywords": "mobility, transportation",
+        "keywords": "mobility",
         "keywords_umap": [
             1.1571449041,
             10.305680275
@@ -3497,7 +3497,7 @@
             5.1536636353,
             3.5153796673
         ],
-        "keywords": "materials, minerals",
+        "keywords": "materials",
         "keywords_umap": [
             2.2791810036,
             8.5474500656
@@ -3518,7 +3518,7 @@
             4.4344072342,
             6.0931658745
         ],
-        "keywords": "affordable, machinery, industry",
+        "keywords": "industry",
         "keywords_umap": [
             1.6768090725,
             9.7659235001
@@ -3646,7 +3646,7 @@
             4.1045279503,
             6.5784344673
         ],
-        "keywords": "economy, creative, solidarity",
+        "keywords": "economy, business",
         "keywords_umap": [
             3.7808964252,
             12.8838672638
@@ -3667,7 +3667,7 @@
             2.3911211491,
             6.7945642471
         ],
-        "keywords": "disaster, crisis",
+        "keywords": "disasters, and crises",
         "keywords_umap": [
             3.2179224491,
             9.870013237
@@ -3688,7 +3688,7 @@
             4.164018631,
             5.8967189789
         ],
-        "keywords": "commerce, service, ndc",
+        "keywords": "commerce, trade",
         "keywords_umap": [
             3.5727117062,
             10.100982666
@@ -3709,7 +3709,7 @@
             4.903907299,
             8.4502096176
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             2.4174261093,
             10.4160327911
@@ -4021,12 +4021,12 @@
             "diaspora engagement"
         ],
         "split": "diaspora engagement",
-        "clusters": 94,
+        "clusters": 84,
         "umap": [
             2.3102574348,
             9.9723577499
         ],
-        "keywords": "involvement, active, citizenship",
+        "keywords": "communities",
         "keywords_umap": [
             3.8530421257,
             11.8581781387
@@ -4320,7 +4320,7 @@
             6.3543548584,
             8.1600818634
         ],
-        "keywords": "information, share, exchange",
+        "keywords": "information",
         "keywords_umap": [
             2.0731322765,
             11.5972108841
@@ -4399,12 +4399,12 @@
             "digital learning"
         ],
         "split": "digital learning",
-        "clusters": 130,
+        "clusters": 28,
         "umap": [
             7.1695313454,
             8.4170684814
         ],
-        "keywords": "digital, data, AI",
+        "keywords": "education, training",
         "keywords_umap": [
             1.7946990728,
             12.6917943954
@@ -4467,7 +4467,7 @@
             6.3879323006,
             8.7641487122
         ],
-        "keywords": "market, need, assessment",
+        "keywords": "markets",
         "keywords_umap": [
             2.0919024944,
             12.0804748535
@@ -4609,12 +4609,12 @@
             "digital service"
         ],
         "split": "digital service",
-        "clusters": 55,
+        "clusters": 49,
         "umap": [
             6.3550930023,
             9.1210460663
         ],
-        "keywords": "digital, data, AI",
+        "keywords": "services",
         "keywords_umap": [
             0.9430660605,
             11.6320085526
@@ -4630,12 +4630,12 @@
             "digital services"
         ],
         "split": "digital services",
-        "clusters": 130,
+        "clusters": 49,
         "umap": [
             6.3521089554,
             9.1288347244
         ],
-        "keywords": "digital, data, AI",
+        "keywords": "services",
         "keywords_umap": [
             0.9430660605,
             11.6320085526
@@ -4672,12 +4672,12 @@
             "digital skills"
         ],
         "split": "digital skills",
-        "clusters": 130,
+        "clusters": 28,
         "umap": [
             6.843744278,
             8.3627529144
         ],
-        "keywords": "digital, data, AI",
+        "keywords": "education, training",
         "keywords_umap": [
             2.8438315392,
             10.4868106842
@@ -4866,7 +4866,7 @@
             4.7075762749,
             9.1239309311
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             1.6475888491,
             11.7835245132
@@ -4887,7 +4887,7 @@
             2.718531847,
             8.8654823303
         ],
-        "keywords": "people, disability, elderly",
+        "keywords": "vulnerable, populations",
         "keywords_umap": [
             4.0260853767,
             11.8837270737
@@ -4908,7 +4908,7 @@
             2.7643129826,
             8.8684034348
         ],
-        "keywords": "people, disability, elderly",
+        "keywords": "vulnerable, populations",
         "keywords_umap": [
             4.0260853767,
             11.8837270737
@@ -4929,7 +4929,7 @@
             2.2007975578,
             6.5275859833
         ],
-        "keywords": "disaster, crisis",
+        "keywords": "disasters, and crises",
         "keywords_umap": [
             3.2179224491,
             9.870013237
@@ -4950,7 +4950,7 @@
             2.4457514286,
             6.8160767555
         ],
-        "keywords": "disaster, crisis",
+        "keywords": "disasters, and crises",
         "keywords_umap": [
             3.2179224491,
             9.870013237
@@ -4971,7 +4971,7 @@
             2.2595565319,
             6.5033431053
         ],
-        "keywords": "disaster, crisis",
+        "keywords": "disasters, and crises",
         "keywords_umap": [
             3.7835552692,
             12.0697116852
@@ -5013,7 +5013,7 @@
             2.4666845798,
             8.9493436813
         ],
-        "keywords": "people, disability, elderly",
+        "keywords": "vulnerable, populations",
         "keywords_umap": [
             4.0260853767,
             11.8837270737
@@ -5139,7 +5139,7 @@
             6.4005661011,
             6.9303817749
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             1.7144613266,
             10.8844747543
@@ -5160,7 +5160,7 @@
             2.3448364735,
             5.3553886414
         ],
-        "keywords": "disaster, crisis",
+        "keywords": "disasters, and crises",
         "keywords_umap": [
             3.2179224491,
             9.870013237
@@ -5202,7 +5202,7 @@
             12.7121496201,
             5.1313796043
         ],
-        "keywords": "commerce, service, ndc",
+        "keywords": "commerce, trade",
         "keywords_umap": [
             1.019166708,
             10.9031009674
@@ -5244,7 +5244,7 @@
             12.669793129,
             5.1750326157
         ],
-        "keywords": "commerce, service, ndc",
+        "keywords": "commerce, trade",
         "keywords_umap": [
             1.019166708,
             10.9031009674
@@ -5265,7 +5265,7 @@
             12.7380008698,
             5.1062111855
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "services",
         "keywords_umap": [
             1.019166708,
             10.9031009674
@@ -5286,7 +5286,7 @@
             12.6650114059,
             5.179046154
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "services",
         "keywords_umap": [
             1.019166708,
             10.9031009674
@@ -5307,7 +5307,7 @@
             12.6592159271,
             5.1776461601
         ],
-        "keywords": "commerce, service, ndc",
+        "keywords": "commerce, trade",
         "keywords_umap": [
             1.019166708,
             10.9031009674
@@ -5540,7 +5540,7 @@
             5.8196563721,
             3.2880358696
         ],
-        "keywords": "solution, alternative, datum",
+        "keywords": "local solutions",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -5624,7 +5624,7 @@
             6.5658154488,
             8.7302446365
         ],
-        "keywords": "commerce, service, ndc",
+        "keywords": "commerce, trade",
         "keywords_umap": [
             1.3265234232,
             10.9428882599
@@ -5645,7 +5645,7 @@
             3.6372947693,
             7.2625408173
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "keywords_umap": [
             2.9761724472,
             12.0239944458
@@ -5666,7 +5666,7 @@
             4.0386099815,
             6.7711958885
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "keywords_umap": [
             2.9761724472,
             12.0239944458
@@ -5687,7 +5687,7 @@
             4.0940847397,
             6.5270962715
         ],
-        "keywords": "economy, creative, solidarity",
+        "keywords": "economy, business",
         "keywords_umap": [
             3.7808964252,
             12.8838672638
@@ -5708,7 +5708,7 @@
             4.403737545,
             6.221200943
         ],
-        "keywords": "economy, creative, solidarity",
+        "keywords": "economy, business",
         "keywords_umap": [
             3.5727117062,
             10.100982666
@@ -5766,12 +5766,12 @@
             "efficiency"
         ],
         "split": "efficiency",
-        "clusters": 29,
+        "clusters": 57,
         "umap": [
             1.4166936874,
             3.4675354958
         ],
-        "keywords": "cost, operating, efficiency",
+        "keywords": "production",
         "keywords_umap": [
             1.0206546783,
             9.5057525635
@@ -5792,7 +5792,7 @@
             1.81846416,
             8.7802877426
         ],
-        "keywords": "people, disability, elderly",
+        "keywords": "vulnerable, populations",
         "keywords_umap": [
             4.0260853767,
             11.8837270737
@@ -5855,7 +5855,7 @@
             5.5965600014,
             6.881893158
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             2.4211161137,
             11.2348937988
@@ -6088,7 +6088,7 @@
             3.9531340599,
             7.3904905319
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             3.6605508327,
             10.6163463593
@@ -6109,7 +6109,7 @@
             3.9812326431,
             7.5365796089
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             3.199244976,
             11.5023527145
@@ -6342,7 +6342,7 @@
             4.7910923958,
             7.3471665382
         ],
-        "keywords": "localization, geolocation, integration",
+        "keywords": "communication, advocacy",
         "keywords_umap": [
             3.0547959805,
             10.7949533463
@@ -6384,7 +6384,7 @@
             5.4343485832,
             8.3960704803
         ],
-        "keywords": "information, share, exchange",
+        "keywords": "information",
         "keywords_umap": [
             2.0731322765,
             11.5972108841
@@ -6447,7 +6447,7 @@
             4.2572731972,
             1.9618319273
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -6573,7 +6573,7 @@
             7.4979820251,
             3.6730725765
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             2.3117513657,
             8.4111461639
@@ -6594,7 +6594,7 @@
             4.7192187309,
             8.6369924545
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             2.5323956013,
             12.5506467819
@@ -6615,7 +6615,7 @@
             4.0605998039,
             8.9017362595
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -6636,7 +6636,7 @@
             6.3486824036,
             8.3552246094
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -6678,7 +6678,7 @@
             2.334880352,
             5.2197937965
         ],
-        "keywords": "disaster, crisis",
+        "keywords": "disasters, and crises",
         "keywords_umap": [
             3.2179224491,
             9.870013237
@@ -6720,7 +6720,7 @@
             4.3248357773,
             1.9219124317
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -6741,7 +6741,7 @@
             4.1935281754,
             2.044159174
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -6762,7 +6762,7 @@
             4.3925709724,
             1.8931604624
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -6783,7 +6783,7 @@
             4.3236689568,
             1.9481050968
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -6804,7 +6804,7 @@
             4.3370628357,
             1.8257796764
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -6825,7 +6825,7 @@
             4.4225149155,
             1.8824872971
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -6846,7 +6846,7 @@
             4.5154752731,
             2.1034874916
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -6867,7 +6867,7 @@
             4.4285745621,
             2.1016216278
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -6888,7 +6888,7 @@
             4.5212435722,
             2.0167205334
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -6930,7 +6930,7 @@
             5.1994247437,
             9.0706968307
         ],
-        "keywords": "small businesses, informal businesses",
+        "keywords": "informality",
         "keywords_umap": [
             1.2924062014,
             11.2195367813
@@ -7324,12 +7324,12 @@
             "geolocation"
         ],
         "split": "geolocation",
-        "clusters": 113,
+        "clusters": 130,
         "umap": [
             4.9500741959,
             7.0147624016
         ],
-        "keywords": "localization, geolocation, integration",
+        "keywords": "digital, data, AI",
         "keywords_umap": [
             3.0547959805,
             10.7949533463
@@ -7350,7 +7350,7 @@
             5.573035717,
             7.3316836357
         ],
-        "keywords": "solution, alternative, datum",
+        "keywords": "local solutions",
         "keywords_umap": [
             2.2231407166,
             10.7395772934
@@ -7392,7 +7392,7 @@
             5.2562656403,
             3.17060256
         ],
-        "keywords": "materials, minerals",
+        "keywords": "materials",
         "keywords_umap": [
             2.2791810036,
             8.5474500656
@@ -7471,12 +7471,12 @@
             "governance cluster (co"
         ],
         "split": "governance cluster (co",
-        "clusters": 27,
+        "clusters": 77,
         "umap": [
             7.2036185265,
             4.5791802406
         ],
-        "keywords": "co, creation, cluster",
+        "keywords": "Governance",
         "keywords_umap": [
             3.2991342545,
             10.929643631
@@ -7497,7 +7497,7 @@
             3.8286669254,
             9.680437088
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             2.8321950436,
             12.7819709778
@@ -7518,7 +7518,7 @@
             3.9010469913,
             9.3805236816
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             2.8321950436,
             12.7819709778
@@ -7560,7 +7560,7 @@
             5.4588851929,
             7.1959190369
         ],
-        "keywords": "solution, alternative, datum",
+        "keywords": "local solutions",
         "keywords_umap": [
             2.2231407166,
             10.7395772934
@@ -7581,7 +7581,7 @@
             4.3744587898,
             6.0767173767
         ],
-        "keywords": "green, economy, blue",
+        "keywords": "green, and blue, economies",
         "keywords_umap": [
             3.8656797409,
             9.2799606323
@@ -7602,7 +7602,7 @@
             4.6578860283,
             5.7174406052
         ],
-        "keywords": "green, economy, blue",
+        "keywords": "green, and blue, economies",
         "keywords_umap": [
             3.8656797409,
             9.2799606323
@@ -7623,7 +7623,7 @@
             4.3218603134,
             5.7504563332
         ],
-        "keywords": "green, economy, blue",
+        "keywords": "green, and blue, economies",
         "keywords_umap": [
             3.8656797409,
             9.2799606323
@@ -7644,7 +7644,7 @@
             4.6848521233,
             5.9233670235
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             3.8656797409,
             9.2799606323
@@ -7919,7 +7919,7 @@
             4.0587739944,
             6.7865757942
         ],
-        "keywords": "affordable, machinery, industry",
+        "keywords": "industry",
         "keywords_umap": [
             1.6768090725,
             9.7659235001
@@ -7961,7 +7961,7 @@
             3.3799288273,
             6.9172530174
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "keywords_umap": [
             3.0719001293,
             12.6009950638
@@ -8129,7 +8129,7 @@
             3.1052687168,
             7.7434720993
         ],
-        "keywords": "impact, invest, collective",
+        "keywords": "impact",
         "keywords_umap": [
             2.5293562412,
             12.0301914215
@@ -8150,7 +8150,7 @@
             2.8426218033,
             7.4755825996
         ],
-        "keywords": "impact, invest, collective",
+        "keywords": "impact",
         "keywords_umap": [
             2.5293562412,
             12.0301914215
@@ -8171,7 +8171,7 @@
             4.5410218239,
             8.4912452698
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             2.2620592117,
             12.3221788406
@@ -8236,7 +8236,7 @@
             3.9332618713,
             7.1803612709
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "keywords_umap": [
             2.9761724472,
             12.0239944458
@@ -8278,7 +8278,7 @@
             4.0378217697,
             6.9560542107
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "keywords_umap": [
             2.9761724472,
             12.0239944458
@@ -8362,7 +8362,7 @@
             3.2742710114,
             8.0111551285
         ],
-        "keywords": "community, reliance, resilience",
+        "keywords": "communities",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -8404,7 +8404,7 @@
             4.5041584969,
             6.6994156837
         ],
-        "keywords": "affordable, machinery, industry",
+        "keywords": "industry",
         "keywords_umap": [
             1.6768090725,
             9.7659235001
@@ -8446,7 +8446,7 @@
             5.1212472916,
             9.121380806
         ],
-        "keywords": "small businesses, informal businesses",
+        "keywords": "informality",
         "keywords_umap": [
             1.2924062014,
             11.2195367813
@@ -8467,7 +8467,7 @@
             5.1556501389,
             9.1302928925
         ],
-        "keywords": "small businesses, informal businesses",
+        "keywords": "informality",
         "keywords_umap": [
             1.2924062014,
             11.2195367813
@@ -8509,7 +8509,7 @@
             6.0281734467,
             8.8913803101
         ],
-        "keywords": "market, need, assessment",
+        "keywords": "markets",
         "keywords_umap": [
             2.0919024944,
             12.0804748535
@@ -8530,7 +8530,7 @@
             5.6435661316,
             9.3394021988
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "services",
         "keywords_umap": [
             1.0010057688,
             11.0991077423
@@ -8551,7 +8551,7 @@
             5.3602185249,
             9.0257492065
         ],
-        "keywords": "small businesses, informal businesses",
+        "keywords": "informality",
         "keywords_umap": [
             1.2924062014,
             11.2195367813
@@ -8572,7 +8572,7 @@
             5.1455254555,
             8.8382196426
         ],
-        "keywords": "small businesses, informal businesses",
+        "keywords": "informality",
         "keywords_umap": [
             1.2924062014,
             11.2195367813
@@ -8614,7 +8614,7 @@
             5.7469091415,
             9.1524429321
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "services",
         "keywords_umap": [
             1.0010057688,
             11.0991077423
@@ -8742,7 +8742,7 @@
             4.6382260323,
             8.1612987518
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             2.2620592117,
             12.3221788406
@@ -8826,7 +8826,7 @@
             5.0231375694,
             7.1560678482
         ],
-        "keywords": "localization, geolocation, integration",
+        "keywords": "communication, advocacy",
         "keywords_umap": [
             3.0547959805,
             10.7949533463
@@ -8889,7 +8889,7 @@
             5.9039154053,
             8.0645046234
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             1.7351571321,
             11.4960861206
@@ -9015,7 +9015,7 @@
             3.2311344147,
             10.2414646149
         ],
-        "keywords": "justice, peace, environmental",
+        "keywords": "peace, and justice",
         "keywords_umap": [
             3.7335777283,
             12.4485359192
@@ -9136,12 +9136,12 @@
             "learning"
         ],
         "split": "learning",
-        "clusters": 58,
+        "clusters": 28,
         "umap": [
             3.2379388809,
             8.8715791702
         ],
-        "keywords": "learn, community, blend",
+        "keywords": "education, training",
         "keywords_umap": [
             3.7412052155,
             11.0843057632
@@ -9157,12 +9157,12 @@
             "learning communities"
         ],
         "split": "learning communities",
-        "clusters": 58,
+        "clusters": 28,
         "umap": [
             2.3749787807,
             9.3707132339
         ],
-        "keywords": "learn, community, blend",
+        "keywords": "education, training",
         "keywords_umap": [
             3.7412052155,
             11.0843057632
@@ -9183,7 +9183,7 @@
             5.6744627953,
             9.4420347214
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "services",
         "keywords_umap": [
             1.0010057688,
             11.0991077423
@@ -9290,7 +9290,7 @@
             1.8626995087,
             8.6120100021
         ],
-        "keywords": "youth, livelihood, refugee",
+        "keywords": "youth, and livelihood",
         "keywords_umap": [
             4.1852836609,
             11.5889005661
@@ -9353,7 +9353,7 @@
             3.728395462,
             6.9139361382
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             3.6605508327,
             10.6163463593
@@ -9374,7 +9374,7 @@
             3.7821645737,
             6.9821910858
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             3.6605508327,
             10.6163463593
@@ -9395,7 +9395,7 @@
             3.915910244,
             6.9251327515
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "keywords_umap": [
             3.6605508327,
             10.6163463593
@@ -9416,7 +9416,7 @@
             3.8910398483,
             7.1793775558
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             3.6605508327,
             10.6163463593
@@ -9437,7 +9437,7 @@
             4.8139066696,
             6.9756970406
         ],
-        "keywords": "localization, geolocation, integration",
+        "keywords": "communication, advocacy",
         "keywords_umap": [
             3.0547959805,
             10.7949533463
@@ -9500,7 +9500,7 @@
             5.4406728745,
             9.7464828491
         ],
-        "keywords": "space, public, consultation",
+        "keywords": "public, spaces",
         "keywords_umap": [
             1.7135108709,
             12.0163974762
@@ -9626,7 +9626,7 @@
             6.0424304008,
             8.8357534409
         ],
-        "keywords": "market, need, assessment",
+        "keywords": "markets",
         "keywords_umap": [
             2.0919024944,
             12.0804748535
@@ -9647,7 +9647,7 @@
             5.9865903854,
             8.8914871216
         ],
-        "keywords": "market, need, assessment",
+        "keywords": "markets",
         "keywords_umap": [
             2.0919024944,
             12.0804748535
@@ -9668,7 +9668,7 @@
             6.0845127106,
             8.8093061447
         ],
-        "keywords": "market, need, assessment",
+        "keywords": "markets",
         "keywords_umap": [
             2.0919024944,
             12.0804748535
@@ -9689,7 +9689,7 @@
             5.0209946632,
             5.7938876152
         ],
-        "keywords": "big, small, enterprise",
+        "keywords": "small, and medium, enterprises",
         "keywords_umap": [
             1.8380494118,
             10.7026863098
@@ -9731,7 +9731,7 @@
             5.0708742142,
             3.1280825138
         ],
-        "keywords": "materials, minerals",
+        "keywords": "materials",
         "keywords_umap": [
             2.2791810036,
             8.5474500656
@@ -9779,7 +9779,7 @@
             4.9652833939,
             5.7911000252
         ],
-        "keywords": "big, small, enterprise",
+        "keywords": "small, and medium, enterprises",
         "keywords_umap": [
             1.8380494118,
             10.7026863098
@@ -9907,7 +9907,7 @@
             4.1076612473,
             8.3607540131
         ],
-        "keywords": "mobility, transportation",
+        "keywords": "mobility",
         "keywords_umap": [
             1.9154479504,
             12.2518434525
@@ -9928,7 +9928,7 @@
             4.3879432678,
             6.9329853058
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             1.6475888491,
             11.7835245132
@@ -10014,7 +10014,7 @@
             7.5203728676,
             4.0432209969
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             3.164611578,
             9.8127498627
@@ -10035,7 +10035,7 @@
             3.7503004074,
             6.6658658981
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             3.6605508327,
             10.6163463593
@@ -10182,7 +10182,7 @@
             7.5510578156,
             3.9510939121
         ],
-        "keywords": "solution, alternative, datum",
+        "keywords": "local solutions",
         "keywords_umap": [
             3.164611578,
             9.8127498627
@@ -10203,7 +10203,7 @@
             12.6639442444,
             5.1757683754
         ],
-        "keywords": "commerce, service, ndc",
+        "keywords": "commerce, trade",
         "keywords_umap": [
             1.019166708,
             10.9031009674
@@ -10245,7 +10245,7 @@
             6.3355445862,
             7.8828454018
         ],
-        "keywords": "involvement, active, citizenship",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -10329,7 +10329,7 @@
             2.0833394527,
             6.0421352386
         ],
-        "keywords": "pollution, odor, noise",
+        "keywords": "pollution",
         "keywords_umap": [
             1.3786031008,
             8.4667654037
@@ -10392,7 +10392,7 @@
             4.3535251617,
             1.8908253908
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -10518,7 +10518,7 @@
             2.2322199345,
             6.1227221489
         ],
-        "keywords": "pollution, odor, noise",
+        "keywords": "pollution",
         "keywords_umap": [
             1.3786031008,
             8.4667654037
@@ -10581,7 +10581,7 @@
             6.2297406197,
             7.3615512848
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             0.8432324529,
             12.2416467667
@@ -10728,7 +10728,7 @@
             4.340051651,
             2.0630731583
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -10938,7 +10938,7 @@
             4.9355487823,
             6.6106753349
         ],
-        "keywords": "co, creation, cluster",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             3.1753716469,
             11.1284370422
@@ -10980,7 +10980,7 @@
             5.2013034821,
             7.1406545639
         ],
-        "keywords": "solution, alternative, datum",
+        "keywords": "local solutions",
         "keywords_umap": [
             2.2231407166,
             10.7395772934
@@ -11001,7 +11001,7 @@
             4.1899256706,
             8.8914203644
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             3.4337844849,
             11.1149864197
@@ -11022,7 +11022,7 @@
             4.4818892479,
             9.365729332
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             1.6475888491,
             11.7835245132
@@ -11068,7 +11068,7 @@
             3.0388891697,
             10.1101799011
         ],
-        "keywords": "justice, peace, environmental",
+        "keywords": "peace, and justice",
         "keywords_umap": [
             3.7335777283,
             12.4485359192
@@ -11110,7 +11110,7 @@
             2.4211494923,
             8.8708906174
         ],
-        "keywords": "people, disability, elderly",
+        "keywords": "vulnerable, populations",
         "keywords_umap": [
             4.0260853767,
             11.8837270737
@@ -11215,7 +11215,7 @@
             5.7384324074,
             9.2961797714
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "services",
         "keywords_umap": [
             1.0010057688,
             11.0991077423
@@ -11282,7 +11282,7 @@
             5.2755441666,
             3.2821371555
         ],
-        "keywords": "materials, minerals",
+        "keywords": "materials",
         "keywords_umap": [
             2.2791810036,
             8.5474500656
@@ -11303,7 +11303,7 @@
             5.3593974113,
             3.5331611633
         ],
-        "keywords": "waste management",
+        "keywords": "materials",
         "keywords_umap": [
             2.2791810036,
             8.5474500656
@@ -11324,7 +11324,7 @@
             5.9922032356,
             3.8066506386
         ],
-        "keywords": "free, packaging, software",
+        "keywords": "waste management",
         "keywords_umap": [
             1.0049681664,
             12.0515050888
@@ -11381,13 +11381,13 @@
         "clean": [
             "plastic-free environment"
         ],
-        "split": "plastic-free environment",
+        "split": "waste management",
         "clusters": 80,
         "umap": [
             7.3722877502,
             2.584376812
         ],
-        "keywords": "materials, minerals",
+        "keywords": "materials",
         "keywords_umap": [
             2.3117513657,
             8.4111461639
@@ -11513,7 +11513,7 @@
             2.1630654335,
             6.0664763451
         ],
-        "keywords": "pollution, odor, noise",
+        "keywords": "pollution",
         "keywords_umap": [
             1.3786031008,
             8.4667654037
@@ -11555,7 +11555,7 @@
             2.0462369919,
             6.2749652863
         ],
-        "keywords": "pollution, odor, noise",
+        "keywords": "pollution",
         "keywords_umap": [
             1.1262019873,
             9.0153493881
@@ -11576,7 +11576,7 @@
             4.9887595177,
             7.164454937
         ],
-        "keywords": "localization, geolocation, integration",
+        "keywords": "communication, advocacy",
         "keywords_umap": [
             3.0547959805,
             10.7949533463
@@ -11765,7 +11765,7 @@
             4.5977640152,
             9.4210290909
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             1.6475888491,
             11.7835245132
@@ -11786,7 +11786,7 @@
             4.5820965767,
             9.436873436
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             1.6475888491,
             11.7835245132
@@ -11807,7 +11807,7 @@
             4.5647273064,
             9.3719921112
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             1.6475888491,
             11.7835245132
@@ -11998,7 +11998,7 @@
             5.3238220215,
             9.9074058533
         ],
-        "keywords": "space, public, consultation",
+        "keywords": "public, spaces",
         "keywords_umap": [
             1.7135108709,
             12.0163974762
@@ -12014,12 +12014,12 @@
             "public consultations"
         ],
         "split": "public consultations",
-        "clusters": 48,
+        "clusters": 27,
         "umap": [
             5.0224647522,
             9.7935562134
         ],
-        "keywords": "space, public, consultation",
+        "keywords": "participatory, practices",
         "keywords_umap": [
             1.7135108709,
             12.0163974762
@@ -12107,7 +12107,7 @@
             5.5512347221,
             9.6213922501
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "services",
         "keywords_umap": [
             1.0010057688,
             11.0991077423
@@ -12128,7 +12128,7 @@
             5.3224830627,
             9.9862308502
         ],
-        "keywords": "space, public, consultation",
+        "keywords": "public, spaces",
         "keywords_umap": [
             1.7135108709,
             12.0163974762
@@ -12149,7 +12149,7 @@
             5.3450741768,
             9.9682512283
         ],
-        "keywords": "space, public, consultation",
+        "keywords": "public, spaces",
         "keywords_umap": [
             1.7135108709,
             12.0163974762
@@ -12338,7 +12338,7 @@
             7.509750843,
             3.9353833199
         ],
-        "keywords": "economy, creative, solidarity",
+        "keywords": "economy, business",
         "keywords_umap": [
             3.164611578,
             9.8127498627
@@ -12573,7 +12573,7 @@
             1.9813891649,
             6.2187404633
         ],
-        "keywords": "pollution, odor, noise",
+        "keywords": "pollution",
         "keywords_umap": [
             1.3786031008,
             8.4667654037
@@ -12762,7 +12762,7 @@
             2.0817422867,
             9.1743831635
         ],
-        "keywords": "youth, livelihood, refugee",
+        "keywords": "youth, and livelihood",
         "keywords_umap": [
             4.1852836609,
             11.5889005661
@@ -12783,7 +12783,7 @@
             2.0381863117,
             9.0144414902
         ],
-        "keywords": "youth, livelihood, refugee",
+        "keywords": "youth, and livelihood",
         "keywords_umap": [
             4.1852836609,
             11.5889005661
@@ -13058,7 +13058,7 @@
             6.4549293518,
             8.732670784
         ],
-        "keywords": "market, need, assessment",
+        "keywords": "markets",
         "keywords_umap": [
             2.0919024944,
             12.0804748535
@@ -13167,7 +13167,7 @@
             4.5117616653,
             4.9781947136
         ],
-        "keywords": "mobility, transportation",
+        "keywords": "mobility",
         "keywords_umap": [
             1.437990427,
             10.2708301544
@@ -13188,7 +13188,7 @@
             6.2854237556,
             6.7474737167
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             1.7144613266,
             10.8844747543
@@ -13372,12 +13372,12 @@
             "sanitation"
         ],
         "split": "sanitation",
-        "clusters": 51,
+        "clusters": 9,
         "umap": [
             2.6050248146,
             6.1715459824
         ],
-        "keywords": "safety, worker, sanitation",
+        "keywords": "health, wellbeing",
         "keywords_umap": [
             3.0781083107,
             12.2071819305
@@ -13440,7 +13440,7 @@
             4.1644806862,
             7.2604393959
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             1.0206546783,
             9.5057525635
@@ -13503,7 +13503,7 @@
             4.8333058357,
             6.9745635986
         ],
-        "keywords": "localization, geolocation, integration",
+        "keywords": "communication, advocacy",
         "keywords_umap": [
             3.0547959805,
             10.7949533463
@@ -13587,7 +13587,7 @@
             4.8507022858,
             9.2726650238
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             1.6475888491,
             11.7835245132
@@ -13776,7 +13776,7 @@
             5.5640807152,
             8.4011001587
         ],
-        "keywords": "information, share, exchange",
+        "keywords": "information",
         "keywords_umap": [
             2.0731322765,
             11.5972108841
@@ -13839,7 +13839,7 @@
             5.5742015839,
             3.2808408737
         ],
-        "keywords": "materials, minerals",
+        "keywords": "materials",
         "keywords_umap": [
             2.2791810036,
             8.5474500656
@@ -13855,12 +13855,12 @@
             "skills"
         ],
         "split": "skills",
-        "clusters": 17,
+        "clusters": 28,
         "umap": [
             3.587767601,
             8.4027843475
         ],
-        "keywords": "skill, play, changemaking",
+        "keywords": "education, training",
         "keywords_umap": [
             2.8438315392,
             10.4868106842
@@ -13881,7 +13881,7 @@
             4.938794136,
             5.9256062508
         ],
-        "keywords": "big, small, enterprise",
+        "keywords": "small, and medium, enterprises",
         "keywords_umap": [
             1.8380494118,
             10.7026863098
@@ -13944,7 +13944,7 @@
             4.0277018547,
             10.635474205
         ],
-        "keywords": "social, cohesion, entrepreneurship",
+        "keywords": "social, cohesion",
         "keywords_umap": [
             3.5442502499,
             12.7245330811
@@ -14007,7 +14007,7 @@
             4.0786204338,
             10.6286220551
         ],
-        "keywords": "social, cohesion, entrepreneurship",
+        "keywords": "social, cohesion",
         "keywords_umap": [
             3.5442502499,
             12.7245330811
@@ -14028,7 +14028,7 @@
             4.0194058418,
             10.5855560303
         ],
-        "keywords": "impact, invest, collective",
+        "keywords": "impact",
         "keywords_umap": [
             2.5293562412,
             12.0301914215
@@ -14049,7 +14049,7 @@
             4.0315761566,
             10.5508890152
         ],
-        "keywords": "social, cohesion, entrepreneurship",
+        "keywords": "social, cohesion",
         "keywords_umap": [
             3.5442502499,
             12.7245330811
@@ -14091,7 +14091,7 @@
             3.6539678574,
             10.5346565247
         ],
-        "keywords": "justice, peace, environmental",
+        "keywords": "peace, and justice",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -14175,7 +14175,7 @@
             4.0628118515,
             10.5023460388
         ],
-        "keywords": "social, cohesion, entrepreneurship",
+        "keywords": "social, cohesion",
         "keywords_umap": [
             3.5442502499,
             12.7245330811
@@ -14196,7 +14196,7 @@
             4.0940346718,
             10.4817962646
         ],
-        "keywords": "social, cohesion, entrepreneurship",
+        "keywords": "social, cohesion",
         "keywords_umap": [
             3.5442502499,
             12.7245330811
@@ -14238,7 +14238,7 @@
             7.1893362999,
             4.3884320259
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "keywords_umap": [
             2.9761724472,
             12.0239944458
@@ -14387,7 +14387,7 @@
             4.0464248657,
             6.4959716797
         ],
-        "keywords": "economy, creative, solidarity",
+        "keywords": "economy, business",
         "keywords_umap": [
             3.7808964252,
             12.8838672638
@@ -14429,7 +14429,7 @@
             5.7425136566,
             7.0357255936
         ],
-        "keywords": "solution, alternative, datum",
+        "keywords": "local solutions",
         "keywords_umap": [
             2.2231407166,
             10.7395772934
@@ -14492,7 +14492,7 @@
             5.4010052681,
             9.9539556503
         ],
-        "keywords": "space, public, consultation",
+        "keywords": "public, spaces",
         "keywords_umap": [
             1.7135108709,
             12.0163974762
@@ -14555,7 +14555,7 @@
             6.2053208351,
             8.3859386444
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             1.3366491795,
             8.5889396667
@@ -14723,7 +14723,7 @@
             0.6981905103,
             8.5866537094
         ],
-        "keywords": "youth, livelihood, refugee",
+        "keywords": "youth, and livelihood",
         "keywords_umap": [
             4.1852836609,
             11.5889005661
@@ -14891,7 +14891,7 @@
             4.07462883,
             7.0904374123
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "keywords_umap": [
             3.6138191223,
             10.644780159
@@ -14933,7 +14933,7 @@
             12.6547555923,
             5.1895132065
         ],
-        "keywords": "commerce, service, ndc",
+        "keywords": "commerce, trade",
         "keywords_umap": [
             1.019166708,
             10.9031009674
@@ -14996,7 +14996,7 @@
             4.5647978783,
             8.1091375351
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "finance",
         "keywords_umap": [
             2.2620592117,
             12.3221788406
@@ -15206,7 +15206,7 @@
             5.756421566,
             6.9287805557
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             2.4211161137,
             11.2348937988
@@ -15231,7 +15231,7 @@
             5.8157706261,
             6.820183754
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             2.4211161137,
             11.2348937988
@@ -15273,7 +15273,7 @@
             5.1134929657,
             4.4655809402
         ],
-        "keywords": "affordable, machinery, industry",
+        "keywords": "industry",
         "keywords_umap": [
             1.6768090725,
             9.7659235001
@@ -15315,7 +15315,7 @@
             2.6360299587,
             9.8916349411
         ],
-        "keywords": "people, disability, elderly",
+        "keywords": "vulnerable, populations",
         "keywords_umap": [
             3.9885787964,
             12.2016057968
@@ -15527,7 +15527,7 @@
             5.7503428459,
             7.0322933197
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "keywords_umap": [
             2.4211161137,
             11.2348937988
@@ -15592,7 +15592,7 @@
             3.6840195656,
             5.6771402359
         ],
-        "keywords": "mobility, transportation",
+        "keywords": "mobility",
         "keywords_umap": [
             1.1571449041,
             10.305680275
@@ -15615,7 +15615,7 @@
             3.1765637398,
             6.1102843285
         ],
-        "keywords": "mobility, transportation",
+        "keywords": "mobility",
         "keywords_umap": [
             1.1571449041,
             10.305680275
@@ -15636,7 +15636,7 @@
             2.7385020256,
             5.480240345
         ],
-        "keywords": "mobility, transportation",
+        "keywords": "mobility",
         "keywords_umap": [
             1.1571449041,
             10.305680275
@@ -15741,7 +15741,7 @@
             7.3944544792,
             2.1366524696
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "keywords_umap": [
             2.691110611,
             9.9947509766
@@ -15762,7 +15762,7 @@
             3.1047372818,
             7.4501223564
         ],
-        "keywords": "impact, invest, collective",
+        "keywords": "impact",
         "keywords_umap": [
             2.5293562412,
             12.0301914215
@@ -16016,7 +16016,7 @@
             5.385948658,
             6.5160799026
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "keywords_umap": [
             1.8619844913,
             9.5633974075
@@ -16142,7 +16142,7 @@
             2.0450143814,
             9.7774019241
         ],
-        "keywords": "learn, community, blend",
+        "keywords": "learning",
         "keywords_umap": [
             3.7412052155,
             11.0843057632
@@ -16184,7 +16184,7 @@
             3.3181428909,
             2.864538908
         ],
-        "keywords": "cooking",
+        "keywords": "water",
         "keywords_umap": [
             2.4633827209,
             9.0195627213
@@ -17070,7 +17070,7 @@
             1.8760055304,
             9.6101226807
         ],
-        "keywords": "youth, livelihood, refugee",
+        "keywords": "youth, and livelihood",
         "keywords_umap": [
             4.1852836609,
             11.5889005661
@@ -17091,7 +17091,7 @@
             1.9001500607,
             9.5084571838
         ],
-        "keywords": "youth, livelihood, refugee",
+        "keywords": "youth, and livelihood",
         "keywords_umap": [
             4.1852836609,
             11.5889005661
@@ -17112,7 +17112,7 @@
             1.9592343569,
             9.3742876053
         ],
-        "keywords": "youth, livelihood, refugee",
+        "keywords": "youth, and livelihood",
         "keywords_umap": [
             4.1852836609,
             11.5889005661
@@ -17133,7 +17133,7 @@
             4.2727899551,
             9.4559431076
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "keywords_umap": [
             1.6475888491,
             11.7835245132
@@ -17183,7 +17183,7 @@
         "id": [
             4073
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "split": "governance, economic diversification, and citizen agency",
         "total_count": 1,
         "initial_idx": 814
@@ -17196,7 +17196,7 @@
         "id": [
             1117
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "split": "Government legislation",
         "total_count": 1,
         "initial_idx": 815
@@ -17209,7 +17209,7 @@
         "id": [
             2438
         ],
-        "keywords": "co, creation, cluster",
+        "keywords": "participatory, practices",
         "split": "co -creation",
         "total_count": 3,
         "initial_idx": 816
@@ -17326,7 +17326,7 @@
         "id": [
             4140
         ],
-        "keywords": "youth, livelihood, refugee",
+        "keywords": "youth, and livelihood",
         "split": "building youth capacities",
         "total_count": 2,
         "initial_idx": 825
@@ -17378,7 +17378,7 @@
         "id": [
             4159
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "split": "entrepreneurial ecosystem",
         "total_count": 2,
         "initial_idx": 829
@@ -17391,7 +17391,7 @@
         "id": [
             4186
         ],
-        "keywords": "market, need, assessment",
+        "keywords": "markets",
         "split": "modern market",
         "total_count": 1,
         "initial_idx": 830
@@ -17417,7 +17417,7 @@
         "id": [
             3936
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "split": "affordable mining technology",
         "total_count": 1,
         "initial_idx": 832
@@ -17430,7 +17430,7 @@
         "id": [
             3937
         ],
-        "keywords": "materials, minerals",
+        "keywords": "materials",
         "split": "development minerals",
         "total_count": 1,
         "initial_idx": 833
@@ -17443,7 +17443,7 @@
         "id": [
             4078
         ],
-        "keywords": "solution, alternative, datum",
+        "keywords": "local solutions",
         "split": "locally made",
         "total_count": 1,
         "initial_idx": 834
@@ -17456,7 +17456,7 @@
         "id": [
             3938
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "split": "value addition",
         "total_count": 1,
         "initial_idx": 835
@@ -17482,7 +17482,7 @@
         "id": [
             4240
         ],
-        "keywords": "commerce, service, ndc",
+        "keywords": "commerce, trade",
         "split": "sustainable trade",
         "total_count": 1,
         "initial_idx": 837
@@ -17495,7 +17495,7 @@
         "id": [
             4114
         ],
-        "keywords": "market, need, assessment",
+        "keywords": "markets",
         "split": "communities markets",
         "total_count": 1,
         "initial_idx": 838
@@ -17686,11 +17686,11 @@
         "clean": [
             "traditional practices"
         ],
-        "clusters": 95,
+        "clusters": 42,
         "id": [
             4185
         ],
-        "keywords": "community, reliance, resilience",
+        "keywords": "knowledge, culture",
         "split": "traditional practices",
         "total_count": 1,
         "initial_idx": 853
@@ -17703,7 +17703,7 @@
         "id": [
             4184
         ],
-        "keywords": "big, small, enterprise",
+        "keywords": "small, and medium, enterprises",
         "split": "msmes",
         "total_count": 1,
         "initial_idx": 854
@@ -17742,7 +17742,7 @@
         "id": [
             4699
         ],
-        "keywords": "inclusive, economic, growth",
+        "keywords": "inclusive growth",
         "split": "leaky pipeline",
         "total_count": 1,
         "initial_idx": 857
@@ -17755,7 +17755,7 @@
         "id": [
             4647
         ],
-        "keywords": "green, economy, blue",
+        "keywords": "green, and blue, economies",
         "split": "green transition,",
         "total_count": 1,
         "initial_idx": 858
@@ -17768,7 +17768,7 @@
         "id": [
             4476
         ],
-        "keywords": "local, development, entre",
+        "keywords": "government, and institutions",
         "split": "political polarization",
         "total_count": 1,
         "initial_idx": 859
@@ -17794,7 +17794,7 @@
         "id": [
             4341
         ],
-        "keywords": "justice, peace, environmental",
+        "keywords": "peace, and justice",
         "split": "court of justice",
         "total_count": 1,
         "initial_idx": 861
@@ -17872,7 +17872,7 @@
         "id": [
             4339
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "split": "appropriate technology",
         "total_count": 1,
         "initial_idx": 867
@@ -17937,7 +17937,7 @@
         "id": [
             4435
         ],
-        "keywords": "disaster, crisis",
+        "keywords": "disasters, and crises",
         "split": "disaster preparedness",
         "total_count": 1,
         "initial_idx": 872
@@ -17998,11 +17998,11 @@
         "clean": [
             "regional trade"
         ],
-        "clusters": 87,
+        "clusters": 0,
         "id": [
             4430
         ],
-        "keywords": "market, need, assessment",
+        "keywords": "commerce, trade",
         "split": "regional trade",
         "total_count": 1,
         "initial_idx": 877
@@ -18015,7 +18015,7 @@
         "id": [
             4431
         ],
-        "keywords": "market, need, assessment",
+        "keywords": "markets",
         "split": "afcfta",
         "total_count": 1,
         "initial_idx": 878
@@ -18041,7 +18041,7 @@
         "id": [
             4441
         ],
-        "keywords": "food systems, food security",
+        "keywords": "food security",
         "split": "food rescue",
         "total_count": 1,
         "initial_idx": 880
@@ -18054,7 +18054,7 @@
         "id": [
             4443
         ],
-        "keywords": "green, economy, blue",
+        "keywords": "green, and blue, economies",
         "split": "just transition",
         "total_count": 1,
         "initial_idx": 881
@@ -18067,7 +18067,7 @@
         "id": [
             4490
         ],
-        "keywords": "economy, creative, solidarity",
+        "keywords": "economy, business",
         "split": "value-based economy",
         "total_count": 1,
         "initial_idx": 882
@@ -18132,7 +18132,7 @@
         "id": [
             4722
         ],
-        "keywords": "disaster, crisis",
+        "keywords": "disasters, and crises",
         "split": "earthquake",
         "total_count": 1,
         "initial_idx": 887
@@ -18158,7 +18158,7 @@
         "id": [
             4724
         ],
-        "keywords": "disaster, crisis",
+        "keywords": "disasters, and crises",
         "split": "earthquake response",
         "total_count": 1,
         "initial_idx": 889
@@ -18171,7 +18171,7 @@
         "id": [
             4721
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "split": "startup",
         "total_count": 1,
         "initial_idx": 890
@@ -18223,7 +18223,7 @@
         "id": [
             4713
         ],
-        "keywords": "co, creation, cluster",
+        "keywords": "participatory, practices",
         "split": "clusters",
         "total_count": 1,
         "initial_idx": 894
@@ -18245,11 +18245,11 @@
         "clean": [
             "Access to finance"
         ],
-        "clusters": 103,
+        "clusters": 86,
         "id": [
             4834
         ],
-        "keywords": "financing, innovative, incentive",
+        "keywords": "accessibility",
         "split": "Access to finance",
         "total_count": 1,
         "initial_idx": 896
@@ -18275,7 +18275,7 @@
         "id": [
             4641
         ],
-        "keywords": "localization, geolocation, integration",
+        "keywords": "communication, advocacy",
         "split": "advocacy",
         "total_count": 1,
         "initial_idx": 898
@@ -18284,11 +18284,11 @@
         "clean": [
             "false information"
         ],
-        "clusters": 77,
+        "clusters": 46,
         "id": [
             5549
         ],
-        "keywords": "Governance",
+        "keywords": "information",
         "split": "false information",
         "total_count": 1,
         "initial_idx": 899
@@ -18297,11 +18297,11 @@
         "clean": [
             "misinformation"
         ],
-        "clusters": 77,
+        "clusters": 46,
         "id": [
             5550
         ],
-        "keywords": "Governance",
+        "keywords": "information",
         "split": "misinformation",
         "total_count": 1,
         "initial_idx": 900
@@ -18314,7 +18314,7 @@
         "id": [
             5551
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "split": "open-source technology",
         "total_count": 1,
         "initial_idx": 901
@@ -18327,7 +18327,7 @@
         "id": [
             4637
         ],
-        "keywords": "service, legal, pick",
+        "keywords": "services",
         "split": "service quality",
         "total_count": 1,
         "initial_idx": 902
@@ -18366,7 +18366,7 @@
         "id": [
             4143
         ],
-        "keywords": "solution, alternative, datum",
+        "keywords": "local solutions",
         "split": "craftsmanship",
         "total_count": 1,
         "initial_idx": 905
@@ -18405,7 +18405,7 @@
         "id": [
             3846
         ],
-        "keywords": "sector, private, informal",
+        "keywords": "private, sector",
         "split": "private_sector",
         "total_count": 1,
         "initial_idx": 908
@@ -18431,7 +18431,7 @@
         "id": [
             5033
         ],
-        "keywords": "technology, appropiate, emerge",
+        "keywords": "technology",
         "split": "Technology and innovation",
         "total_count": 1,
         "initial_idx": 910
