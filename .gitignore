@@ -1,3 +1,6 @@
 .DS_Store
 tokens
 static/
+scripts/
+experiments.html
+*.sublime-workspace

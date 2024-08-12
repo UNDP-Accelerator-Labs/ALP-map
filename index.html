@@ -12,6 +12,10 @@
 
 	<link rel='icon' type='image/x-icon' href='favicon.ico'>
 
+	<script type='text/javascript'>
+		const islocal = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') || false
+	</script>
+
 </head>
 
 <body id='packs'>
@@ -182,7 +186,7 @@
 	const width = Math.round(Math.min(cw ?? ow, ch ?? oh))
 	const height = width
 	const padding = 60
-	const edit_layout = true
+	const edit_layout = islocal
 	
 	const svg = d3.select('svg#bubbles')
 	.attrs({ 
@@ -194,7 +198,6 @@
 
 	const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJpYXQiOjE2OTk3MDQwOTksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJzZGctaW5ub3ZhdGlvbi1jb21tb25zLm9yZyJ9.vKYu1PcT5Z672GUOuxO4ux_E6MTd2PT-GPBgXPgXbl8'
 	
-	// const platform = new URL('https://acclabs-actionlearningplans.azurewebsites.net')
 	const platform = new URL('https://learningplans.sdg-innovation-commons.org')
 	const tags_path = new URL('apis/fetch/tags', platform)
 	const regions_path = new URL('apis/fetch/regions', platform)
