@@ -1,0 +1,887 @@
+<html>
+
+<head>
+	<link rel='stylesheet' type='text/css' href='css/main.css'>
+	<link rel='stylesheet' type='text/css' href='css/footer.css'>
+	<link rel='stylesheet' type='text/css' href='css/loader.css'>
+	<script src='https://cdn.jsdelivr.net/npm/d3@5'></script>
+	<script src='https://d3js.org/d3-selection-multi.v1.min.js'></script>
+	
+	<script type='text/javascript' src='js/d3.prototype.extensions.js'></script>
+	<script type='text/javascript' src='js/main.js'></script>
+
+	<link rel='icon' type='image/x-icon' href='favicon.ico'>
+
+</head>
+
+<body id='packs'>
+
+
+<div class='container'>
+	<div class='left-col dark'>
+		<header>
+			<nav id='languages'></nav>
+			<div id='logo'>
+				<img src='imgs/branding/UNDP_accelerator_labs_logo_vertical_color_RGB.png'>
+				<h1>Action Learning</h1>
+				<h2>Topic Browser</h2>
+			</div>
+
+			<script type='text/javascript'>
+				function fixLabel (node) {
+					d3.select(node).classed('has-value', node.value?.trim().length)
+				}
+			</script>
+		</header>
+		<svg id='bubbles'>
+			<g></g>
+		</svg>
+		<div class='cartouche'>
+			<button type='button' class='expand-filters' onclick='expandfilters(this)'>
+				<div class='line l1'></div><div class='line l2'></div><div class='line l3'></div>
+			</button>
+			<form method='GET'>
+				<section>
+					<!-- <input id='find-tag' type='text' oninput='highlightTag(this.value)' /> -->
+					<div class='filter regions'>
+						<input type='text' id='f-regions' onblur='fixLabel(this)'>
+						<label for='f-regions'>Filter by region</label>
+						<div class='dropdown'>
+							<menu class='f-regions'>
+							</menu>
+						</div>
+					</div>
+					<div class='filter countries'>
+						<input type='text' id='f-countries' onblur='fixLabel(this)'>
+						<label for='f-countries'>Filter by country</label>
+						<div class='dropdown'>
+							<menu class='f-countries'>
+							</menu>
+						</div>
+					</div>
+				</section>
+				<section>
+					<!-- <div class='filter countries'>
+						<input type='text' id='h-countries' onblur='fixLabel(this)'>
+						<label for='h-countries'>Highlight countries</label>
+						<div class='dropdown'>
+							<menu class='h-countries'>
+							</menu>
+						</div>
+					</div> -->
+					<div class='filter tags'>
+						<input type='text' id='h-tags' onblur='fixLabel(this)'>
+						<label for='h-regions'>Highlight tags</label>
+						<div class='dropdown'>
+							<menu class='h-tags'>
+							</menu>
+						</div>
+					</div>
+				</section>
+				<button type='submit' class='submit-filters'>Apply filters</button>
+			</form>
+		</div>
+		<button id='get-data' style='z-index: 1000;'>Get data</button>
+	</div>
+	<div class='right-col'>
+		<button type='button' class='expand-filters' onclick='clearPanel()'>
+			<div class='line l1'></div><div class='line l2'></div><div class='line l3'></div>
+		</button>
+	</div>
+</div>
+
+<footer>
+	<div class='footer-row'>
+		<div class='footer-column left'>
+			<div class='outer'>
+				<img class='logo' src='imgs/branding/UNDP_accelerator_labs_logo_vertical_white.png' alt='UNDP accelerator labs logo'>
+				<small>UNDP Accelerator Labs</small>
+			</div>
+			<div class='inner'>
+				<h3>Links</h3>
+				<!-- TO DO: TRANSLATE -->
+				<ul>
+					<li>
+						<a target='_blank' href='https://www.undp.org/acceleratorlabs'>
+						About Us
+						</a>
+						<!-- TO DO: TRANSLATE -->
+					</li>
+					<li>
+						<a target='_blank' href='https://www.undp.org/accountability/audit/investigations'>
+						Report fraud, abuse, misconduct
+						<!-- TO DO: TRANSLATE -->
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href='https://www.undp.org/scam-alert'>
+						Scam Alert
+						<!-- TO DO: TRANSLATE -->
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href='https://www.undp.org/copyright-terms-use'>
+						Terms of Use
+						<!-- TO DO: TRANSLATE -->
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href='https://forms.office.com/Pages/ResponsePage.aspx?id=Xtvls0QpN0iZ9XSIrOVDGbiZROH1lsFMla8_BsgmZ6lUOU1SNkVFWkRCVkFaTzBVWExSNkwyNkJGNi4u'>
+						Submit a request about our platforms
+						<!-- TO DO: TRANSLATE -->
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class='footer-column center'>
+			<div class='inner'>
+				<h3>Our Partners</h3>
+				<!-- TO DO: TRANSLATE -->
+				<img class='footer-img' src='imgs/branding/UNDP_Acc_Labs_All_Partners_horiz_white.png'	alt='UNDP accelerator Partnerslogo'>
+			</div>
+		</div>
+		<div class='footer-column right'>
+			<div class='inner'>
+				<!-- <h3>Follow Us</h3>
+				<div class='social-media-links'>
+					<ul>
+						<li>
+							<a target='_blank' href='https://www.linkedin.com/company/undp-accelerator-labs'>
+								<i class='fa fa-linkedin' > </i>
+							</a>
+						</li>
+						<li>
+							<a target='_blank' href='https://twitter.com/UNDPAccLabs'>
+								<i class='fa fa-twitter'> </i>
+							</a>
+						</li>
+						<li>
+							<a target='_blank' href='https://www.instagram.com/acceleratorlabs/'>
+								<i class='fa fa-instagram'> </i>
+							</a>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div class='footer-row signature'>
+		<div class='inner'>
+			<p>&copy; 2024 United Nations Development Programme</p>
+		</div>
+		<!-- TO DO: TRANSLATE -->
+	</div>
+</footer>
+
+
+
+
+<script type='text/javascript'>
+	const { clientWidth: cw, clientHeight: ch, offsetWidth: ow, offsetHeight: oh } = d3.select('.left-col').node()
+	const width = Math.round(Math.min(cw ?? ow, ch ?? oh))
+	const height = width
+	const padding = 60
+	const edit_layout = false;
+
+	if (!edit_layout) {
+		d3.select('#get-data').remove();
+	}
+	
+	const svg = d3.select('svg#bubbles')
+	.attrs({ 
+		'x': 0,
+		'y':0,
+		'viewBox': `0 0 ${width} ${height}`,
+		'preserveAspectRatio': 'xMidYMid meet'
+	})
+
+	const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJpYXQiOjE3MTkzMTA4MTksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJzZGctaW5ub3ZhdGlvbi1jb21tb25zLm9yZyJ9.NLd3G4hwgobeiFL3l_8QejCt8GcsJAXjF77Q2C0AnOU'
+
+	const platform = new URL('https://solutions.sdg-innovation-commons.org')
+	const tags_path = new URL('apis/fetch/tags', platform)
+	const regions_path = new URL('apis/fetch/regions', platform)
+	const countries_path = new URL('apis/fetch/countries', platform)
+
+	const basetags_params = new URLSearchParams(tags_path.search)
+	basetags_params.append('token', token)
+	// let mobilization = 30
+
+	const highlighttags_params = new URLSearchParams(basetags_params)
+	new URLSearchParams(window.location.search).forEach((v, k) => {
+		// if (['h-countries'].includes(k)) highlighttags_params.append(k, v)
+		if (['countries'].includes(k)) basetags_params.append(k, v)
+		if (['regions'].includes(k)) basetags_params.append(k, v)
+		if (['mobilizations'].includes(k)) basetags_params.append(k, v) //mobilization = v
+	})
+	// if (!basetags_params.has('mobilizations')) basetags_params.append('mobilizations', mobilization)
+
+
+	const focus_pads = [6881,6861,6860,6859,6857,6798,6520,6467,6457,6441,6440,6176,6172,6002,5949,5746,5496,5475,5473,5455,5442,5435,5427,5215,5213,4302,4288,4053,4039,3980,3954,3880,3878,3877,3866,3865,3614,3574,3504,3455,3164,3091,2965,2925,2903,2794,2675,2397,2352,2312,1956,1819,1755,1745,1741,1591,1559,1420,1124,1107,928,898,814,179,152,130];
+	focus_pads.forEach(d => basetags_params.append('pads', d))
+
+	const regions_params = new URLSearchParams(regions_path)
+	regions_params.append('token', token)
+	const countries_params = new URLSearchParams(countries_path)
+	countries_params.append('token', token)
+	countries_params.append('has_lab', true)
+
+	const data_collection = []
+	console.log(`${tags_path.origin}${tags_path.pathname}?${basetags_params.toString()}`)
+	data_collection.push(GET(`${tags_path.origin}${tags_path.pathname}?${basetags_params.toString()}`))
+	data_collection.push(GET(`${regions_path.origin}${regions_path.pathname}?${regions_params.toString()}`))
+	data_collection.push(GET(`${countries_path.origin}${countries_path.pathname}?${countries_params.toString()}`))
+	data_collection.push(d3.json('data/taxonomy_manual_202409_solutions.json'))
+	if (highlighttags_params.size >= 2) data_collection.push(GET(`${tags_path.origin}${tags_path.pathname}?${highlighttags_params.toString()}`))
+
+	addLoader()
+
+	Promise.all(data_collection)
+	.then(results => {
+		rmLoader()
+		let [ tags_data, regions, countries, taxonomy, tags_portfolio ] = results
+
+		renderMenu(regions, countries, tags_data)
+
+		const selectids = tags_data.map(d => d.id)
+		const portfolio_ids = tags_portfolio?.unique('id', true) || []
+		
+
+		// THIS IS TO MAKE SURE ALL TAGS ARE ACCOUNTED FOR (THERE MAY BE NEW TAGS SINCE THE AGGREGATOR WAS LAST RUN)
+		tags_data.forEach(d => {
+			if (d.count === undefined) d.count = 1
+			if (!taxonomy.map(d => d.id).flat().includes(d.id)) {
+				console.log('found a missing tag in the taxonomy')
+				if (d.name) {
+					const obj = {}
+					obj.clean = [d.name?.replace(/\./g, ',')]
+					obj.clusters = -1
+					obj.id = [d.id]
+					obj.keywords = taxonomy.find(c => c.clusters === -1).keywords
+					obj.split = d.name?.replace(/\./g, ',')
+					obj.total_count = d.count // nestedtags.find(c => d.id === c.key).count
+					taxonomy.push(obj)
+				} else console.log('the tag has no name (value)')
+			}
+		})
+
+		taxonomy.forEach((d, i) => {
+			d.initial_idx = i
+		})
+
+		
+		/*
+		console.log(tags_data.map(d => {
+			const { id, name } = d
+			const match = taxonomy.find(c => c.id.includes(d.id))
+			if (match?.clusters === -1) return { id, name }
+		}).filter(d => d))
+		*/
+
+		const hidepack = 130;
+		const packdata = JSON.parse(JSON.stringify(taxonomy)).filter(d => {
+			if (hidepack) return d.id.intersection(selectids).length && d.clusters !== hidepack
+			return d.id.intersection(selectids).length
+		})
+		packdata.forEach(d => {
+			d.select_count = tags_data.find(c => d.id.includes(c.id))?.count ?? 0
+			d.highlight = portfolio_ids.some(c => d.id.includes(c)) || false
+		})
+
+		const contains_unclustered = packdata.some(d => d.clusters === -1)
+
+		packdata.forEach(d => {
+			d.orid = d.id
+			d.id = `root.${contains_unclustered ? `${d.clusters >= 0}.` : ''}${d.keywords.replace(/\,\s/g, '-')}.${d.split}`
+			d.value = d.select_count ?? d.total_count
+		})
+		packdata.unique('keywords').forEach(d => {
+			packdata.push({ id: `root.${contains_unclustered ? `${d.clusters >= 0}.` : ''}${d.keywords.replace(/\,\s/g, '-')}` })
+		})
+		if (contains_unclustered) {
+			packdata.push({ id: 'root.true' })
+			packdata.push({ id: 'root.false' })
+		}
+		packdata.push({ id: 'root' })
+		
+		drawPack(packdata)
+
+		d3.select('#get-data')
+		.on('click', _ => {
+			const newdata = d3.selectAll('.node').data().filter(d => !d.children).map(d => d.data)
+			taxonomy.forEach(d => {
+				const source = newdata.find(c => c.initial_idx === d.initial_idx)
+				if (source && d.clusters !== source.clusters) {
+					d.clusters = source.clusters
+					d.keywords = source.keywords
+				}
+			})
+			console.log(taxonomy)
+		})
+	}).catch(err => console.log(err))
+
+	function renderMenu (regions, countries, tags) {
+		// ADD THE mobilizations VALUES FOR NOW AS WE DO NOT ENABLE SELECTION YET
+		const cartouche = d3.select('.cartouche')
+		const form = cartouche.select('form')
+
+		form.addElems('input', 'mobilizations', basetags_params.getAll('mobilizations'))
+			.attrs({
+				'type': 'hidden',
+				'name': 'mobilizations',
+				'value': d => d
+			})
+
+		// ADD THE DROPDOWNS
+		regions.sort((a, b) => a.undp_region.localeCompare(b.undp_region))
+		countries = countries.filter(d => {
+			if (basetags_params.getAll('regions').length) return d.has_lab && basetags_params.getAll('regions').includes(d.undp_region)
+			else return d.has_lab
+		})
+
+		tags.sort((a, b) => a.name?.localeCompare(b.name))
+		
+		// FOR FILTERING
+		const regions_menu = cartouche.select('menu.f-regions')
+		.addElems('li', 'region', regions)
+		
+		regions_menu.addElems('input')
+			.attrs({
+				'type': 'checkbox',
+				'value': d => d.undp_region,
+				'id': d => d.undp_region,
+				'name': 'regions',
+				'checked': d => basetags_params.getAll('regions').includes(d.undp_region) || null
+			})
+		regions_menu.addElems('label')
+			.attr('for', d => d.undp_region)
+		.html(d => `${d.undp_region_name} (${d.undp_region})`)
+
+		const countries_menu = cartouche.select('menu.f-countries')
+		.addElems('li', 'country', countries)
+		
+		countries_menu.addElems('input')
+			.attrs({
+				'type': 'checkbox',
+				'value': d => d.iso3,
+				'id': d => d.iso3,
+				'name': 'countries',
+				'checked': d => basetags_params.getAll('countries').includes(d.iso3) || null
+			})
+		countries_menu.addElems('label')
+			.attr('for', d => d.iso3)
+		.html(d => `${d.country}`)
+
+		// FOR HIGHLIGHTING
+		// const countries_hmenu = cartouche.select('menu.h-countries')
+		// .addElems('li', 'country', countries)
+		
+		// countries_hmenu.addElems('input')
+		// 	.attrs({
+		// 		'type': 'checkbox',
+		// 		'value': d => d.iso3,
+		// 		'id': d => `h-${d.iso3}`,
+		// 		'name': 'countries',
+		// 		'checked': d => highlighttags_params.getAll('h-countries').includes(d.iso3) || null
+		// 	})
+		// countries_hmenu.addElems('label')
+		// 	.attr('for', d => `h-${d.iso3}`)
+		// .html(d => `${d.country}`)
+
+		const tags_hmenu = cartouche.select('menu.h-tags')
+		.addElems('li', 'tag', tags)
+		
+		tags_hmenu.addElems('input')
+			.attrs({
+				'type': 'checkbox',
+				'value': d => d.name?.simplify(),
+				'id': d => d.name?.simplify(),
+				'name': 'h-tags',
+				'checked': d => highlighttags_params.getAll('h-tag').includes(d.name?.simplify()) || null
+			})
+		.on('change', function (d) {
+			toggleHighlight(d.name, this.checked)
+		})
+
+		tags_hmenu.addElems('label')
+			.attr('for', d => d.name?.simplify())
+		.html(d => d.name)
+
+		// INTERACTIVITY
+		cartouche.selectAll('.filter input[type=text]')
+		.on('keyup', function () {
+			const node = this
+			const dropdown = d3.select(node).findAncestor('filter').select('.dropdown')
+			dropdown.selectAll('menu li')
+				.classed('hide', function () {
+					return !this.textContent.trim().toLowerCase()
+					.includes(node.value.trim().toLowerCase())
+				})
+		}).on('focus', function () {
+			const dropdown = d3.select(this).findAncestor('filter').select('.dropdown')
+			let { top, height } = this.getBoundingClientRect()
+			top = top + height
+			const viewheight = window.innerHeight
+			if (top + 300 >= viewheight) dropdown.classed('dropup', true)
+
+			const filters = d3.select(this).findAncestor('filters')
+
+			if (dropdown.node()) dropdown.node().style.maxHeight = `${Math.min(dropdown.node().scrollHeight, 300)}px`
+			if (filters?.node()) filters.node().style.overflow = 'visible'
+
+			dropdown.selectAll('label, a').on('mousedown', function () {
+				d3.event.preventDefault()
+			})
+		}).on('blur', function () {
+			const filter = d3.select(this).findAncestor('filter')
+			const dropdown = filter.select('.dropdown')
+			if (dropdown.node()) dropdown.node().style.maxHeight = null
+		})
+	}
+
+	function drawPack (data) {
+		const drag = d3.drag()
+			.on('start', function (d) {
+				const sel = d3.select(this)
+				d.mx = d.x
+				d.my = d.y
+				sel.style('pointer-events', 'none')
+				.selectAll('text')
+				.classed('hide', true)
+			}).on('drag', function (d) {
+				const evt = d3.event
+				const sel = d3.select(this)
+				d.mx += evt.dx
+				d.my += evt.dy
+				sel.attr('transform', `translate(${d.mx},${d.my})`)
+
+			}).on('end', function (d) {
+				const evt = d3.event
+				const { depth: target_depth, id: target_id, children } = evt.sourceEvent.target['__data__'] || d3.select(evt.sourceEvent.target).findAncestor('node')?.datum() || {}
+				const sel = d3.select(this)
+				
+				if (!target_depth || target_depth < d.depth - 1) {
+					sel.transition().attr('transform', `translate(${d.x},${d.y})`)
+				} else {
+					d.x = d.mx
+					d.y = d.my
+					d.data.id = `${target_id}.${d.id.substring(d.id.lastIndexOf('.') + 1).split(/(?=[A-Z][^A-Z])/g)[0]}`
+					d.data.clusters = children.map(d => d.data).unique('clusters', true)[0]
+					d.data.keywords = children.map(d => d.data).unique('keywords', true)[0]
+				}
+				sel.style('pointer-events', null)
+				drawPack(d3.selectAll('.node').data().map(d => d.data))
+			})
+
+		const color = d3.scaleSequential(d3.interpolateMagma)
+			.domain([-3, 3])
+
+		const stratify = d3.stratify()
+			.parentId(d => d.id.substring(0, d.id.lastIndexOf('.')))
+
+		const pack = d3.pack()
+			.size([ width - padding * 2, height - padding * 2])
+			.padding(20)
+
+		const root = stratify(data)
+			.sum(d => d.value)
+			.sort((a, b) => b.value - a.value)
+
+		pack(root)
+		const min_depth = Math.min(...root.descendants().unique('depth', true))
+		const max_depth = Math.max(...root.descendants().unique('depth', true))
+
+		const acclab_colors = d3.scaleOrdinal()
+			.domain(root.descendants().unique('depth', true))
+			.range([ '#32BEE1', '#0468B1', '#005687'])
+
+		let node = svg.styles({
+			'width': `calc(100% - ${padding}px)`,
+			'height': `calc(100% - ${padding}px)`,
+			// 'margin': `${padding}px 0 0 ${padding}px`
+		}).select('g')
+			.selectAll('g')
+		.data(root.descendants(), d => d.id)
+		node.exit().remove()
+		
+		node = node.enter().append('g')
+			.attrs({
+				'class': d => `node${(!d.children ? ' node--leaf' : d.depth ? '' : ' node--root')}`,
+				'transform': d => `translate(${(width - padding * 2) / 2},${(height - padding * 2) / 2})`
+			})
+		.each(function(d) { 
+			const sel = d3.select(this)
+			d.node = this 
+			if (sel.classed('node--leaf') && edit_layout) sel.call(drag)
+		}).on('mouseover', function (d) {
+			const sel = d3.select(this)
+			if (sel.classed('node--leaf')) {
+				sel.moveToFront()
+				d3.selectAll('.group-label')
+					.filter(c => d.parent.data.id === c.data.id)
+				.selectAll('tspan')
+					.transition()
+					.style('opacity', 0)
+
+				d3.selectAll('.node')
+					.classed('hover', c => d.parent.data.id === c.data.id)
+			}
+			sel.selectAll('text').classed('hide', false)
+			// hovered(true)
+		}).on('mouseout', function (d) {
+			const sel = d3.select(this)
+			if (sel.classed('node--leaf')) {
+				d3.selectAll('.group-label tspan')
+				.transition().style('opacity', 1)
+
+				d3.selectAll('.node.hover')
+					.classed('hover', false)
+			}
+			sel.selectAll('text').classed('hide', true)
+			// hovered(false)
+		}).on('click', async function (d) {
+			const sel = d3.select(this)
+			if (sel.classed('node--leaf') && !edit_layout) console.log(d)
+			if (d.children && d.depth !== 0) {
+				// HIGHLIGHT
+				d3.selectAll('circle.highlight').classed('highlight', false)
+				const circle = sel.select('circle').classed('highlight', true)
+				
+				// GET DATA
+				const tag_ids = d.children.map(c => c.data.orid).flat()
+				const cluster_name = d.children.map(c => c.data).flat().unique('keywords', true)
+				
+				const pads_path = new URL('apis/fetch/pads', platform)
+				const queryparams = new URLSearchParams(pads_path.search)
+				queryparams.append('output', 'json')
+				queryparams.append('token', token)
+
+				// queryparams.append('countries', 'json')
+				if (basetags_params.getAll('mobilizations').length) {
+					basetags_params.getAll('mobilizations').forEach(d => {
+						queryparams.append('mobilizations', d)
+					})
+				} // else queryparams.append('mobilizations', mobilization)
+				queryparams.append('include_imgs', true)
+				queryparams.append('include_tags', true)
+				new URLSearchParams(window.location.search).forEach((v, k) => {
+					if (['countries'].includes(k)) queryparams.append(k, v)
+					if (['regions'].includes(k)) queryparams.append(k, v)
+				})		
+
+				focus_pads.forEach(d => queryparams.append('pads', d))
+
+				// GET TIMESERIES DATA
+				const timeseries_params = new URLSearchParams(tags_path.search)
+				timeseries_params.append('token', token)
+				timeseries_params.append('timeseries', true)
+				timeseries_params.append('aggregation', 'month')
+				timeseries_params.append('type', 'thematic_areas')
+				timeseries_params.delete('mobilizations')
+
+				tag_ids.forEach(c => {
+					queryparams.append('thematic_areas', c)
+					timeseries_params.append('tags', c)
+				})
+
+				addLoader()
+				let [ pads, timeseries ] = await Promise.all([ GET(`${pads_path}?${queryparams}`), GET(`${tags_path.origin}${tags_path.pathname}?${timeseries_params}`) ])
+				rmLoader()
+				pads = pads.flat().filter(d => d.status >= 2)
+				pads.sort((a, b) => +new Date(b.created_at) - +new Date(a.created_at))
+
+				const aggseries = []
+				timeseries.map(d => d.timeseries).flat()
+				.forEach(d => {
+					if (!aggseries.some(c => c.date === d.date)) aggseries.push(d)
+					else aggseries.find(c => c.date === d.date).count += d.count
+				})
+				aggseries.forEach(d => d.date = new Date(d.date))
+				aggseries.sort((a, b) => a.date - b.date)
+
+				displaySnippets({ title: cluster_name, data: pads, timeseries: aggseries })
+			} else if (sel.classed('node--leaf')) {
+				const parent = d3.selectAll('.node')
+				.filter(c => d.parent.data.id === c.data.id)
+				.node().dispatchEvent(new Event('click'))
+			}
+		}).merge(node)
+		
+		node.transition()
+			.duration(_ => 1000 + Math.random() * 2000)
+			.delay(_ => Math.random() * 1000)
+			.attr('transform', d => `translate(${d.x || 0},${d.y || 0})`)
+
+		let circle = node.selectAll('circle')
+			.data(d => [d])
+		circle.exit().remove()
+		
+		circle = circle.enter().append('circle')
+			.attrs({
+				'id': d => `node-${d.id}`,
+				'r': 5
+			}).styles({
+				'fill': d => {
+					if (d.data.highlight) return '#FFC10E'
+					else if (d.children) return 'transparent'
+					else return acclab_colors(d.depth)
+				},
+				'fill-opacity': .75,
+			})
+		.merge(circle)
+
+		circle.transition()
+			.duration(3000)
+			.attr('r', d => d.r || 5)
+
+		const leaf = node.filter(d => !d.children)
+		let leaf_text = leaf.selectAll('text')
+			.data(d => [d])
+		leaf_text.exit().remove()
+
+		leaf_text = leaf_text.enter()
+			.append('text')
+			.attrs({ 
+				'class': 'leaf-label hide',
+				'x': 0,
+				'y': (d, i, nodes) => (i - nodes.length / 2 - 0.5) * 14
+			}).styles({
+				'pointer-events': 'none'
+			}).text(d => d.id.substring(d.id.lastIndexOf('.') + 1).split(/(?=[A-Z][^A-Z])/g))
+
+		let group_text = svg.selectAll('text.group-label')
+			.data(root.descendants().filter(d => d.depth === max_depth - 1), d => `label-${d.id}`)
+		group_text.exit().remove()
+
+		group_text = group_text.enter()
+			.append('text')
+			.attrs({ 
+				'class': 'group-label',
+				'x': 0,
+				'transform': d => `translate(${d.x || 0},${d.y || 0})`,
+			}).style('opacity', 0)
+			.merge(group_text)
+		
+		group_text.transition()
+			.delay(_ => 2000 + Math.random() * 1000)
+			.duration(_ => Math.random() * 1000)
+			.attr('transform', d => `translate(${d.x || 0},${d.y || 0})`)
+			.style('opacity', 1)
+
+		let text_lines = group_text.selectAll('tspan')
+			.data(d => {
+				if (d.children?.length === 1) return []
+				else return d.id.substring(d.id.lastIndexOf('.') + 1).split(/(?=[A-Z][^A-Z])/g)[0].split('-')
+			})
+		text_lines.exit().remove()
+
+		text_lines = text_lines.enter()
+			.append('tspan')
+			.attrs({ 
+				'x': 0,
+				'y': (d, i, nodes) => 13 + (i - nodes.length / 2 - 0.5) * 16,
+			}).text(d => d)
+		.merge(text_lines)
+
+		// function hovered(hover) {
+		// 	return function(d) {
+		// 		d3.selectAll(d.ancestors().map(function(d) { return d.node; })).classed('node--hover', hover);
+		// 	};
+		// }
+
+		d3.selectAll('.group-label').moveToFront()
+	}
+
+	function drawTimeSeries (data) {
+		const panel = d3.select('.right-col .inner')
+		const { clientWidth: cw, clientHeight: ch, offsetWidth: ow, offsetHeight: oh } = panel.node()
+		const width = Math.round(Math.min(cw ?? ow, ch ?? oh))
+		const height = Math.round(width * .25)
+		const padding = 15
+
+		const svg = panel.addElems('svg')
+			.attrs({ 
+				'id': 'timeseries',
+				width,
+				height
+			})
+
+		const x = d3.scaleTime()
+			.domain(d3.extent(data, d => d.date))
+			.range([ padding, width - padding ])
+		const y = d3.scaleLinear()
+			.domain(d3.extent(data, d => d.count))
+			.range([ height - padding, padding ])
+		const line = d3.line()
+			// .curve(d3.curveMonotone)
+			.x(d => x(d.date))
+			.y(d => y(d.count))
+
+		svg.addElems('path', 'timeseries', [data])
+			.attr('d', line)
+	}
+
+	function displaySnippets (kwargs) {
+		const { title, data, timeseries } = kwargs
+		const container = d3.select('.right-col')
+		.style('flex', '1 1 0')
+		container.select('button.expand-filters').toggleClass('close')
+
+		const panel = container.addElems('div', 'inner')
+
+		panel.addElems('h1', 'category', title ? [title] : [])
+			.html(d => d)
+
+		drawTimeSeries(timeseries)
+
+		const pad = panel.addElems('article', 'pad', data)
+		.on('mouseover', function (d) {
+			const tags = d.tags.filter(c => c.type === 'thematic_areas')
+			const tag_ids = tags.map(c => c.tag_id)
+			// DIM ALL NODES THAT ARE NOT IN THE PAD
+			d3.selectAll('g.node--leaf circle')
+			.filter(c => c.data.orid.intersection(tag_ids).length === 0)
+			.classed('dimmed', true)
+
+			d3.selectAll('.group-label')
+			.classed('hide', true)
+
+			d3.selectAll('.leaf-label')
+			.classed('hide', c => c.data.orid.intersection(tag_ids).length === 0)
+
+			drawPortfolio(tag_ids)
+
+		}).on('mouseout', _ => {
+			// UNDIM ALL NODES
+			d3.selectAll('g.node--leaf circle')
+			.classed('dimmed', false)
+
+			d3.selectAll('.group-label')
+			.classed('hide', false)
+
+			d3.selectAll('.leaf-label')
+			.classed('hide', true)
+
+			d3.selectAll('path.portfolio').remove()
+		}).addElems('div', 'inner')
+	
+		const head = pad.addElems('hgroup', 'head')
+
+		head.addElems('h1', 'title')
+			.addElems('a')
+		.attrs({
+			'href': d => new URL(`en/view/pad?id=${d.pad_id}`, platform),
+			'target': '_blank'
+		}).html(d => d.title)
+		head.addElems('p', 'country')
+			.html(d => d.country)
+		head.addElems('small', 'date')
+			.html(d => {
+				const date = new Date(d.created_at)
+				const year = date.getFullYear()
+				let month = date.getMonth() + 1
+				if (month < 10) month = `0${month}`
+				return `${year}-${month}`
+			})
+		head.addElems('div', 'tags', d => [d.tags.filter(c => c.type === 'thematic_areas')])
+			.addElems('div', 'tag', d => d)
+			.html(d => d.name?.length > 20 ? `${d.name?.slice(0, 20)}...` : d.name)
+
+		const body = pad.addElems('div', 'body')
+		body.addElems('img', 'vignette', d => d.media.slice(0, 1))
+			.attr('src', d => d.replace('https:/', 'https://'))
+		body.addElems('p', 'snippet', d => [d.snippet])
+			.html(d => d)
+	}
+
+	function clearPanel () {
+		const container = d3.select('.right-col')
+		.style('flex', '0 1 0')
+		container.select('button.expand-filters').toggleClass('close')
+		container.selectAll('.inner').remove()
+	}
+
+	function drawPortfolio (data) {
+		const points = data.map(d => {
+			const circle = d3.selectAll('g.node--leaf').filter(c => c.data.orid.includes(d))
+			if (circle.node()) return [ circle.datum().x, circle.datum().y ]
+			else return null
+		}).filter(d => d)
+
+		svg.addElems('path', 'portfolio', [sortpolygon(points)])
+			.attrs({
+				'd': d => `M${d.join(' L')}`
+			}).styles({
+				'stroke': '#000',
+				'fill': 'none'
+			}).on('click', d => {
+				// window.open(`https://acclabs-actionlearningplans.azurewebsites.net/en/edit/pad?id=${data.unique('pad', true)[0]}`, '_blank')
+				window.open(`https://solutions.sdg-innovation-commons.org/en/edit/pad?id=${data.unique('pad', true)[0]}`, '_blank')
+			})
+	}
+
+	function highlightTag (value) {
+		d3.selectAll('circle')
+		.classed('highlight', d => value?.length && Object.keys(d.data).includes('orid') && d.data.clean[0].includes(value))
+	}
+	function toggleHighlight (value, highlight = true) {
+		d3.selectAll('circle')
+		.filter(d => value?.length && Object.keys(d.data).includes('orid') && d.data.clean[0].includes(value))
+		.classed('highlight', highlight)
+	}
+
+	function sortpolygon (points, type) {
+		if (!points.length) return points
+		const unique = []
+		points.forEach(d => {
+			if (!unique.map(c => c.join('-')).includes(d.join('-'))) unique.push(d)
+		})
+
+		// INSPIRED BY https://stackoverflow.com/questions/14263284/create-non-intersecting-polygon-passing-through-all-given-points
+		// FIND THE LEFT MOST POINT p AND TH RIGHT MOST POINT q
+		const p = unique.sort((a, b) => a[0] - b[0])[0]
+		const q = unique.sort((a, b) => b[0] - a[0])[0]
+		// CONSIDERING THE FUNCTIONS THAT DEFINE THE pq SEGMENT IS
+		// a * x + b
+		const a = (p[1] - q[1]) / (p[0] - q[0])
+		const b = p[1] - a * p[0]
+		// FIND THE GROUP A OF POINTS ABOVE pq
+		// A POINT (x, y) IS ABOVE pq IF y > ax + b
+		// SEE https://math.stackexchange.com/questions/324589/detecting-whether-a-point-is-above-or-below-a-slope
+		const A = unique.filter(d => d[1] > a * d[0] + b)
+		A.sort((a, b) => a[0] - b[0])
+		// AND THE GROUPP B OF POINTS BELOW pq
+		const B = unique.filter(d => d[1] <= a * d[0] + b && ![p.join('-'), q.join('-')].includes(d.join('-')))
+		B.sort((a, b) => b[0] - a[0])
+
+		let sorted = [p]
+		sorted = sorted.concat(A)
+		sorted.push(q)
+		sorted = sorted.concat(B)
+
+		return sorted
+	}
+
+	function addLoader () {
+		const ripple = d3.select('body').addElems('div', 'lds-default')
+		ripple.addElems('div', 'filler', d3.range(12))
+	}
+	function rmLoader () {
+		d3.select('.lds-default').remove()
+	}
+	function expandfilters (node) {
+		d3.select(node).toggleClass('close')
+		const cartouche = d3.select(node).findAncestor('cartouche')
+		const filters = cartouche.select('form').node()
+		const padding = filters.querySelector('section').getBoundingClientRect().height / 2
+		// WE NEED TO MANUALLY ADD THE BOTTOM PADDING BECAUSE IT IS NOT COMPUTED IN THE scrollHeight
+		if (filters.style.maxHeight) {
+			filters.style.maxHeight = null
+			filters.style.overflow = 'hidden'
+		} else {
+			filters.style.maxHeight = `${filters.scrollHeight + padding}px`
+			filters.style.overflow = 'visible'
+		}
+	}
+</script>
+</body>

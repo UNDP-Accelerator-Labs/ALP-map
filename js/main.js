@@ -83,3 +83,15 @@ Array.prototype.intersection = function (V2) {
 String.prototype.simplify = function () {
 	return this.valueOf().trim().replace(/[^\w\s]/gi, '').replace(/\s/g, '').toLowerCase()
 }
+Array.prototype.sum = function (key) {
+  if (this.length === 0) return 0;
+  if (!key) {
+    return this.reduce((accumulator, value) => accumulator + value);
+  } else {
+    return this.reduce((accumulator, value) => {
+      const obj = {};
+      obj[key] = accumulator[key] + value[key];
+      return obj;
+    })[key];
+  }
+};

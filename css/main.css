@@ -12,6 +12,9 @@ html, body {
   height: 100%;
 }
 
+.dark {
+  background-color: #393939 !important;
+}
 body {
   font-family: "Noto Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -60,7 +63,7 @@ body .cartouche {
   min-height: 30px;
   width: 100%;
   padding: 15px;
-  border: 1px dotted #969696;
+  border-top: 1px dotted #969696;
   box-sizing: border-box;
   background-color: #FFF;
   z-index: 1000;
@@ -93,17 +96,24 @@ body div.container .left-col svg text {
   text-transform: capitalize;
   pointer-events: none;
 }
+body div.container .left-col.dark svg text {
+  fill: #FFF;
+}
 body div.container .left-col svg text.group-label {
   font-size: 14px;
   /*font-weight: bold;*/
   fill: #646464;
 }
+body div.container .left-col.dark svg text.group-label {
+  fill: #969696;
+}
 body div.container .left-col svg .node:not(.node--root) {
   cursor: pointer;
 }
 body div.container .left-col svg .node:not(.node--root) .highlight {
-  stroke: #FA7814;
-  stroke-width: 2;
+  stroke: #FFC10E;
+  stroke-width: 1;
+/*  stroke-dasharray: 1, 2;*/
 }
 body div.container .left-col svg .node:not(.node--root):not(.node--leaf):hover circle:not(.highlight),
 body div.container .left-col svg .node:not(.node--root):not(.node--leaf).hover circle:not(.highlight) {
@@ -130,6 +140,7 @@ body div.container .left-col #get-data {
   left: 0;
 }
 body div.container .right-col {
+  position: relative;
   flex: 0 1 0;
   background-color: #005687;
   transition: flex 0.5s;
@@ -137,7 +148,7 @@ body div.container .right-col {
   overflow: auto;
 }
 body div.container .right-col button.expand-filters {
-  position: fixed;
+  position: absolute;
   top: 30px;
   right: 0;
 }
