@@ -36,16 +36,6 @@ Array.prototype.nest = function (key, keep) {
 	return arr
 }
 
-d3.selection.prototype.moveToFront = function() {
-	return this.each(function(){
-		this.parentNode.appendChild(this)
-	})
-}
-d3.selection.prototype.findAncestor = function (_target) {
-	if (!this.node().classList || this.node().nodeName === 'BODY') return null
-	if (this.classed(_target) || this.node().nodeName === _target?.toUpperCase()) return this
-	return d3.select(this.node().parentNode)?.findAncestor(_target);
-}
 const jsonQueryHeader = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest' }
 function POST (_uri, _q, _expectJSON = true) {
 	return new Promise(resolve => 

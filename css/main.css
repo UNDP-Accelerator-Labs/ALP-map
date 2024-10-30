@@ -92,7 +92,7 @@ body div.container .left-col svg {
 body div.container .left-col svg text {
   font-family: "Noto Sans", Helvetica, Arial, sans-serif;
   font-size: 12px;
-  text-anchor: middle;
+/*  text-anchor: middle;*/
   text-transform: capitalize;
   pointer-events: none;
 }
@@ -128,7 +128,7 @@ body div.container .left-col svg .node--leaf circle {
   transition: opacity 0.25s;
 }
 body div.container .left-col svg .node--leaf circle.dimmed {
-  opacity: 0.3;
+  opacity: 0.75;
 }
 body div.container .left-col svg circle.connected {
   fill: green !important;
@@ -151,6 +151,9 @@ body div.container .right-col button.expand-filters {
   position: absolute;
   top: 30px;
   right: 0;
+}
+body div.container .right-col button.expand-filters.fixed {
+  position: fixed;
 }
 body div.container .right-col button.expand-filters:not(.close) {
   pointer-events: none;

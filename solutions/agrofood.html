@@ -1,20 +1,16 @@
 <html>
 
 <head>
-	<link rel='stylesheet' type='text/css' href='css/main.css'>
-	<link rel='stylesheet' type='text/css' href='css/footer.css'>
-	<link rel='stylesheet' type='text/css' href='css/loader.css'>
+	<link rel='stylesheet' type='text/css' href='../css/main.css'>
+	<link rel='stylesheet' type='text/css' href='../css/footer.css'>
+	<link rel='stylesheet' type='text/css' href='../css/loader.css'>
 	<script src='https://cdn.jsdelivr.net/npm/d3@5'></script>
 	<script src='https://d3js.org/d3-selection-multi.v1.min.js'></script>
 	
-	<script type='text/javascript' src='js/d3.prototype.extensions.js'></script>
-	<script type='text/javascript' src='js/main.js'></script>
+	<script type='text/javascript' src='../js/d3.prototype.extensions.js'></script>
+	<script type='text/javascript' src='../js/main.js'></script>
 
-	<link rel='icon' type='image/x-icon' href='favicon.ico'>
-
-	<script type='text/javascript'>
-		const islocal = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') || false
-	</script>
+	<link rel='icon' type='image/x-icon' href='../favicon.ico'>
 
 </head>
 
@@ -22,13 +18,13 @@
 
 
 <div class='container'>
-	<div class='left-col'>
+	<div class='left-col dark'>
 		<header>
 			<nav id='languages'></nav>
 			<div id='logo'>
-				<img src='imgs/branding/UNDP_accelerator_labs_logo_vertical_color_RGB.png'>
-				<h1>Action Learning</h1>
-				<h2>Topic Browser</h2>
+				<img src='../imgs/branding/UNDP_accelerator_labs_logo_vertical_color_RGB.png'>
+				<h1>Agriculture and Food</h1>
+				<h2>Solutions</h2>
 			</div>
 
 			<script type='text/javascript'>
@@ -40,7 +36,7 @@
 		<svg id='bubbles'>
 			<g></g>
 		</svg>
-		<div class='cartouche'>
+		<div class='cartouche dark'>
 			<button type='button' class='expand-filters' onclick='expandfilters(this)'>
 				<div class='line l1'></div><div class='line l2'></div><div class='line l3'></div>
 			</button>
@@ -98,7 +94,7 @@
 	<div class='footer-row'>
 		<div class='footer-column left'>
 			<div class='outer'>
-				<img class='logo' src='imgs/branding/UNDP_accelerator_labs_logo_vertical_white.png' alt='UNDP accelerator labs logo'>
+				<img class='logo' src='../imgs/branding/UNDP_accelerator_labs_logo_vertical_white.png' alt='UNDP accelerator labs logo'>
 				<small>UNDP Accelerator Labs</small>
 			</div>
 			<div class='inner'>
@@ -142,7 +138,7 @@
 			<div class='inner'>
 				<h3>Our Partners</h3>
 				<!-- TO DO: TRANSLATE -->
-				<img class='footer-img' src='imgs/branding/UNDP_Acc_Labs_All_Partners_horiz_white.png'	alt='UNDP accelerator Partnerslogo'>
+				<img class='footer-img' src='../imgs/branding/UNDP_Acc_Labs_All_Partners_horiz_white.png'	alt='UNDP accelerator Partnerslogo'>
 			</div>
 		</div>
 		<div class='footer-column right'>
@@ -186,9 +182,11 @@
 	const width = Math.round(Math.min(cw ?? ow, ch ?? oh))
 	const height = width
 	const padding = 60
-	const edit_layout = islocal
+	const edit_layout = false;
 
-	if (!islocal) d3.select('#get-data').remove();
+	if (!edit_layout) {
+		d3.select('#get-data').remove();
+	}
 	
 	const svg = d3.select('svg#bubbles')
 	.attrs({ 
@@ -198,17 +196,16 @@
 		'preserveAspectRatio': 'xMidYMid meet'
 	})
 
-	const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJpYXQiOjE2OTk3MDQwOTksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJzZGctaW5ub3ZhdGlvbi1jb21tb25zLm9yZyJ9.vKYu1PcT5Z672GUOuxO4ux_E6MTd2PT-GPBgXPgXbl8'
-	
-	const platform = new URL('https://learningplans.sdg-innovation-commons.org')
+	const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNDVlMThiYzMtODgwNS00NWUxLThjNTQtYjM1NmJjZWU0OTEyIiwicmlnaHRzIjozLCJpYXQiOjE3MTkzMTA4MTksImF1ZCI6InVzZXI6a25vd24iLCJpc3MiOiJzZGctaW5ub3ZhdGlvbi1jb21tb25zLm9yZyJ9.NLd3G4hwgobeiFL3l_8QejCt8GcsJAXjF77Q2C0AnOU'
+
+	const platform = new URL('https://solutions.sdg-innovation-commons.org')
 	const tags_path = new URL('apis/fetch/tags', platform)
 	const regions_path = new URL('apis/fetch/regions', platform)
 	const countries_path = new URL('apis/fetch/countries', platform)
-	const pads_path = new URL('apis/fetch/pads', platform)
 
 	const basetags_params = new URLSearchParams(tags_path.search)
 	basetags_params.append('token', token)
-	let mobilization = 30
+	// let mobilization = 30
 
 	const highlighttags_params = new URLSearchParams(basetags_params)
 	new URLSearchParams(window.location.search).forEach((v, k) => {
@@ -217,7 +214,13 @@
 		if (['regions'].includes(k)) basetags_params.append(k, v)
 		if (['mobilizations'].includes(k)) basetags_params.append(k, v) //mobilization = v
 	})
-	if (!basetags_params.has('mobilizations')) basetags_params.append('mobilizations', mobilization)
+	// if (!basetags_params.has('mobilizations')) basetags_params.append('mobilizations', mobilization)
+
+	// const focus_tags = [10,765,6732,1572,4735,1424,13,4734,4126,3564,841,4703,14,6276,5561,1426,128,2176,129,130,131,2661,132,133,134,2337,7084,917,1857,4447,261,6766,6731,838];
+	// focus_tags.forEach(d => basetags_params.append('thematic_areas', d))
+
+	basetags_params.append('pinboard', 425);
+	basetags_params.append('space', 'pinned');
 
 	const regions_params = new URLSearchParams(regions_path)
 	regions_params.append('token', token)
@@ -225,25 +228,13 @@
 	countries_params.append('token', token)
 	countries_params.append('has_lab', true)
 
-	const queryparams = new URLSearchParams(pads_path.search)
-	queryparams.append('output', 'json')
-	queryparams.append('token', token)
-	queryparams.append('include_tags', true)
-	if (basetags_params.getAll('mobilizations').length) {
-		basetags_params.getAll('mobilizations').forEach(d => {
-			queryparams.append('mobilizations', d)
-		})
-	} else queryparams.append('mobilizations', mobilization)
-
-	console.log(`${pads_path.origin}${pads_path.pathname}?${basetags_params.toString()}`)
+	console.log(`${tags_path.origin}${tags_path.pathname}?${basetags_params.toString()}`)
 
 	const data_collection = []
 	data_collection.push(GET(`${tags_path.origin}${tags_path.pathname}?${basetags_params.toString()}`))
 	data_collection.push(GET(`${regions_path.origin}${regions_path.pathname}?${regions_params.toString()}`))
 	data_collection.push(GET(`${countries_path.origin}${countries_path.pathname}?${countries_params.toString()}`))
-	data_collection.push(GET(`${pads_path.origin}${pads_path.pathname}?${queryparams.toString()}`))
-	// data_collection.push(d3.json('data/taxonomy_manual_202401_01.json'))
-	data_collection.push(d3.json('data/taxonomy_manual_202409.json'))
+	data_collection.push(d3.json('../data/taxonomy_latest.json'))
 	if (highlighttags_params.size >= 2) data_collection.push(GET(`${tags_path.origin}${tags_path.pathname}?${highlighttags_params.toString()}`))
 
 	addLoader()
@@ -251,13 +242,12 @@
 	Promise.all(data_collection)
 	.then(results => {
 		rmLoader()
-		let [ tags_data, regions, countries, pads, taxonomy, tags_portfolio ] = results
+		let [ tags_data, regions, countries, taxonomy, tags_portfolio ] = results
 
 		renderMenu(regions, countries, tags_data)
 
 		const selectids = tags_data.map(d => d.id)
 		const portfolio_ids = tags_portfolio?.unique('id', true) || []
-		
 
 		// THIS IS TO MAKE SURE ALL TAGS ARE ACCOUNTED FOR (THERE MAY BE NEW TAGS SINCE THE AGGREGATOR WAS LAST RUN)
 		tags_data.forEach(d => {
@@ -269,7 +259,7 @@
 					obj.clean = [d.name?.replace(/\./g, ',')]
 					obj.clusters = -1
 					obj.id = [d.id]
-					obj.keywords = taxonomy.find(c => c.clusters === -1).keywords
+					obj.keywords = taxonomy.find(c => c.clusters === -1)?.keywords
 					obj.split = d.name?.replace(/\./g, ',')
 					obj.total_count = d.count // nestedtags.find(c => d.id === c.key).count
 					taxonomy.push(obj)
@@ -280,38 +270,43 @@
 		taxonomy.forEach((d, i) => {
 			d.initial_idx = i
 		})
+
 		
-		const hidepack = [35, 118, 130];
+		/*
+		console.log(tags_data.map(d => {
+			const { id, name } = d
+			const match = taxonomy.find(c => c.id.includes(d.id))
+			if (match?.clusters === -1) return { id, name }
+		}).filter(d => d))
+		*/
+
+		const hidepack = -1;
 		const packdata = JSON.parse(JSON.stringify(taxonomy)).filter(d => {
-			if (hidepack?.length) return d.id.intersection(selectids).length && !hidepack.includes(d.clusters)
+			if (hidepack) return d.id.intersection(selectids).length && d.clusters !== hidepack
 			return d.id.intersection(selectids).length
 		})
 		packdata.forEach(d => {
 			d.select_count = tags_data.find(c => d.id.includes(c.id))?.count ?? 0
 			d.highlight = portfolio_ids.some(c => d.id.includes(c)) || false
 		})
-		
-		console.log('pads', pads.flat().filter(d => d.status >= 2).length)
+
+		/*
 		const clusters = tags_data.map(d => {
-			const { clusters, keywords } = taxonomy?.find(c => c.id.includes(d.id)) || {};
+			const { clusters, keywords } = taxonomy.find(c => c.id.includes(d.id));
 			d.cluster = clusters;
 			d.keyword = keywords;
 			return d;
-		}).filter(d => !hidepack.includes(d.cluster))
+		}).filter(d => d.cluster !== hidepack)
 		.nest('cluster', 'keyword')
 		.map(d => {
-			const { key, keyword, values } = d;
-			const ids = values.map(c => c.id)
+			const { keyword, values } = d;
 			const obj = {};
-			obj.id = key;
 			obj.key = keyword;
 			obj.count = values.sum('count');
-			obj.padcount = pads.flat().filter(c => c.status >= 2 && c.tags.some(b => b.type === 'thematic_areas' && ids.includes(b.tag_id))).length;
-			obj.values = values;
 			return obj;
 		}).sort((a, b) => b.count - a.count);
 		console.log(clusters)
-
+		*/
 
 		const contains_unclustered = packdata.some(d => d.clusters === -1)
 
@@ -498,7 +493,6 @@
 				drawPack(d3.selectAll('.node').data().map(d => d.data))
 			})
 
-
 		const color = d3.scaleSequential(d3.interpolateMagma)
 			.domain([-3, 3])
 
@@ -519,7 +513,7 @@
 
 		const acclab_colors = d3.scaleOrdinal()
 			.domain(root.descendants().unique('depth', true))
-			.range(['#005687', '#0468B1', '#32BEE1'])
+			.range([ '#32BEE1', '#0468B1', '#005687'])
 
 		let node = svg.styles({
 			'width': `calc(100% - ${padding}px)`,
@@ -533,7 +527,7 @@
 		node = node.enter().append('g')
 			.attrs({
 				'class': d => `node${(!d.children ? ' node--leaf' : d.depth ? '' : ' node--root')}`,
-				'transform': d => `translate(${(width - padding * 2) / 2},${(height - padding * 2) / 2})`
+				'transform': d => `translate(${width / 2},${height / 2})`
 			})
 		.each(function(d) { 
 			const sel = d3.select(this)
@@ -552,9 +546,7 @@
 				d3.selectAll('.node')
 					.classed('hover', c => d.parent.data.id === c.data.id)
 			}
-			sel.selectAll('text')
-				.classed('hide', false)
-				.style('opacity', 1)
+			sel.selectAll('text').classed('hide', false)
 			// hovered(true)
 		}).on('mouseout', function (d) {
 			const sel = d3.select(this)
@@ -565,12 +557,11 @@
 				d3.selectAll('.node.hover')
 					.classed('hover', false)
 			}
-			sel.selectAll('text')
-				.classed('hide', true)
-				.style('opacity', 0)
+			sel.selectAll('text').classed('hide', true)
 			// hovered(false)
 		}).on('click', async function (d) {
 			const sel = d3.select(this)
+			if (sel.classed('node--leaf') && !edit_layout) console.log(d)
 			if (d.children && d.depth !== 0) {
 				// HIGHLIGHT
 				d3.selectAll('circle.highlight').classed('highlight', false)
@@ -590,44 +581,51 @@
 					basetags_params.getAll('mobilizations').forEach(d => {
 						queryparams.append('mobilizations', d)
 					})
-				} else queryparams.append('mobilizations', mobilization)
+				} // else queryparams.append('mobilizations', mobilization)
 				queryparams.append('include_imgs', true)
 				queryparams.append('include_tags', true)
 				new URLSearchParams(window.location.search).forEach((v, k) => {
 					if (['countries'].includes(k)) queryparams.append(k, v)
 					if (['regions'].includes(k)) queryparams.append(k, v)
-
 				})		
+				queryparams.append('pinboard', 425)
+				//focus_tags.forEach(d => queryparams.append('pads', d))
 
 				// GET TIMESERIES DATA
+				/*
 				const timeseries_params = new URLSearchParams(tags_path.search)
 				timeseries_params.append('token', token)
 				timeseries_params.append('timeseries', true)
 				timeseries_params.append('aggregation', 'month')
 				timeseries_params.append('type', 'thematic_areas')
 				timeseries_params.delete('mobilizations')
+				*/
 
 				tag_ids.forEach(c => {
 					queryparams.append('thematic_areas', c)
-					timeseries_params.append('tags', c)
+					// timeseries_params.append('tags', c)
 				})
 
 				addLoader()
-				let [ pads, timeseries ] = await Promise.all([ GET(`${pads_path}?${queryparams}`), GET(`${tags_path.origin}${tags_path.pathname}?${timeseries_params}`) ])
+				// let [ pads, timeseries ] = await Promise.all([ GET(`${pads_path}?${queryparams}`), GET(`${tags_path.origin}${tags_path.pathname}?${timeseries_params}`) ])
+				let [ pads ] = await Promise.all([ GET(`${pads_path}?${queryparams}`) ])
 				rmLoader()
 				pads = pads.flat().filter(d => d.status >= 2)
 				pads.sort((a, b) => +new Date(b.created_at) - +new Date(a.created_at))
 
 				const aggseries = []
+				/*
 				timeseries.map(d => d.timeseries).flat()
 				.forEach(d => {
 					if (!aggseries.some(c => c.date === d.date)) aggseries.push(d)
 					else aggseries.find(c => c.date === d.date).count += d.count
 				})
+				*/
 				aggseries.forEach(d => d.date = new Date(d.date))
 				aggseries.sort((a, b) => a.date - b.date)
 
-				displaySnippets({ title: cluster_name, data: pads, timeseries: aggseries })
+				// displaySnippets({ title: cluster_name, data: pads, timeseries: aggseries })
+				displaySnippets({ title: cluster_name, data: pads })
 			} else if (sel.classed('node--leaf')) {
 				const parent = d3.selectAll('.node')
 				.filter(c => d.parent.data.id === c.data.id)
@@ -648,10 +646,13 @@
 			.attrs({
 				'id': d => `node-${d.id}`,
 				'r': 5
-			}).style('fill', d => {
-				if (d.data.highlight) return '#FFC10E'
-				else if (d.children) return 'transparent'
-				else return acclab_colors(d.depth)
+			}).styles({
+				'fill': d => {
+					if (d.data.highlight) return '#FFC10E'
+					else if (d.children) return 'transparent'
+					else return acclab_colors(d.depth)
+				},
+				'fill-opacity': .75,
 			})
 		.merge(circle)
 
@@ -671,8 +672,11 @@
 				'x': 0,
 				'y': (d, i, nodes) => (i - nodes.length / 2 - 0.5) * 14
 			}).styles({
-				'opacity': 0,
-				'pointer-events': 'none'
+				'pointer-events': 'none',
+				'text-anchor': 'middle',
+				'font-face': 'Noto Sans',
+				'font-size': '12px',
+				'fill': '#FFF',
 			}).text(d => d.id.substring(d.id.lastIndexOf('.') + 1).split(/(?=[A-Z][^A-Z])/g))
 
 		let group_text = svg.selectAll('text.group-label')
@@ -686,15 +690,12 @@
 				'x': 0,
 				'transform': d => `translate(${d.x || 0},${d.y || 0})`,
 			}).styles({
-				'font-family': '"Noto Sans", Helvetica, Arial, sans-serif',
-				'font-size': '14px',
+				'opacity': 0,
 				'text-anchor': 'middle',
-				'text-transform': 'capitalize',
-				'pointer-events': 'none',
-				'fill': '#646464',
-				'opacity': 0
-			})
-			.merge(group_text)
+				'font-face': 'Noto Sans',
+				'font-size': '12px',
+				'fill': '#969696',
+			}).merge(group_text)
 		
 		group_text.transition()
 			.delay(_ => 2000 + Math.random() * 1000)
@@ -766,7 +767,7 @@
 		panel.addElems('h1', 'category', title ? [title] : [])
 			.html(d => d)
 
-		drawTimeSeries(timeseries)
+		// drawTimeSeries(timeseries)
 
 		const pad = panel.addElems('article', 'pad', data)
 		.on('mouseover', function (d) {
@@ -846,11 +847,13 @@
 			.attrs({
 				'd': d => `M${d.join(' L')}`
 			}).styles({
-				'stroke': '#000',
+				'stroke': '#005687',
+				'stroke-width': 3,
+				'stroke-opacity': 1,
 				'fill': 'none'
 			}).on('click', d => {
 				// window.open(`https://acclabs-actionlearningplans.azurewebsites.net/en/edit/pad?id=${data.unique('pad', true)[0]}`, '_blank')
-				window.open(`https://learningplans.sdg-innovation-commons.org/en/edit/pad?id=${data.unique('pad', true)[0]}`, '_blank')
+				window.open(`https://solutions.sdg-innovation-commons.org/en/edit/pad?id=${data.unique('pad', true)[0]}`, '_blank')
 			})
 	}
 

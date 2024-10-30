@@ -1,0 +1,166 @@
+<html>
+
+<head>
+	<link rel='stylesheet' type='text/css' href='/css/main.css'>
+	<link rel='stylesheet' type='text/css' href='/css/footer.css'>
+	<link rel='stylesheet' type='text/css' href='/css/loader.css'>
+	<script src='https://cdn.jsdelivr.net/npm/d3@5'></script>
+	<script src='https://d3js.org/d3-selection-multi.v1.min.js'></script>
+	
+	<script type='text/javascript' src='/js/d3.prototype.extensions.js'></script>
+	<script type='text/javascript' src='/js/main.js'></script>
+	
+	<script type='module' src='/js/bubbles/index.mjs'></script>
+
+	<link rel='icon' type='image/x-icon' href='/favicon.ico'>
+
+</head>
+
+<body id='packs'>
+
+
+<div class='container'>
+	<div class='left-col dark'>
+		<header>
+			<nav id='languages'></nav>
+			<div id='logo'>
+				<img src='/imgs/branding/UNDP_accelerator_labs_logo_vertical_color_RGB.png'>
+				<!-- <h1>Agriculture and Food</h1>
+				<h2>Solutions</h2> -->
+			</div>
+
+			<script type='text/javascript'>
+				function fixLabel (node) {
+					d3.select(node).classed('has-value', node.value?.trim().length)
+				}
+			</script>
+		</header>
+		<svg id='canvas'>
+		</svg>
+		<div class='cartouche dark'>
+			<button type='button' class='expand-filters'>
+				<div class='line l1'></div><div class='line l2'></div><div class='line l3'></div>
+			</button>
+			<form method='GET'>
+				<section>
+					<!-- <input id='find-tag' type='text' oninput='highlightTag(this.value)' /> -->
+					<div class='filter regions'>
+						<input type='text' id='f-regions' onblur='fixLabel(this)'>
+						<label for='f-regions'>Filter by region</label>
+						<div class='dropdown'>
+							<menu class='f-regions'>
+							</menu>
+						</div>
+					</div>
+					<div class='filter countries'>
+						<input type='text' id='f-countries' onblur='fixLabel(this)'>
+						<label for='f-countries'>Filter by country</label>
+						<div class='dropdown'>
+							<menu class='f-countries'>
+							</menu>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class='filter tags'>
+						<input type='text' id='h-tags' onblur='fixLabel(this)'>
+						<label for='h-regions'>Highlight tags</label>
+						<div class='dropdown'>
+							<menu class='h-tags'>
+							</menu>
+						</div>
+					</div>
+				</section>
+				<button type='submit' class='submit-filters'>Apply filters</button>
+			</form>
+		</div>
+		<button id='get-data' style='z-index: 1000;'>Get data</button>
+	</div>
+	<div class='right-col'>
+	</div>
+</div>
+
+<footer>
+	<div class='footer-row'>
+		<div class='footer-column left'>
+			<div class='outer'>
+				<img class='logo' src='/imgs/branding/UNDP_accelerator_labs_logo_vertical_white.png' alt='UNDP accelerator labs logo'>
+				<small>UNDP Accelerator Labs</small>
+			</div>
+			<div class='inner'>
+				<h3>Links</h3>
+				<!-- TO DO: TRANSLATE -->
+				<ul>
+					<li>
+						<a target='_blank' href='https://www.undp.org/acceleratorlabs'>
+						About Us
+						</a>
+						<!-- TO DO: TRANSLATE -->
+					</li>
+					<li>
+						<a target='_blank' href='https://www.undp.org/accountability/audit/investigations'>
+						Report fraud, abuse, misconduct
+						<!-- TO DO: TRANSLATE -->
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href='https://www.undp.org/scam-alert'>
+						Scam Alert
+						<!-- TO DO: TRANSLATE -->
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href='https://www.undp.org/copyright-terms-use'>
+						Terms of Use
+						<!-- TO DO: TRANSLATE -->
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href='https://forms.office.com/Pages/ResponsePage.aspx?id=Xtvls0QpN0iZ9XSIrOVDGbiZROH1lsFMla8_BsgmZ6lUOU1SNkVFWkRCVkFaTzBVWExSNkwyNkJGNi4u'>
+						Submit a request about our platforms
+						<!-- TO DO: TRANSLATE -->
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class='footer-column center'>
+			<div class='inner'>
+				<h3>Our Partners</h3>
+				<!-- TO DO: TRANSLATE -->
+				<img class='footer-img' src='/imgs/branding/UNDP_Acc_Labs_All_Partners_horiz_white.png'	alt='UNDP accelerator Partnerslogo'>
+			</div>
+		</div>
+		<div class='footer-column right'>
+			<div class='inner'>
+				<!-- <h3>Follow Us</h3>
+				<div class='social-media-links'>
+					<ul>
+						<li>
+							<a target='_blank' href='https://www.linkedin.com/company/undp-accelerator-labs'>
+								<i class='fa fa-linkedin' > </i>
+							</a>
+						</li>
+						<li>
+							<a target='_blank' href='https://twitter.com/UNDPAccLabs'>
+								<i class='fa fa-twitter'> </i>
+							</a>
+						</li>
+						<li>
+							<a target='_blank' href='https://www.instagram.com/acceleratorlabs/'>
+								<i class='fa fa-instagram'> </i>
+							</a>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div class='footer-row signature'>
+		<div class='inner'>
+			<p>&copy; 2024 United Nations Development Programme</p>
+		</div>
+		<!-- TO DO: TRANSLATE -->
+	</div>
+</footer>
+</body>
