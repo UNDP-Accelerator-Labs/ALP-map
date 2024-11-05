@@ -27,7 +27,7 @@ async function onLoad () {
 	let options = {};
 	if (!qm) options.mobilizations = [38, 37];
 
-	const data = await loadData('/data/taxonomy_latest.json', options, true);
+	const data = await loadData('../../data/taxonomy_latest.json', options, true);
 	let { taxonomy } = processData(data, [-1]);
 	
 	const packs = processPack(taxonomy);
