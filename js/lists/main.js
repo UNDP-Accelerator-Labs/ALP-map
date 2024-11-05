@@ -7,7 +7,7 @@ async function loadData () {
 	let taxonomy = search.get('taxonomy');
 
 	if (!platform) platform = 'learningplans';
-	if (!taxonomy) taxonomy = 'data/taxonomy_latest.json';
+	if (!taxonomy) taxonomy = '../../data/taxonomy_latest.json';
 
 	const baseurl = new URL(`https://${platform}.sdg-innovation-commons.org`);
 	const tags = new URL('apis/fetch/tags', baseurl);
