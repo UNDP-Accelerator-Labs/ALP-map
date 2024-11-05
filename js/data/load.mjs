@@ -3,7 +3,7 @@ import { addLoader, rmLoader } from '../ui/index.mjs';
 import { baseurl } from '../utils/index.mjs';
 
 export const loadData = async function (taxonomy, _kwargs, include_location_information) {
-	if (!taxonomy) taxonomy = '/data/taxonomy_latest.json';
+	if (!taxonomy) taxonomy = '../../data/taxonomy_latest.json';
 
 	const tags = new URL('apis/fetch/tags', baseurl);
 	const pads = new URL('apis/fetch/pads', baseurl);
