@@ -12,7 +12,7 @@ export const loadData = async function (taxonomy, _kwargs, include_location_info
 	params.append('token', token);
 	params.append('output', 'json');
 	params.append('include_tags', true);
-	params.append('space', 'published');
+	// if (!_kwargs.space) params.append('space', 'published');
 	
 	if (_kwargs) {
 		for (let k in _kwargs) {
@@ -22,21 +22,23 @@ export const loadData = async function (taxonomy, _kwargs, include_location_info
 				v.forEach(d => {
 					params.append(k, d);
 				})
-			} else params.append(k, v);
+			} else params.set(k, v);
 		}
-	} 
+	}
 
 	const search = new URLSearchParams(window.location.search);
 	search.forEach((v, k) => {
-		if (['countries'].includes(k)) params.append(k, v);
-		if (['regions'].includes(k)) params.append(k, v);
-		if (['mobilizations'].includes(k)) params.append(k, v);
-		if (['pads'].includes(k)) params.append(k, v);
+		if (['countries'].includes(k)) params.set(k, v);
+		if (['regions'].includes(k)) params.set(k, v);
+		if (['mobilizations'].includes(k)) params.set(k, v);
+		if (['pads'].includes(k)) params.set(k, v);
 		if (['pinboard'].includes(k)) {
-			params.append(k, v);
-			params.append('space', 'pinned');
+			params.set(k, v);
+			params.set('space', 'pinned');
 		}
 	});
+
+	// if (!params.get('space')) params.set('space', 'published');
 
 	const promises = [];
 
@@ -49,8 +51,8 @@ export const loadData = async function (taxonomy, _kwargs, include_location_info
 		const countries = new URL('apis/fetch/countries', baseurl);
 
 		const location_params = new URLSearchParams();
-		location_params.append('token', token)
-		location_params.append('has_lab', true)
+		location_params.set('token', token)
+		location_params.set('has_lab', true)
 
 		promises.push(GET(`${regions.origin}${regions.pathname}?${location_params.toString()}`))
 		promises.push(GET(`${countries.origin}${countries.pathname}?${location_params.toString()}`))

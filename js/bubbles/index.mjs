@@ -23,7 +23,8 @@ async function onLoad () {
 
 	// LOAD DATA AND DRAW PACKS
 	// hidepacks: [130, 118]
-	const qm = new URLSearchParams(window.location.search).get('mobilizations');
+	const params = new URLSearchParams(window.location.search);
+	const qm = params.get('mobilizations');
 	let options = {};
 	if (!qm) options.mobilizations = [38, 37];
 

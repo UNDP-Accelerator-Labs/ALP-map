@@ -137,7 +137,7 @@ export const render = function (_kwargs) {
 		.attr('transform', d => `translate(${d.x || 0},${d.y || 0})`);
 
 	let circle = node.selectAll('circle')
-		.data(d => [d])
+		.data(d => [d]);
 	circle.exit().remove();
 	
 	circle = circle.enter().append('circle')
