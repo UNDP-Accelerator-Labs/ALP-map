@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Map dependencies -->
+    <script src="https://unpkg.com/topojson-client@3" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7/turf.min.js"></script>
+    <!--  -->
+    <script type="module" src="public/js/load.mjs"></script>
+    <link rel="stylesheet" type="text/css" href="public/css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id='logo'>
+        <img src='public/imgs/branding/UNDP_accelerator_labs_logo_vertical_white_cropped_shadow.png'>
+      </div>
+      <h1>A Network of Ecosystems</h1>
+    </header>
+
+    <main>
+      <section id="visualization">
+        <nav>
+          <div id="cartouche">
+            <div class="inner">
+              <p id="partner-type">Type</p>
+              <h2 id="partner-name">Partner</h2>
+              <div id="partner-description">
+                <small class="interaction-queue">Hover over one of the nodes in the network to display partnership information.</small>
+              </div>
+              <a id="partner-source"></a>
+            </div>
+          </div>
+          <div id="layers"></div>
+          <div id="interaction-panel">
+          </div>
+        </nav>
+        <div id="canvas"></div>
+      </section>
+      <section id="description">
+        <div class="left">
+          <div class="subsection">
+            <p>This visualization illustrates the UNDP Accelerator Labs Network of Ecosystems, with 5+ years of data on the connections and coallitions formed by Accelerator Labs in over 100 countries&mdash;from grassroots innovators to academia, to governments (the "ecosystems" layer)&mdash;and the interactions between labs through informal WhatsApp groups, where they shared questions, their experiences, contextual and situational information, practical tips, etc.&mdash;as well as more basic but deep camaraderie (the "network" layer).</p>
+
+            <p>All the way back in 2020, the <a href="https://sloanreview.mit.edu/article/accelerating-innovation/" target="_blank">MIT Sloan Management Review</a> coined this idea of a network of ecosystems to define the <a href="https://www.undp.org/acceleratorlabs" target="blank">UNDP Accelerator Labs Network</a>, which at the time was the largest and fastest learning network on sustainable development priorities and challenges.</p>
+
+            <blockquote>
+              UNDP has [created] a large network of ecosystems that revolve around its labs, and building connections with local partners while also helping the labs coordinate with one another.
+              <small>Altman E. J., Nagle F., MIT Sloan Management Review, 2020</small>
+            </blockquote>
+
+            <p>This visualization intends to honor the work of the Accelerator Labs and their legacy.</p>
+          
+          </div>
+          <div class="subsection">
+            <h2>Documentation</h2>
+            <p>The "ecosystem" layer displayed in the graphic above shows data on the partnerships that 91 UNDP Accelerator Labs established in 115 countries over 5 years. The data are extracted from the reflective documentation on innovation in sustainable development practice available in the <a href="https://sdg-innovation-commons.org/" target="_blank">SDG Commons</a> (under <a href="https://sdg-innovation-commons.org/test/all" target="_blank">"What we Test"</a>). The semi-automated methodology for extracting the names of partners is documented here.</p>
+
+            <p>You can download the data from the side panel on the right.</p>
+
+            <!-- <p>At a heuristic level, to be included in the data, partner details must be:</p>
+            <ul>
+              <li> a distinctly named entitiy (not an unspecified group or individual)
+                <ul>
+                  <li>for example "we had more than 12 meetings with various private sector contra parts" is not accounted for.</li>
+                  <li>only distincly named entities are retrieved.</li>
+                  <li>non specific actors like central or local government are not included</li>
+                </ul>
+              </li>
+              <li>not part of UNDP
+                <ul>
+                  <li>we do not include internal collaborations with programmatic units or clusters</li>
+                </ul>
+              </li>
+              <li>unusual partners have to be named to be accounted for (this could be improved, but for now I am going for speed)
+                <ul>
+                  <li>for example "Civil Society Organisations and private sector partners mentioned above" is not accounted for since the organizations are not explicitely mentioned.</li>
+                </ul>
+              </li>
+            </ul> -->
+          </div>
+          <div class="subsection">
+            <h2>Data License</h2>
+            <p>The Accelerator Labs Network of Ecosystems data and code are licensed under the <a href='https://creativecommons.org/licenses/by-nc/4.0/'>Creative Commons Attribution-NonCommercial 4.0 International license</a>.</p>
+          </div>
+        </div>
+        <div class="right">
+          <div id="download-cartouche">
+            <h2>Get the data</h2>
+            <p>Only the data on the "ecosystems" layer are released here. They are provided in two versions, both in two formats. The first version is a simplified graph of all partnerships between Accelerator Labs and external parties. This is the default data in the "global" view. The second version is a more complex graph that also includes connections between external parties. This is the default data in "country" views. Both datasets are available in .xlsx and .json formats.</p>
+            <h3>Partnerships data</h3>
+            <ul>
+              <li>
+                <a href="https://github.com/UNDP-Accelerator-Labs/Network_of_Ecosystems/blob/main/download/accelerator_labs_partners.xlsx"><button>xlsx (250 KB)</button></a>
+              </li>
+              <li>
+                <a href="https://github.com/UNDP-Accelerator-Labs/Network_of_Ecosystems/blob/main/download/accelerator_labs_partners.json"><button>json (1.1 MB)</button></a>
+              </li>
+            </ul>
+            <h3>Ecosystem data</h3>
+            <ul>
+              <li>
+                <a href="https://github.com/UNDP-Accelerator-Labs/Network_of_Ecosystems/blob/main/download/accelerator_labs_ecosystems.xlsx"><button>xlsx (250 KB)</button></a>
+              </li>
+              <li>
+                <a href="https://github.com/UNDP-Accelerator-Labs/Network_of_Ecosystems/blob/main/download/accelerator_labs_ecosystems.json"><button>json (1.1 MB)</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="public/imgs/branding/UNDP_Acc_Labs_All_Partners_horiz_white.png" alt="UNDP Accelerator Labs funding and action partners"/>
+    </footer>
+  </body>
+</html>
