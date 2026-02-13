@@ -13,12 +13,6 @@ async function onLoad() {
     .then(res => res.json())
     .catch(err => console.log(err));
   }))
-  // let [ landmass, countries ] = await Promise.all(['landmass', 'all_countries'].map(d => {
-  let [ countries ] = await Promise.all(['all_countries'].map(d => {
-    return fetch(`public/data/geo/${d}.topojson`)
-    .then(res => res.json())
-    .catch(err => console.log(err));
-  }));
 
   let { nodes, links } = ecosystems;
   console.log(nodes.filter(d => d.name?.toLowerCase() !== 'accelerator lab').length)
@@ -27,29 +21,6 @@ async function onLoad() {
   const { proj } = render.map(null, countries, { ...canvas, ctrs });
   const country_features = topojson.feature(countries, countries.objects.all_countries).features;
   
-  /* 
-  Set all the geo-coordinates for the network and ecosystems
-  */
-  /*
-  Network links. We do not use the nodes.
-  */
-  network.links.forEach(d => {
-    const { source, target } = d || {};
-    if (country_features.some(c => c.id === source)) {
-      const geo_source = country_features.find(c => c.id === source);
-      d.source_pos = proj(turf.centroid(geo_source).geometry.coordinates);
-      d.source_name = geo_source.properties.ADMIN;
-    } else {
-      console.log(`source: ${source}`);
-    }
-    if (country_features.find(c => c.id === target)) {
-      const geo_target = country_features.find(c => c.id === target);
-      d.target_pos = proj(turf.centroid(geo_target).geometry.coordinates);
-      d.target_name = geo_target.properties.ADMIN;
-    } else {
-      console.log(`target: ${target}`);
-    }
-  });
   /*
   Ecosystems nodes
   */
@@ -90,12 +61,10 @@ async function onLoad() {
   /*
   Render everything
   */
-  // interaction.slider(nodes, links, { ...canvas });
-  render.widgets.layer_activation('network');
-  render.widgets.layer_activation('ecosystems');
-  render.widgets.range_slider(steps, network, ecosystems, { canvas });
+  // render.widgets.layer_activation('network');
+  // render.widgets.layer_activation('ecosystems');
+  // render.widgets.range_slider(steps, network, ecosystems, { canvas });
   if (!ctrs?.length) render.network(network, { ...canvas, ctrs });
-  render.ecosystems(ecosystems, { ...canvas, ctrs, countries });
 }
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", function () {
