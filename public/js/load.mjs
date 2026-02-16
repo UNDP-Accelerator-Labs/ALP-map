@@ -2,7 +2,7 @@ import * as render from './render/index.mjs';
 import { d3, arrays, parsers } from './helpers/index.mjs';
 // import { token } from './tokens.mjs';
 
-const local = false;
+const local = true;
 const use_token = false;
 
 async function onLoad() {
@@ -29,7 +29,6 @@ async function onLoad() {
     }
   } else {
     const pads_path = new URL('api/pads', new URL('https://www.sdg-innovation-commons.org'));
-    // const mobilization = [65, 79, 82, 67, 75, 76, 86, 87, 90, 92, 93];
     const templates = [403];
 
     const pads_queryparams = new URLSearchParams(pads_path.search);
