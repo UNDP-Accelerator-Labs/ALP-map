@@ -3,7 +3,7 @@ tokens
 static/
 scripts/
 experiments.html
-*.sublime-workspace
+*.sublime-*
 tokens.mjs
 download/compile.py
 download/all_tags.json
