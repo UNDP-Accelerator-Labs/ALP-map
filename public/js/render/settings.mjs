@@ -6,4 +6,5 @@ export const colors = {
   "government": "darkgrey",
   "civil society": "white",
   "UN": "blue",
+  "fluo": "rgb(210,249,96)",
 }

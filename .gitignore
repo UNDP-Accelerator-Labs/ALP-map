@@ -4,3 +4,7 @@ static/
 scripts/
 experiments.html
 *.sublime-workspace
+tokens.mjs
+download/compile.py
+download/all_tags.json
+public/data/local_data.json

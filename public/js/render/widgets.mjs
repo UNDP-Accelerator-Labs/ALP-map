@@ -1,7 +1,7 @@
 import { d3, strings } from '../helpers/index.mjs';
 import * as render from './index.mjs';
 
-export const range_slider = function(steps, network, ecosystems, kwargs) {
+export const range_slider = function(steps, hierarchy, pads, kwargs) {
   let { width, height, svg, orient, canvas } = kwargs || {};
   if (!svg) {
     const panel = render.canvas('#interaction-panel');
@@ -88,15 +88,22 @@ export const range_slider = function(steps, network, ecosystems, kwargs) {
         .each(c => c[0] = d.value)
         .transition()
           .attr('y1', d.y);
-      }else if (d.index === 1) {
+      } else if (d.index === 1) {
         d3.select('line.range')
         .each(c => c[1] = d.value)
         .transition()
           .attr('y2', d.y);
       }
     }
-    render.network(network, { ...canvas });
-    render.ecosystems(ecosystems, { ...canvas });
+    /*
+    Clear the cards and update the graphic
+    */
+    const card_list = d3.select('#card-list .inner');
+    card_list.selectAll('.card').remove();
+    card_list.select('.card-placeholder').classed('hide', false);
+    card_list.node().scrollTo(0, 0);
+    render.portfolio([]);
+    render.bubbles(hierarchy, pads, { ...canvas });
   });
 
   const ticks = scale.ticks().filter(tick => Number.isInteger(tick));
