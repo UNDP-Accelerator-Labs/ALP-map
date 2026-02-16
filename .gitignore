@@ -7,4 +7,5 @@ experiments.html
 tokens.mjs
 download/compile.py
 download/all_tags.json
+download/learning_themes_202602_base.json
 public/data/local_data.json

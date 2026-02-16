@@ -38,20 +38,22 @@ export const main = function (pads, taxonomy, kwargs) {
   const nodes = svg.addElems('g', 'packs')
   nodes.addElems('circle', null, root.descendants().slice(1), d => d.data.name)
     .classed('lock', false)
-    .on('click', function (evt, d) {
-      d3.selectAll('g.packs circle, g.label')
-        .classed('lock', false)
-      .filter(c => {
-        return c.data.name === d.data.name
-        || c.parent?.data.name === d.data.name;
-      }).classed('lock', true);
+  .each(function () {
+    const sel = d3.select(this);
+    if (!sel.attr('transform')) sel.attr('transform', d => `translate(${[0, height/ 2]})`);
+  }).on('click', function (evt, d) {
+    d3.selectAll('g.packs circle, g.label')
+      .classed('lock', false)
+    .filter(c => {
+      return c.data.name === d.data.name
+      || c.parent?.data.name === d.data.name;
+    }).classed('lock', true);
 
-      if (d.parent === root) {
-        interaction.highlight_bubble(d.data.name);
-        render.cards(pads.filter(c => d.data.pads.includes(c.pad_id)));
-      }
-    })
-  .transition()
+    if (d.parent === root) {
+      interaction.highlight_bubble(d.data.name);
+      render.cards(pads.filter(c => d.data.pads.includes(c.pad_id)));
+    }
+  }).transition()
     .delay((d, i) => i * 2)
     .attr('transform', d => `translate(${[d.x, d.y]})`)
     .attr('r', d => d.r)
