@@ -2,8 +2,8 @@ import * as render from './render/index.mjs';
 import { d3, arrays, parsers } from './helpers/index.mjs';
 import { token } from './tokens.mjs';
 
-const local = true;
-const use_token = true;
+const local = false;
+const use_token = false;
 
 async function onLoad() {
   /*
@@ -15,8 +15,6 @@ async function onLoad() {
     return res;
   }).catch(err => console.log(err));
 
-
-  console.log(taxonomy)
   let pads = [];
   if (local) {
     pads = await d3.json('public/data/local_data.json')
@@ -25,8 +23,6 @@ async function onLoad() {
     const q_params = new URL(window.location).searchParams;
     let ctrs = q_params.getAll('ctr') || q_params.getAll('CTR');
     if (!Array.isArray(ctrs)) ctrs = [ctrs];
-
-    console.log(pads)
 
     if (ctrs.length) {
       pads = pads.filter(d => ctrs.includes(d.iso3))
