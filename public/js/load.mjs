@@ -2,7 +2,7 @@ import * as render from './render/index.mjs';
 import { d3, arrays, parsers } from './helpers/index.mjs';
 // import { token } from './tokens.mjs';
 
-const local = true;
+const local = false;
 const use_token = false;
 
 async function onLoad() {
