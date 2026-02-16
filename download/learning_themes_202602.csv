@@ -1,0 +1,569 @@
+tag,tag_id,category,count
+access to basic services,3,Access & Equity,16
+water,295,Water & WASH,5
+woman empowerment,298,"Social Inclusion, Gender & Human Development",2
+education,107,Education & Skills,7
+employment,110,"Economy, Markets & Private Sector",13
+empowerment,111,"Social Inclusion, Gender & Human Development",3
+disabilities,94,"Social Inclusion, Gender & Human Development",7
+policy innovation,210,"Governance, Policy & Public Sector",9
+better livelihood,26,"Economy, Markets & Private Sector",10
+migration,186,Migration & Human Mobility,3
+digital inclusion,83,"Social Inclusion, Gender & Human Development",22
+digital literacy,84,"Technology, Data & Digital",6
+"micro, small, medium enterprises",185,"Economy, Markets & Private Sector",8
+geolocalization,872,"Governance, Policy & Public Sector",1
+geospatial,748,"Technology, Data & Digital",1
+gis,4113,"Technology, Data & Digital",2
+satellite images,4046,"Technology, Data & Digital",2
+private sector engagement,214,"Economy, Markets & Private Sector",9
+socio-economic impact and needs assessment,254,"Economy, Markets & Private Sector",4
+sustainability strategy,260,Ecosystems & Biodiversity,3
+governance,144,"Governance, Policy & Public Sector",9
+innovation,170,"Methods, Innovation & Foresight",16
+social protection,253,"Social Inclusion, Gender & Human Development",3
+active citizenship,7,"Governance, Policy & Public Sector",7
+portfolio approach,212,"Methods, Innovation & Foresight",19
+strategic foresight,4238,"Methods, Innovation & Foresight",3
+circular economy,40,Waste & Circular Economy,31
+green economy,148,"Economy, Markets & Private Sector",8
+food waste management,134,Waste & Circular Economy,5
+participatory solutions,199,"Governance, Policy & Public Sector",4
+food system,2661,Agriculture & Food Systems,4
+participatory governance,198,"Governance, Policy & Public Sector",8
+sustainable tourism,4133,"Culture, Arts & Tourism",9
+institutional reform,174,UNDP / Institutional,4
+public health,220,Health,4
+street-level bureaucrats,259,"Governance, Policy & Public Sector",1
+access to information,4,Access & Equity,12
+behavioral change,24,"Methods, Innovation & Foresight",14
+health,152,Health,3
+informal employment,167,"Economy, Markets & Private Sector",10
+informality,169,"Economy, Markets & Private Sector",8
+building trust in government,35,"Governance, Policy & Public Sector",3
+digital transformation,90,"Technology, Data & Digital",22
+government innovation,147,"Governance, Policy & Public Sector",17
+climate change,50,Climate & Resilience,21
+energy,112,Energy,2
+evidence driven,121,"Methods, Innovation & Foresight",1
+research,237,"Methods, Innovation & Foresight",3
+collective intelligence,4442,"Methods, Innovation & Foresight",9
+financial inclusion,125,"Social Inclusion, Gender & Human Development",8
+Financial support for the communities,5965,Finance & Investment,1
+fin-tech,123,"Technology, Data & Digital",3
+fintech,126,"Technology, Data & Digital",3
+inclusive insurance,10542,"Social Inclusion, Gender & Human Development",2
+innovation challenges,171,"Methods, Innovation & Foresight",17
+innovative financing,3214,"Methods, Innovation & Foresight",6
+private sector,1215,"Economy, Markets & Private Sector",2
+Sustainable Finance,6846,Finance & Investment,2
+knowledge management,176,"Methods, Innovation & Foresight",3
+quality education,227,Education & Skills,4
+social innovation,19646,"Methods, Innovation & Foresight",1
+anticipatory governance,4020,"Governance, Policy & Public Sector",1
+digital government,4259,"Governance, Policy & Public Sector",4
+institutional capacity,739,UNDP / Institutional,2
+public policy planning,221,"Governance, Policy & Public Sector",8
+public sector innovation,222,"Governance, Policy & Public Sector",26
+public services,223,"Governance, Policy & Public Sector",7
+system thinking,264,"Methods, Innovation & Foresight",7
+recovery and reconstruction,10496,Disaster Risk Management & Humanitarian,1
+Sustainable Investment,6957,Finance & Investment,1
+food security,131,Agriculture & Food Systems,8
+smart farming,1826,Agriculture & Food Systems,2
+sustainable land managemnt,4139,Ecosystems & Biodiversity,1
+private sector support,2976,"Economy, Markets & Private Sector",4
+sustainable financing,4018,Finance & Investment,4
+"circular economy, techonology",41,Waste & Circular Economy,5
+community resilience,64,Climate & Resilience,14
+inclusive economic development,162,"Economy, Markets & Private Sector",8
+alternative finance,18,Finance & Investment,7
+ecosystem strengthening,6349,Ecosystems & Biodiversity,2
+cultural heritage,72,"Culture, Arts & Tourism",1
+traditional knowledge,273,"Social Inclusion, Gender & Human Development",1
+Behavior Change,6758,"Methods, Innovation & Foresight",1
+experimental desgin,8559,"Methods, Innovation & Foresight",2
+litter,8558,Waste & Circular Economy,1
+marine litter,181,Oceans & Coasts,2
+AI,10858,"Technology, Data & Digital",4
+digital education,2031,Education & Skills,3
+media literacy,19688,"Technology, Data & Digital",1
+missinformation,19689,"Technology, Data & Digital",1
+youth empowerment,305,"Social Inclusion, Gender & Human Development",7
+ai systems,4716,"Technology, Data & Digital",3
+digital solutions,89,"Technology, Data & Digital",9
+water management,297,Water & WASH,5
+digital,79,"Technology, Data & Digital",10
+digital finance,10540,"Technology, Data & Digital",1
+digital payments,4261,"Technology, Data & Digital",2
+solid waste management,256,Waste & Circular Economy,10
+system transformation,265,"Methods, Innovation & Foresight",11
+cimate change adaptation,4572,Climate & Resilience,1
+Poverty,1734,"Social Inclusion, Gender & Human Development",3
+inclusive education,2355,Education & Skills,1
+people with disabilities,203,"Social Inclusion, Gender & Human Development",7
+solutions mapping,3920,"Methods, Innovation & Foresight",5
+community relience,1211,Civic & Community Participation,5
+participatory design,770,"Governance, Policy & Public Sector",4
+3d printing,1193,"Technology, Data & Digital",1
+capacity building,4479,"Methods, Innovation & Foresight",5
+technology,266,"Technology, Data & Digital",8
+data,74,"Technology, Data & Digital",5
+enviroment,4079,Ecosystems & Biodiversity,6
+community-based disaster response and management,8563,Disaster Risk Management & Humanitarian,1
+disaster education,8562,Education & Skills,1
+drr,8561,Disaster Risk Management & Humanitarian,1
+digital administration,742,"Technology, Data & Digital",2
+digital data collection,755,"Technology, Data & Digital",3
+e-governance,98,"Governance, Policy & Public Sector",4
+portfolio management,4469,"Methods, Innovation & Foresight",1
+social contract,4074,"Peace, Security & Justice",2
+behavioral insights,25,"Methods, Innovation & Foresight",19
+waste management,292,Waste & Circular Economy,23
+ai ethics,6744,"Technology, Data & Digital",1
+artificial intelligence,22,"Technology, Data & Digital",12
+creative economy,69,"Economy, Markets & Private Sector",7
+culture,73,"Culture, Arts & Tourism",3
+intellectual property,19554,"Economy, Markets & Private Sector",1
+orange economy,19553,"Economy, Markets & Private Sector",1
+preservation of culture,861,"Culture, Arts & Tourism",1
+digital platform,86,"Technology, Data & Digital",5
+digital skills,88,Education & Skills,8
+entrepreneurial eco-system,115,"Economy, Markets & Private Sector",10
+entrepreneurial ecosystem,4159,Ecosystems & Biodiversity,6
+youth and unemployment,304,"Economy, Markets & Private Sector",24
+collective impact,745,"Methods, Innovation & Foresight",3
+strategic innovation,4480,"Methods, Innovation & Foresight",3
+agricultural waste,1424,Waste & Circular Economy,1
+biology,3522,Ecosystems & Biodiversity,1
+bio-waste,28,Waste & Circular Economy,2
+circular business model,1450,Waste & Circular Economy,4
+citizen engagment and feedback,43,"Governance, Policy & Public Sector",15
+city,1576,Urban Development & Infrastructure,1
+coffee,1538,Agriculture & Food Systems,1
+Creating long-term solutions,6011,"Methods, Innovation & Foresight",1
+Eco-friendly design,6122,"Methods, Innovation & Foresight",1
+eco packaging,2416,Waste & Circular Economy,1
+entrepreneurship,116,"Economy, Markets & Private Sector",14
+Innovative,5850,"Methods, Innovation & Foresight",1
+innovative goods,4167,"Methods, Innovation & Foresight",1
+Innovative material,6201,"Methods, Innovation & Foresight",1
+municipality waste,4719,Waste & Circular Economy,2
+start-up,1584,"Economy, Markets & Private Sector",2
+startup,4721,"Economy, Markets & Private Sector",2
+agriculture,13,Agriculture & Food Systems,12
+environmental monitoring,3581,Ecosystems & Biodiversity,2
+prototyping,217,"Methods, Innovation & Foresight",7
+food value chains,132,Agriculture & Food Systems,3
+skills,3956,Education & Skills,3
+farmer-herder conflicts,4236,Agriculture & Food Systems,1
+insecurity,4235,"Peace, Security & Justice",2
+human mobility,4055,Transportation & Mobility,1
+social cohesion,251,"Social Inclusion, Gender & Human Development",8
+public spaces,225,Urban Development & Infrastructure,4
+career counselling,4710,Education & Skills,2
+AI-Powered Solution,10646,"Technology, Data & Digital",1
+co -creation,2438,"Methods, Innovation & Foresight",11
+co creation,4012,"Methods, Innovation & Foresight",10
+co-creation,53,"Methods, Innovation & Foresight",23
+co design,4609,"Methods, Innovation & Foresight",2
+community  involment,935,Civic & Community Participation,2
+community involment,61,Civic & Community Participation,5
+Data Visualization,10638,"Technology, Data & Digital",1
+digital access,4209,"Technology, Data & Digital",1
+digital gap,82,"Technology, Data & Digital",8
+digital service,2557,"Technology, Data & Digital",3
+human center design,19633,"Methods, Innovation & Foresight",1
+plastic,206,Waste & Circular Economy,4
+agritourism,3564,Agriculture & Food Systems,1
+community tourism,870,"Culture, Arts & Tourism",3
+ecotourism,106,"Culture, Arts & Tourism",2
+tourism,271,"Culture, Arts & Tourism",13
+climate resiliency,52,Climate & Resilience,11
+urbanization,284,Urban Development & Infrastructure,4
+access,2,Access & Equity,5
+awareness,23,"Methods, Innovation & Foresight",4
+communication,57,Civic & Community Participation,2
+inclusion,160,"Social Inclusion, Gender & Human Development",5
+project management,4029,"Methods, Innovation & Foresight",1
+project management\,4067,"Methods, Innovation & Foresight",1
+technologie,1361,"Technology, Data & Digital",1
+biodiversity,30,Ecosystems & Biodiversity,12
+water protection,1431,Water & WASH,2
+crowdfunding,70,Finance & Investment,5
+gender violence,142,"Social Inclusion, Gender & Human Development",10
+safety,244,"Peace, Security & Justice",1
+organizational innovation,197,"Methods, Innovation & Foresight",4
+Sustainable Consumption and Production,5718,Waste & Circular Economy,1
+market need,182,"Economy, Markets & Private Sector",4
+multi-stakeholder approach,189,"Governance, Policy & Public Sector",6
+"covid-19 , response",68,Health,7
+inclusive and solidary communities,161,"Social Inclusion, Gender & Human Development",3
+positive deviance,213,"Methods, Innovation & Foresight",2
+vulnerable groups,290,"Social Inclusion, Gender & Human Development",3
+civic participation,45,"Governance, Policy & Public Sector",9
+partnership,200,"Methods, Innovation & Foresight",4
+digitalhealth,91,Health,3
+health and wellbeing,154,Health,3
+digital equity,737,"Technology, Data & Digital",2
+emerging technologies,4023,"Technology, Data & Digital",2
+accountability,4037,"Governance, Policy & Public Sector",1
+Ensuring the urban resilience,5957,Climate & Resilience,1
+Smart Cities,6256,Urban Development & Infrastructure,1
+Sustainable Cities and Communities,5564,Urban Development & Infrastructure,2
+training,274,Education & Skills,4
+disinformation,10548,"Technology, Data & Digital",1
+"peace,",202,"Peace, Security & Justice",1
+Peace,962,"Peace, Security & Justice",2
+environment friendly,118,Ecosystems & Biodiversity,2
+waste reduction,293,Waste & Circular Economy,5
+data collection,1592,"Technology, Data & Digital",4
+disaster risk reduction,2041,Disaster Risk Management & Humanitarian,1
+flooding,1278,Climate & Resilience,5
+chat in career counselling,6400,Education & Skills,1
+art,21,"Culture, Arts & Tourism",1
+creative confidence,10546,"Methods, Innovation & Foresight",1
+sustainable urbanisation,263,Urban Development & Infrastructure,11
+Climate Action Tracker,6869,Climate & Resilience,1
+data-scraping,76,"Technology, Data & Digital",3
+forest conservation,2428,Ecosystems & Biodiversity,1
+gender equality,140,"Social Inclusion, Gender & Human Development",11
+local economy development,2792,"Economy, Markets & Private Sector",2
+local government,1497,"Governance, Policy & Public Sector",2
+portfolio design and sense making,4076,"Methods, Innovation & Foresight",4
+trust,279,"Governance, Policy & Public Sector",3
+court of justice,4341,"Peace, Security & Justice",2
+appropriate technology,4339,"Technology, Data & Digital",1
+food preservation,129,Agriculture & Food Systems,1
+green energy,4198,Energy,1
+diaspora engagement,1112,Migration & Human Mobility,1
+agri-food resilience,765,Climate & Resilience,3
+agrotech,14,Agriculture & Food Systems,4
+digital solution,2414,"Technology, Data & Digital",2
+drones,4004,"Technology, Data & Digital",3
+gender focus,141,"Social Inclusion, Gender & Human Development",11
+green technology,151,"Technology, Data & Digital",2
+sustainable agriculture,261,Agriculture & Food Systems,4
+small medium enterprises,868,"Economy, Markets & Private Sector",1
+just transition,4443,Climate & Resilience,1
+climate adaptation,4434,Climate & Resilience,2
+resilience,4432,Climate & Resilience,1
+reducing gender inequalities,835,"Social Inclusion, Gender & Human Development",9
+climate resilience,4088,Climate & Resilience,8
+violence,1781,"Peace, Security & Justice",1
+disaster,95,Disaster Risk Management & Humanitarian,2
+future,136,"Methods, Innovation & Foresight",1
+reduced inequalities,233,"Social Inclusion, Gender & Human Development",3
+resource management,238,Ecosystems & Biodiversity,2
+gamification,138,"Methods, Innovation & Foresight",4
+gender mainstreaming,4487,"Social Inclusion, Gender & Human Development",2
+women empowerment,300,"Social Inclusion, Gender & Human Development",14
+air pollution,16,Ecosystems & Biodiversity,7
+transportation & mobility,278,Transportation & Mobility,5
+civic technologies,46,"Governance, Policy & Public Sector",3
+commons,56,Civic & Community Participation,1
+punlic sector innovation,226,"Governance, Policy & Public Sector",2
+social capital,250,"Social Inclusion, Gender & Human Development",3
+economic growth,103,"Economy, Markets & Private Sector",6
+livelihood,179,"Economy, Markets & Private Sector",7
+health systems support,155,Health,2
+associativity,4714,"Economy, Markets & Private Sector",1
+clusters,4713,"Economy, Markets & Private Sector",1
+livelihood and decent work,180,"Economy, Markets & Private Sector",5
+local development,4002,"Economy, Markets & Private Sector",1
+msmes,4184,"Economy, Markets & Private Sector",1
+productivity,757,"Economy, Markets & Private Sector",5
+digital dashboard,80,"Technology, Data & Digital",1
+digital economy,81,"Economy, Markets & Private Sector",4
+digitization of the informal sector,93,"Economy, Markets & Private Sector",3
+zero waste,307,Waste & Circular Economy,3
+"community  involment, youth, employment",58,"Economy, Markets & Private Sector",13
+good health and well-being,143,Health,2
+recreation and sports,230,"Culture, Arts & Tourism",2
+incentive,159,Finance & Investment,1
+process innovation,215,"Methods, Innovation & Foresight",6
+access to technology & internet,5,"Technology, Data & Digital",11
+accessibility,6,Access & Equity,7
+affordability,9,Access & Equity,2
+online learning,193,Education & Skills,1
+transfer of knowledge and technology,275,"Technology, Data & Digital",5
+citizen science,44,"Governance, Policy & Public Sector",2
+community empowerment,59,Civic & Community Participation,21
+blue economy,34,Oceans & Coasts,11
+cooking,65,Energy,1
+deforestation,77,Ecosystems & Biodiversity,2
+energy efficiency,113,Energy,3
+children,38,"Social Inclusion, Gender & Human Development",1
+government,146,"Governance, Policy & Public Sector",4
+clean energy,49,Energy,4
+protecting the environment,216,Ecosystems & Biodiversity,5
+value chain,286,Agriculture & Food Systems,2
+ocean,736,Oceans & Coasts,5
+environmental ecosystem,119,Ecosystems & Biodiversity,3
+cooperatives,66,"Methods, Innovation & Foresight",2
+economía solidaria,105,"Economy, Markets & Private Sector",1
+food waste,133,Waste & Circular Economy,4
+responsible consumption & production,239,Waste & Circular Economy,4
+informal markets,168,"Economy, Markets & Private Sector",2
+business support,37,"Economy, Markets & Private Sector",1
+recycling,232,Waste & Circular Economy,6
+transparency and accountability\,276,"Governance, Policy & Public Sector",2
+community involvement,62,Civic & Community Participation,8
+futures,137,"Methods, Innovation & Foresight",4
+recycle waste plastic,231,Waste & Circular Economy,3
+rural electrification,242,Energy,1
+gender,139,"Social Inclusion, Gender & Human Development",7
+blended learning,32,Education & Skills,2
+energy access,4132,Energy,1
+energy transitions,2493,Energy,2
+sensemaking,3969,"Methods, Innovation & Foresight",1
+covid-19,67,Health,3
+public amenities,218,Urban Development & Infrastructure,1
+rurality,243,Agriculture & Food Systems,1
+electricity,109,Energy,2
+unemployment,282,"Economy, Markets & Private Sector",3
+pollution reduction,211,Ecosystems & Biodiversity,4
+awareness raising,1200,"Methods, Innovation & Foresight",5
+surveys,3972,"Methods, Innovation & Foresight",3
+community hub for local solutions,60,Civic & Community Participation,2
+digital nomads,1113,"Technology, Data & Digital",1
+modern market,4186,"Economy, Markets & Private Sector",1
+value-based economy,4490,"Economy, Markets & Private Sector",1
+e-services,99,"Technology, Data & Digital",2
+livestock production,921,Agriculture & Food Systems,2
+natural farming,1425,Agriculture & Food Systems,1
+social entrepreneurship,1844,"Economy, Markets & Private Sector",1
+social impact,252,"Social Inclusion, Gender & Human Development",2
+volunteering,289,Civic & Community Participation,1
+fake news,122,"Technology, Data & Digital",1
+unconventional partners,280,"Methods, Innovation & Foresight",1
+digitalization,92,"Technology, Data & Digital",9
+youth,303,"Social Inclusion, Gender & Human Development",4
+building youth capacities,4140,"Social Inclusion, Gender & Human Development",3
+Community development,4985,Civic & Community Participation,1
+hygiene,157,Water & WASH,2
+innovation ecosystem,4237,Ecosystems & Biodiversity,4
+self-sustainable,840,Ecosystems & Biodiversity,1
+plastic waste management,209,Waste & Circular Economy,9
+conservation,985,Ecosystems & Biodiversity,2
+sustainable development,741,Ecosystems & Biodiversity,1
+pulic sector innovation,2987,"Governance, Policy & Public Sector",1
+informal businesses,166,"Economy, Markets & Private Sector",4
+innovation during covid-19,172,Health,2
+collaboration,55,"Methods, Innovation & Foresight",7
+public space,224,Urban Development & Infrastructure,6
+digital management system,85,"Technology, Data & Digital",1
+economía circular,104,Waste & Circular Economy,1
+solidarity economy,257,"Economy, Markets & Private Sector",1
+community engagement,762,Civic & Community Participation,7
+urban development,283,Urban Development & Infrastructure,8
+ecological farming,101,Ecosystems & Biodiversity,1
+food,128,Agriculture & Food Systems,3
+modernized productive sectors,187,"Economy, Markets & Private Sector",1
+heat management,3713,Climate & Resilience,1
+advocacy,4641,Civic & Community Participation,1
+ecological movements,862,Ecosystems & Biodiversity,1
+digital divide,4711,"Technology, Data & Digital",1
+small holder farmers,4712,Agriculture & Food Systems,1
+iot,1370,"Technology, Data & Digital",1
+indigenous knowledge,3456,"Social Inclusion, Gender & Human Development",1
+climate action,4092,Climate & Resilience,8
+women in agriculture,838,Agriculture & Food Systems,1
+women in energy sector,2815,Energy,1
+affordable mining technology,3936,"Economy, Markets & Private Sector",1
+development minerals,3937,"Economy, Markets & Private Sector",1
+informal businesses to formal businesses,885,"Economy, Markets & Private Sector",4
+locally made,4078,"Economy, Markets & Private Sector",1
+value addition,3938,"Economy, Markets & Private Sector",1
+academia,3118,"Methods, Innovation & Foresight",3
+formalising the informal,747,"Economy, Markets & Private Sector",2
+mental health,183,Health,1
+metal,184,Waste & Circular Economy,1
+rural development,241,Agriculture & Food Systems,2
+road traffic safety,240,Transportation & Mobility,1
+water conservation,296,Ecosystems & Biodiversity,1
+community organizing,63,Civic & Community Participation,2
+wildlife,2143,Ecosystems & Biodiversity,1
+digital participation,2556,"Technology, Data & Digital",3
+enviromental mapping,4160,Ecosystems & Biodiversity,1
+clean cities,48,Urban Development & Infrastructure,7
+digital products,761,"Technology, Data & Digital",2
+transportation,850,Transportation & Mobility,1
+leaky pipeline,4699,"Social Inclusion, Gender & Human Development",1
+stem,4014,Education & Skills,1
+techonology,267,"Technology, Data & Digital",4
+earthquake,4722,Disaster Risk Management & Humanitarian,1
+earthquake response,4724,Disaster Risk Management & Humanitarian,1
+health and environment,153,Ecosystems & Biodiversity,3
+lack of open data,751,"Technology, Data & Digital",2
+recovery and city revitalization,4723,Urban Development & Infrastructure,1
+wash,1182,Water & WASH,1
+social inclusion,4027,"Social Inclusion, Gender & Human Development",2
+covid-19 response,867,Health,1
+finance and knowledge,124,Finance & Investment,2
+"green transition,",4647,Climate & Resilience,1
+open data,194,"Technology, Data & Digital",3
+ecological bags,100,Ecosystems & Biodiversity,2
+circular,39,Waste & Circular Economy,5
+alternative energy,17,Energy,1
+appropiate technology,3138,"Technology, Data & Digital",1
+green ideas,149,Ecosystems & Biodiversity,2
+partnership with private sector,201,"Economy, Markets & Private Sector",2
+digital community,2894,"Technology, Data & Digital",1
+digital lerning,894,Education & Skills,1
+e-service,2698,"Technology, Data & Digital",1
+reneweable energy,843,Energy,3
+communities markets,4114,"Economy, Markets & Private Sector",1
+big data analysis,27,"Technology, Data & Digital",2
+data science,75,"Technology, Data & Digital",3
+portfolio sensemaking,3950,"Methods, Innovation & Foresight",2
+transparency and accountability,766,"Governance, Policy & Public Sector",2
+block chain,33,"Technology, Data & Digital",2
+plastic alternative,207,Waste & Circular Economy,3
+environment,117,Ecosystems & Biodiversity,4
+big data,893,"Technology, Data & Digital",2
+"agriculture, cooperativism",4126,Agriculture & Food Systems,2
+community,1870,Civic & Community Participation,3
+economy,884,"Economy, Markets & Private Sector",1
+fair and clean food,1426,Agriculture & Food Systems,1
+fishing,4128,Oceans & Coasts,1
+food processing,130,Agriculture & Food Systems,1
+hydroponic,1445,Agriculture & Food Systems,1
+hydroponic farming,1660,Agriculture & Food Systems,1
+income generation,749,"Economy, Markets & Private Sector",2
+increased agricultural production,2337,Agriculture & Food Systems,1
+inequalities,750,"Social Inclusion, Gender & Human Development",2
+Local Consumption,1089,"Economy, Markets & Private Sector",1
+market,3942,"Economy, Markets & Private Sector",1
+planting,205,Agriculture & Food Systems,1
+undp high impact projects,281,UNDP / Institutional,2
+waste for livelihoods,291,Waste & Circular Economy,2
+waste separation,294,Waste & Circular Economy,3
+energy saving,114,Energy,1
+legal services,178,"Governance, Policy & Public Sector",2
+"governance, economic diversification, and citizen agency",4073,"Governance, Policy & Public Sector",1
+smes,249,"Economy, Markets & Private Sector",2
+depopulation,78,Urban Development & Infrastructure,2
+human development,156,"Social Inclusion, Gender & Human Development",3
+digital marketing,4100,"Technology, Data & Digital",1
+fishery,127,Oceans & Coasts,1
+alternative data source,1897,"Technology, Data & Digital",1
+disaster resilience,96,Climate & Resilience,1
+infrastructure,1305,Urban Development & Infrastructure,1
+augmented reality,4025,"Technology, Data & Digital",1
+waste upcycling,4335,Waste & Circular Economy,1
+women-led businesses,4196,"Economy, Markets & Private Sector",1
+social justice,834,"Social Inclusion, Gender & Human Development",1
+access to quality and safety standards,4120,Access & Equity,1
+access to education,763,Education & Skills,3
+solar energy,255,Energy,1
+waste system,3981,Waste & Circular Economy,2
+architecture & design,20,"Methods, Innovation & Foresight",1
+transparency for crowdfunding,277,"Governance, Policy & Public Sector",1
+community project,4121,Civic & Community Participation,2
+"cooperativism, community organizing",4122,"Methods, Innovation & Foresight",1
+grassroot solutions,738,Civic & Community Participation,2
+school,1073,Education & Skills,1
+open innovation,195,"Methods, Innovation & Foresight",4
+nature-based solutions,191,Ecosystems & Biodiversity,2
+waste water management,1003,Water & WASH,1
+water scarcity,4498,Water & WASH,1
+user-centered design,3995,"Methods, Innovation & Foresight",2
+false information,5549,"Technology, Data & Digital",2
+misinformation,5550,"Technology, Data & Digital",2
+crises,1195,Disaster Risk Management & Humanitarian,1
+women economic empowerment,5562,"Economy, Markets & Private Sector",1
+ecological,2461,Ecosystems & Biodiversity,1
+Social media campaign,1174,Civic & Community Participation,2
+media,1989,"Technology, Data & Digital",1
+women in crises,301,"Social Inclusion, Gender & Human Development",2
+women-led solution,4144,"Social Inclusion, Gender & Human Development",2
+affordable agricultural & industrial machineries,10,Agriculture & Food Systems,1
+craftsmanship,4143,"Culture, Arts & Tourism",1
+crowdsourcing,71,"Methods, Innovation & Foresight",3
+drought,2258,Climate & Resilience,2
+inclusión,164,"Social Inclusion, Gender & Human Development",1
+the vulnerable members of our society,270,"Social Inclusion, Gender & Human Development",1
+youth informality,306,"Social Inclusion, Gender & Human Development",2
+e-commerce,97,"Economy, Markets & Private Sector",4
+frugal innovation,135,"Methods, Innovation & Foresight",1
+natural solutions,190,Ecosystems & Biodiversity,1
+"environmental, social, and corporate governance (esg)",4329,Ecosystems & Biodiversity,1
+micro small medium enterprises,892,"Economy, Markets & Private Sector",3
+re-invented business models,228,"Economy, Markets & Private Sector",1
+textile,268,"Economy, Markets & Private Sector",2
+indigenous peoples,8555,"Social Inclusion, Gender & Human Development",1
+startegic foresight analysis,258,"Methods, Innovation & Foresight",1
+affordable housing,11,Urban Development & Infrastructure,1
+indigenous rights,165,"Social Inclusion, Gender & Human Development",1
+public consultations,219,"Governance, Policy & Public Sector",4
+women employment,299,"Economy, Markets & Private Sector",2
+agricultural mechanization,1572,Agriculture & Food Systems,1
+learning,177,Education & Skills,1
+monitoring,188,"Methods, Innovation & Foresight",1
+textile recycling,269,Waste & Circular Economy,1
+plastic and pollution,208,Waste & Circular Economy,4
+sanitary waste,245,Waste & Circular Economy,1
+innovations during covid-19,173,Health,3
+climate change simulation,51,Climate & Resilience,1
+affordable energy,844,Energy,1
+urban farming,1018,Agriculture & Food Systems,1
+colaborativa,54,"Methods, Innovation & Foresight",2
+ecommerce,758,"Economy, Markets & Private Sector",2
+trade,272,"Economy, Markets & Private Sector",1
+leave no one behind,4449,"Social Inclusion, Gender & Human Development",1
+digital services,2607,"Technology, Data & Digital",1
+inclusive growth,163,"Social Inclusion, Gender & Human Development",3
+sustainable energy,948,Energy,3
+biodegradable,29,Waste & Circular Economy,1
+governance cluster (co),145,"Governance, Policy & Public Sector",1
+clean cooking,1059,Energy,1
+renewable energy,236,Energy,3
+womenempowerment,5559,"Social Inclusion, Gender & Human Development",2
+sea,247,Oceans & Coasts,1
+biofuel,2790,Energy,1
+reduced waste water,1701,Water & WASH,1
+climate security,4445,Climate & Resilience,1
+responsability,4129,"Governance, Policy & Public Sector",1
+impact measurement and management,158,"Methods, Innovation & Foresight",1
+afcfta,4431,"Economy, Markets & Private Sector",1
+cross border trading,3983,"Economy, Markets & Private Sector",1
+regional trade,4430,"Economy, Markets & Private Sector",1
+open-source technology,5551,"Technology, Data & Digital",1
+Technology and innovation,5033,"Technology, Data & Digital",1
+circular migration,42,Waste & Circular Economy,1
+elderly,108,"Social Inclusion, Gender & Human Development",1
+climate,4334,Climate & Resilience,1
+rejuvenating tourism,235,"Culture, Arts & Tourism",1
+plastic-free environment,2731,Ecosystems & Biodiversity,1
+civil participation,4316,Civic & Community Participation,1
+political polarization,4476,"Governance, Policy & Public Sector",2
+democratic governance,4477,"Governance, Policy & Public Sector",1
+ocean conservation,1635,Ecosystems & Biodiversity,1
+organic production,196,Agriculture & Food Systems,1
+civil registration and vital statistics,47,"Governance, Policy & Public Sector",1
+digital services. digital comerece,4033,"Technology, Data & Digital",1
+digital tools,756,"Technology, Data & Digital",1
+vaccination,285,Health,1
+economic empowerment,102,"Economy, Markets & Private Sector",1
+vocational training,288,Education & Skills,1
+Adaptation action at the local level,5983,Climate & Resilience,1
+Adaptation to the impacts of climate change,5876,Climate & Resilience,1
+arte para la paz,10993,"Peace, Security & Justice",1
+conocimiento para la construcción de paz,10990,"Peace, Security & Justice",1
+Discapacidad,1014,"Social Inclusion, Gender & Human Development",1
+educación artística para la paz,10967,"Peace, Security & Justice",1
+igualdad de género,11002,"Social Inclusion, Gender & Human Development",1
+paz y memoria,11001,"Peace, Security & Justice",1
+turismo comunitario,19649,"Culture, Arts & Tourism",1
+infectious waste,4718,Waste & Circular Economy,1
+waste collection,2899,Waste & Circular Economy,1
+waste ecosystem,4717,Ecosystems & Biodiversity,1
+agtech,15,Agriculture & Food Systems,1
+cardboard waste,2903,Waste & Circular Economy,1
+Localization,922,"Governance, Policy & Public Sector",1
+biomimicry,31,"Methods, Innovation & Foresight",1
+sustainable home gardens,262,Agriculture & Food Systems,1
+re-use,852,Waste & Circular Economy,1
+reuse,1116,Waste & Circular Economy,1
+activism,8,Civic & Community Participation,1
