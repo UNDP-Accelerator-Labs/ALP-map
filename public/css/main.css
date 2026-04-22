@@ -90,6 +90,7 @@ header #logo h1 .light {
   padding: 20px;
   margin: 0 0 20px 0;
   box-sizing: border-box;
+  scroll-snap-align: start;
 }
 #card-list .card:hover {
   background-color: rgb(210,249,96);
@@ -105,6 +106,7 @@ header #logo h1 .light {
   overflow: auto;
   height: 100%;
   width: 100%;
+  scroll-snap-type: y proximity;
 }
 #layers {
   position: relative;
