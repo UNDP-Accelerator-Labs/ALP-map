@@ -74,6 +74,11 @@ async function onLoad() {
   const steps = new Array((range[1] - range[0]) + 1).fill(0).map((d, i) => range[0] + i);
 
   /*
+  Remove the loader
+  */
+  d3.select('.loader-container').remove();
+  /*
+  /*
   Render everything
   */
   const canvas = render.canvas('#canvas');
