@@ -10,7 +10,7 @@
   align-items: center;
 }
 .loader {
-  height: 30px;
+  height: 15px;
   aspect-ratio: 2.75;
   --_g: no-repeat radial-gradient(farthest-side,rgb(210,249,96) 90%,rgb(210,249,96));
   background: var(--_g), var(--_g), var(--_g), var(--_g);
