@@ -341,3 +341,7 @@ footer {
 g.packs {
   cursor: pointer;
 }
+.credit {
+  margin-top: 2em;
+  font-size: .75em;
+}
